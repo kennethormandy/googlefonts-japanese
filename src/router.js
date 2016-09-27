@@ -4,8 +4,8 @@ import Router from 'ampersand-router'
 
 import Layout from './components/Layout'
 import Index from './pages/index'
-// import Test from './pages/test'
-// import FourOhFour from './pages/404'
+import Test from './pages/test'
+import FourOhFour from './pages/404'
 
 export default Router.extend({
   renderPage (page, opts = { layout: true }) {
@@ -20,18 +20,18 @@ export default Router.extend({
   },
   routes: {
     '': 'home',
-    // 'test': 'test',
-    // 'test/': 'test',
-    // 'test/index.html': 'test',
-    // '*404': 'fourOhFour'
+    'test': 'test',
+    'test/': 'test',
+    'test/index.html': 'test',
+    '*404': 'fourOhFour'
   },
   home () {
     this.renderPage(<Index />)
   },
-  // test () {
-  //   this.renderPage(<Test />)
-  // },
-  // fourOhFour () {
-  //   this.renderPage(<FourOhFour />)
-  // }
+  test () {
+    this.renderPage(<Test />)
+  },
+  fourOhFour () {
+    this.renderPage(<FourOhFour />)
+  }
 })
