@@ -1,14 +1,14 @@
 import React from 'react'
-// import data from '../data'
+import data from '../data'
 import ga from 'react-ga'
 // import NoScript from '../components/NoScript'
 
 class Layout extends React.Component {
   renderChildren (props) {
     return React.Children.map(props.children, child => {
-      // if (child.type === Index) {
+      if (child.type === Index) {
         return React.cloneElement(child, {
-          // data: props.data
+          data: props.data
         })
     })
   }
