@@ -1,0 +1,27 @@
+{
+  "name": "react-example",
+  "title": "title",
+  "description": "description",
+  "url": "http://example.com",
+  "action": "http://example.com",
+  "og": {
+    "title": "Open Graph title",
+    "description": "Open Graph description"
+  },
+  "service": {
+    "analytics": false,
+    "mailchimp": "//losttype.us2.list-manage.com/subscribe/post?u=03a53a0acb15f9425c135760f&amp;id=8e91cfe1e8"
+  },
+  "distributor": {
+    "name": "The Lost Type Co-op",
+    "twitter": "losttypecoop",
+    "instagram": "losttypecoop",
+    "url": "http://losttype.com"
+  },
+  "author": {
+    "name": "Author Name",
+    "twitter": "example",
+    "instagram": "example",
+    "url": "http://example.com"
+  }
+}

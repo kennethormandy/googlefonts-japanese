@@ -8,7 +8,7 @@ var getConfig = require('hjs-webpack')
 var sizeOf = require('image-size')
 var Layout = require('./src/components/Layout').default
 var Index = require('./src/pages/index').default
-// var data = require('./src/data')
+var data = require('./src/data')
 var ogImage = sizeOf('./build/media/og-image.png')
 var pkg = require('./package.json')
 
@@ -22,18 +22,18 @@ var hjsConfig = getConfig({
     var renderPage = function (page) {
       return context.defaultTemplate({
         html: '<div id="js-root">' + (page ? ReactDOMServer.renderToString(React.createElement(Layout, {}, React.createElement(page))) : '') + '</div>',
-        // title: data.title,
+        title: data.title,
         lang: 'en',
         metaTags: {
-          // description: data.description,
-          // 'og:url': data.url,
-          // 'og:title': data.og.title || data.title,
-          // 'og:description': data.og.description || data.description,
-          // 'og:site_name': data.distributor.name,
-          // 'article:author': data.author.name,
-          // 'twitter:creator': '@' + data.author.twitter,
-          // 'twitter:site': '@' + data.distributor.twitter,
-          // 'twitter:card': 'summary_large_image',
+          description: data.description,
+          'og:url': data.url,
+          'og:title': data.og.title || data.title,
+          'og:description': data.og.description || data.description,
+          'og:site_name': data.distributor.name,
+          'article:author': data.author.name,
+          'twitter:creator': '@' + data.author.twitter,
+          'twitter:site': '@' + data.distributor.twitter,
+          'twitter:card': 'summary_large_image',
           'twitter:image': data.url + '/media/og-image.png?' + pkg.version,
           'og:image': data.url + '/media/og-image.png',
           'og:image:type': 'image/png',
