@@ -1,0 +1,30 @@
+// State
+.is-translated {
+  transition: transform 1s ease-in-out;
+}
+
+.is-tyn50 {
+  transform: translateY(-50%);
+}
+
+.is-ty50 {
+  transform: translateY(50%);
+}
+
+.is-translated-100 {
+  transform: translateY(100%);
+}
+
+// Pointer animate paused
+//
+// This is used in the M+ section to override the looping JS
+// animation on hover (or, potentially, other pointer events).
+.is-pointer-animate-paused {
+  &:hover,
+  &:focus {
+    // Animation class is a child for a larget tap-target area
+    .animate {
+      animation-play-state: paused;
+    }
+  }
+}

@@ -13,7 +13,7 @@ html {
   height: 100%;
   font-family: $font-family-base;
   font-size: $h5;
-  line-height: $line-height-4;
+  line-height: $line-height-3;
   background-color: $white;
   color: $black;
 }
@@ -102,6 +102,11 @@ figure {
 blockquote {
   margin-left: 0;
   margin-right: 0;
+}
+
+abbr {
+  text-decoration: none;
+  border: none;
 }
 
 hr {
@@ -230,6 +235,10 @@ a {
   speak: none;
 }
 
+.speak-normal {
+  speak: normal;
+}
+
 
 // Embed Responsively
 //
@@ -265,6 +274,26 @@ a {
 
 .ltr {
   direction: ltr;
+}
+
+.vertical {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.upright {
+  // full-size-kana?
+  -webkit-text-transform: full-width;
+  text-transform: -webkit-full-width;
+  text-transform: full-width;
+
+  -webkit-text-orientation: upright;
+  -moz-text-orientation: upright;
+  -ms-text-orientation: upright;
+  text-orientation: upright;
 }
 
 
@@ -337,4 +366,25 @@ a {
   &:active {
     opacity: 1;
   }
+}
+
+
+// List style
+//
+// <ul class="list-style-none"></ul>
+//
+// Styleguide: base.list-style
+.list-style-none,
+.list-style-none > li {
+  list-style: none;
+}
+
+
+// Max width
+//
+// Additional `max-width`
+//
+// Styleguide: base.max-width
+.max-width-5 {
+  max-width: $width-5;
 }

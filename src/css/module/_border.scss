@@ -1,0 +1,36 @@
+// Border
+//
+// Styleguide: module.border
+.border-double {
+  border-style: double;
+}
+
+.border-left-tear {
+  border-left: $border-thick dotted;
+}
+
+.border-thick {
+  border-width: $border-thick;
+}
+
+.border-medium {
+  border-width: $border-medium;
+}
+
+.border-thin {
+  border-width: $border-thin;
+}
+
+@media #{ $breakpoint-sm } {
+  .sm-border-top { border-top-style: solid; }
+  .sm-border-right { border-right-style: solid; }
+  .sm-border-bottom { border-bottom-style: solid; }
+  .sm-border-left { border-left-style: solid; }
+}
+
+@media #{ $breakpoint-md } {
+  .md-border-top { border-top: 1px solid; }
+  .md-border-right { border-right: 1px solid; }
+  .md-border-bottom { border-bottom: 1px solid; }
+  .md-border-left { border-left: 1px solid; }
+}
