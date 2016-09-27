@@ -5,11 +5,11 @@ var path = require('path')
 var React = require('react')
 var ReactDOMServer = require('react-dom/server')
 var getConfig = require('hjs-webpack')
-// var sizeOf = require('image-size')
+var sizeOf = require('image-size')
 var Layout = require('./src/components/Layout').default
 var Index = require('./src/pages/index').default
 // var data = require('./src/data')
-// var ogImage = sizeOf('./build/media/og-image.png')
+var ogImage = sizeOf('./build/media/og-image.png')
 var pkg = require('./package.json')
 
 var hjsConfig = getConfig({
@@ -34,11 +34,11 @@ var hjsConfig = getConfig({
           // 'twitter:creator': '@' + data.author.twitter,
           // 'twitter:site': '@' + data.distributor.twitter,
           // 'twitter:card': 'summary_large_image',
-          // 'twitter:image': data.url + '/media/og-image.png?' + pkg.version,
-          // 'og:image': data.url + '/media/og-image.png',
-          // 'og:image:type': 'image/png',
-          // 'og:image:width': ogImage.width,
-          // 'og:image:height': ogImage.height,
+          'twitter:image': data.url + '/media/og-image.png?' + pkg.version,
+          'og:image': data.url + '/media/og-image.png',
+          'og:image:type': 'image/png',
+          'og:image:width': ogImage.width,
+          'og:image:height': ogImage.height,
           // 'apple-mobile-web-app-title': data.name
         }
       })
