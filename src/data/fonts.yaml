@@ -1,0 +1,195 @@
+---
+example:
+  name:
+    ja: ちょめちょめ
+    en: Example
+  fallback: sans-serif
+  designer:
+    url: http://example.com
+    name:
+      ja: やまだ たろう
+      en: Jane Smith
+    quote:
+      ja: なんとかなんとか
+      en: Something about the typeface
+
+sawarabi:
+  name:
+    ja: さわらび明朝とさわらびゴシック
+    en: Sawarabi Mincho & Gothic
+  designer:
+    url: false
+    name:
+      ja: mishio
+      en: mishio
+    quote:
+      ja: 本文用のフォントとして使いやすくなるようにイメージしています。
+      en: Designed and optimised as text type.
+
+sawarabimincho:
+  feature_nav: true
+  name:
+    ja: さわらび明朝
+    en: Sawarabi Mincho
+  fallback: serif
+  designer:
+    url: false
+    name:
+      ja: mishio
+      en: mishio
+    quote:
+      ja: 本文用のフォントとして使いやすくなるようにイメージしています。
+      en: Designed and optimised as text type.
+
+hannari:
+  feature_nav: true
+  name:
+    ja: はんなり明朝
+    en: Hannari Mincho
+  fallback: serif
+  designer:
+    url: false
+    name:
+      ja: 中井良尚
+      en: Yoshihisa Nakai
+    quote:
+      ja: 明朝体は墨溜まりを意識してデザインしています。
+      en: This Mincho style keeps and includes the visual impression of ink spots.
+
+kokoro:
+  feature_nav: true
+  name:
+    ja: こころ明朝
+    en: Kokoro Mincho
+  fallback: serif
+  designer:
+    url: false
+    name:
+      ja: 中井良尚
+      en: Yoshihisa Nakai
+    quote:
+      ja: 少しほっそりとした、角丸な明朝体です。まろやかで、軽い感じがする文字です。
+      en: A slim Mincho face with rounded endings. The characters look smooth and light.
+
+mplus:
+  feature_nav: true
+  name:
+    ja: M+
+    en: M+
+  fallback: sans-serif
+  designer:
+    url: false
+    # Incomplete
+    name:
+      ja: 森下浩司
+      en:
+    quote:
+      ja: 日常的に使うための飽きのこない、それでいてちょっと気になるデザイン。
+      en:
+
+nicomojiplus:
+  feature_nav: true
+  name:
+    # ニコモジ＋
+    ja: ニコもじ＋
+    en: Nico Moji+
+  fallback: sans-serif
+  designer:
+    url: false
+    name:
+      ja: Ku-ku (Do-Font)
+      en: Ku-ku (Do-Font)
+    quote:
+      ja: すこしでもデザインのてだすけになれればさいわいです。
+      en: I hope to do a cotribution to designers with this typeface.
+
+nikukyu:
+  feature_nav: true
+  name:
+    ja: ニクキュウ
+    en: Nikukyu
+  fallback: sans-serif
+  designer:
+    url: false
+    name:
+      ja: 中井良尚
+      en: false
+    quote:
+      ja: モリっとして、ツヤのあるカタカナフォントです。
+      en: false
+
+sawarabigothic:
+  feature_nav: true
+  name:
+    ja: さわらびゴシック
+    en: Sawarabi Gothic
+  fallback: sans-serif
+  designer:
+    url: false
+    name:
+      ja: mishio
+      en: mishio
+    # Same quote as in Sawarabi Mincho
+    # quote:
+    #   ja: 本文用のフォントとして使いやすくなるようにイメージしています。
+    #   en: Designed and optimised as text type.
+
+notosansjapanese:
+  feature_nav: true
+  name:
+    ja: Noto Sans Japanese
+    en: Noto Sans Japanese
+  fallback: sans-serif
+  designer:
+    url: false
+    name:
+      ja: 西塚涼子
+      en: Ryoko Nishizuka
+    quote:
+      ja: false
+      en: Noto fonts are intended to be visually harmonious across multiple languages, with compatible heights and stroke thicknesses.
+
+harenosora:
+  name:
+    ja: はれのそら明朝
+    en: Harenosora Mincho
+  fallback: sans-serif
+  designer:
+    url: false
+    name:
+      ja: はれのそら明朝
+      en: Yoshihisa Nakai
+    quote:
+      ja: 誰でも、気軽に使ってほしいです。
+      en: I hope people will enjoy using this typeface.
+
+# Incomplete
+
+roundedmplus:
+  feature_nav: false
+  name:
+    ja: Rounded M+
+    en: Rounded M+
+  fallback: sans-serif
+  designer:
+    url: false
+    name:
+      ja: 自家製フォント工房
+      en:
+    quote:
+      ja: 明るく伸びやかなデザインを心がけた。
+      en: I intended a design that is openminded and relaxed.
+
+keifont:
+  name:
+    ja: けいふぉんと
+    en: Kei Font
+  designer:
+    name:
+      ja: 中井良尚
+      en: Nakai Yoshihisa
+
+bokutachino:
+  name:
+    ja: ぼくたちのゴシック２
+    en: Bokutachi No. 2 Gothic 2

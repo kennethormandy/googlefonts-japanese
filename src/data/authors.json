@@ -1,0 +1,34 @@
+{
+  "marikotakagi": {
+    "name": "Mariko Takagi",
+    "url": "http://www.mikan.de",
+    "hidden": true,
+    "credit": "Japanese typography authority, design and typesetting"
+  },
+  "kennethormandy": {
+    "name": "Kenneth Ormandy",
+    "url": "http://kennethormandy.com",
+    "hidden": true,
+    "credit": "Web design and development"
+  },
+  "davecrossland": {
+    "name": "Dave Crossland",
+    "url": "#",
+    "hidden": true
+  },
+  "yuinchien": {
+    "name": "Yuin Chien",
+    "url": "#",
+    "hidden": true
+  },
+  "omerziv": {
+    "name": "Omer Ziv",
+    "url": "#",
+    "hidden": true
+  },
+  "lassefister": {
+    "name": "Lasse Fister",
+    "url": "#",
+    "hidden": true
+  }
+}
