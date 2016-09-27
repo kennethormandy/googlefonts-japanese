@@ -1,0 +1,75 @@
+// Font utilities
+//
+// No styleguide reference.
+
+// Font weight
+//
+// Specify the style of the typeface
+// to use via `font-weight` utility classes.
+//
+// Markup:
+// <div class="font-weight-400">
+//   <div class="h1 font-weight-100">Ultralight</div>
+//   <p>We’re on an Ultralight Beam.</p>
+// </div>
+//
+// No styleguide reference.
+@for $i from 1 through 9 {
+  .font-weight-#{ $i }00 {
+    font-weight: #{ $i }00;
+  }
+}
+
+.font-weight-inherit {
+  font-weight: inherit;
+}
+
+
+// Line height
+//
+// No styleguide reference.
+.line-height-1 {
+  line-height: $line-height-1;
+}
+
+.line-height-2 {
+  line-height: $line-height-2;
+}
+
+.line-height-3 {
+  line-height: $line-height-3;
+}
+
+.line-height-4 {
+  line-height: $line-height-4;
+}
+
+// Responsive font sizes
+//
+// No styleguide reference.
+@media #{ $breakpoint-sm } {
+  .sm-h1 { font-size: $h1; }
+  .sm-h2 { font-size: $h2; }
+  .sm-h3 { font-size: $h3; }
+  .sm-h4 { font-size: $h4; }
+  .sm-h5 { font-size: $h5; }
+  .sm-h6 { font-size: $h6; }
+}
+
+@media #{ $breakpoint-md } {
+  .md-h1 { font-size: $h1; }
+  .md-h2 { font-size: $h2; }
+  .md-h3 { font-size: $h3; }
+  .md-h4 { font-size: $h4; }
+  .md-h5 { font-size: $h5; }
+  .md-h6 { font-size: $h6; }
+}
+
+@media #{ $breakpoint-lg } {
+  .lg-h1 { font-size: $h1; }
+  .lg-h2 { font-size: $h2; }
+  .lg-h3 { font-size: $h3; }
+  .lg-h4 { font-size: $h4; }
+  .lg-h5 { font-size: $h5; }
+  .lg-h6 { font-size: $h6; }
+}

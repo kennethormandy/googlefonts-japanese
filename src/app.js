@@ -6,7 +6,7 @@ import Router from './router'
 
 // CSS
 // require('./css/fonts-critical.css')
-// require('./css/index.scss')
+require('./css/index.scss')
 
 window.app = app.extend({
   init () {

@@ -1,0 +1,23 @@
+// White space / Draft.js CSS overrides
+//
+// Should be a better way to
+// apply this through draft.
+//
+// No styleguide reference.
+.white-space-inherit,
+.white-space-inherit .public-DraftStyleDefault-block {
+  white-space: inherit;
+}
+
+.white-space-nowrap {
+  white-space: nowrap !important;
+}
+
+.white-space-normal {
+  white-space: normal !important;
+}
+
+.public-DraftEditor-content {
+  white-space: normal !important; // Just for BigIdeasText specimens?
+  word-wrap: normal !important;
+}

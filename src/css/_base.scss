@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  font-synthesis: none;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // iOS
+  -webkit-tap-highloght-color: transparent;      // Android
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: $font-family-base;
+  font-size: $h5;
+  line-height: $line-height-4;
+  background-color: $white;
+  color: $black;
+}
+
+@each $prefix in "::-moz-selection", "::selection" {
+  #{ $prefix } {
+    background-color: rgba($black, 0.5);
+    color: $white;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+@each $prefix in ":-webkit-autofill", ":autofill" {
+ #{ $prefix } {
+    box-shadow: 0 0 0 1000px mix($white, $gray, 50%) inset;
+  }
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+.a-underline {
+  color: inherit;
+  border-bottom: 1px solid $darken-3;
+  text-decoration: none;
+  transition: border 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+a:focus,
+a:hover,
+a:active {
+  color: inherit;
+  opacity: 0.75;
+}
+
+.a-hover-none,
+a.a-hover-none {
+  &:focus,
+  &:hover,
+  &:active {
+    color: inherit;
+    opacity: inherit;
+    border-bottom: inherit;
+    text-decoration: inherit;
+  }
+}
+
+strong, b, header, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+i, em, address {
+  font-style: normal;
+}
+
+.border-none {
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    border: none;
+  }
+}
+
+dl, ol, ul {
+  padding-left: 0;
+}
+
+i, em, cite, blockquote {
+  font-style: normal; // No italics
+}
+
+img,
+svg {
+  display: block;
+}
+
+figure {
+  margin: 0;
+  img {
+    width: 100%;
+  }
+}
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+hr {
+  display: block;
+  border: 0;
+}
+
+textarea,
+input,
+button,
+a {
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px rgba($black, 0.5);
+  }
+  &:hover:focus {
+    box-shadow: none;
+  }
+}
+
+
+// Plaintext
+//
+// Ported from 1403 site.
+// This is what makes it possible for
+// editable areas to scale, or work more like woodtype
+// posters, or the original untitled Implicate site
+// Should probably be a utility and/or js class instead
+// that I add or remove based on if we want inline or
+// woodtype poster specimens
+//
+// Styleguide: base.plaintext
+.plaintext {
+  -webkit-user-modify: read-write-plaintext-only;
+  -moz-user-modify: read-write-plaintext-only;
+  -ms-user-modify: read-write-plaintext-only;
+  user-modify: read-write-plaintext-only;
+}
+
+
+// Pre
+//
+// Check if this is already a class in BassCSS or there’s an alternative
+//
+// Styleguide: base.pre
+.pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+
+// Overflow-x and -y
+//
+// Additional Basscss-like utilities for overflow
+// on specific axis.
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+
+// Break word
+//
+// Word-breaking utility, preventing text from overflowing and
+// causing layout to scroll in specific situations.
+//
+// Styleguide: base:break-word
+.break-word {
+  word-wrap: break-word;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.hyphenate {
+  hyphens: auto
+}
+
+
+// Indent
+//
+// Indent subsequent paragraphs. Often used when [contenteditable] is
+// applied to a section, so when someone adds a new paragraph, they will
+// get an indent instead of a line break in those appropriate situations.
+//
+// Styleguide: base.indent
+.indent {
+  * + * {
+    text-indent: $space-3;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+
+// Prefix
+//
+// Styleguide: base.prefix
+[data-before]:before {
+  content: attr(data-before);
+  display: inline-block;
+}
+
+
+// Speak None
+//
+// Accessibility considerations for Basscss.
+//
+// Styleguide: base.speak-none
+.speak-none,
+[aria-hidden="true"] {
+  speak: none;
+}
+
+
+// Embed Responsively
+//
+// Markup:
+// <figure class="embed">
+//   <iframe src="https://player.vimeo.com/video/143748530?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0"
+//           frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+// </figure>
+//
+// Styleguide: base.embed
+.embed {
+  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+  [src] {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  }
+  figcaption {
+    margin-top: 56.25%;
+    z-index: 10;
+    position: absolute;
+  }
+}
+
+
+// Text direction
+//
+// Markup:
+// <p class="rtl">הפסטיבל הבינלאומי לריקוד היסטורי</p>
+//
+// Styleguide: base.direction
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+
+// Nobreak
+//
+// Intentionally not `.no-break`, since it’s not a
+// Modernizer-esque thing, and actually for nicer
+// line breaks in certain places.
+//
+// Markup:
+// <p>This is a sentence, <span class="nobreak">that breaks better here</span>.</p>
+//
+// Styleguide: base.nobreak
+.md-nobreak {
+  @media #{ $breakpoint-md } {
+    display: inline-block;
+  }
+}
+
+
+// Uppercase
+//
+// Since the small caps in this font are lowercase,
+// this actually restores the default Basscss behaviour that
+// makes `.caps` into all caps rather than small caps.
+//
+// Styleguide: base.caps
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+// Select None
+//
+// Basscss-like user select class.
+//
+// Styleguide: base.select
+.select-none {
+  user-select: none;
+}
+
+
+// Text clip
+//
+// No styleguide reference.
+.text-clip {
+  color: rgba(0, 0, 0, 0.125); // Fallback and cursor colour
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+          text-fill-color: rgba(0, 0, 0, 0.1);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+
+// Not muted
+//
+// Like `.not-rounded`, `.no-border`, this will have full opacity, including
+// when interacting with it.
+//
+// Markup:
+// <a href="#" class="not-muted">
+//   <img src="http://placehold.it/800" alt="Example" />
+// </a>
+//
+// No styleguide reference.
+.not-muted {
+  opacity: 1;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
