@@ -1,0 +1,267 @@
+/* TODO Temporary font-loading file until typefaces are available through Early Access */
+@font-face {
+  font-family: 'Sawarabi Mincho';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/sawarabimincho/SawarabiMincho-Regular.ttf');
+}
+
+.wf-sawarabimincho {
+  font-family: 'Sawarabi Mincho', serif;
+}
+
+@font-face {
+  font-family: 'Sawarabi Gothic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/sawarabigothic/SawarabiGothic-Regular.ttf');
+}
+
+.wf-sawarabigothic {
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+@font-face {
+  font-family: 'Hannari';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/hannari/Hannari-Regular.ttf')
+}
+
+.wf-hannari {
+  font-family: 'Hannari', script;
+}
+
+/* TODO Kokoro */
+@font-face {
+  font-family: 'Kokoro';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/kokoro/Kokoro-Regular.ttf')
+}
+
+.wf-kokoro {
+  font-family: 'Kokoro', script;
+}
+
+/* Check if this can be available on Early Access too */
+@font-face {
+  font-family: 'Noto Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/noto/NotoMono-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Nico Moji+';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/nicomoji/nicomoji-plus_1.02.ttf')
+}
+
+.wf-nicomojiplus {
+  font-family: 'Nico Moji+', sans-serif;
+}
+
+@font-face {
+  font-family: 'Nikukyu';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/nikukyu/Nikukyu-Regular.ttf')
+}
+
+.wf-nikukyu {
+  font-family: 'Nikukyu', sans-serif;
+}
+
+@font-face {
+  font-family: 'M+';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/mplus1p/mplus-1p-black.ttf')
+}
+
+@font-face {
+  font-family: 'M+';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/mplus1p/mplus-1p-heavy.ttf')
+}
+
+@font-face {
+  font-family: 'M+';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/mplus1p/mplus-1p-bold.ttf')
+}
+
+@font-face {
+  font-family: 'M+';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/mplus1p/mplus-1p-medium.ttf')
+}
+
+@font-face {
+  font-family: 'M+';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/mplus1p/mplus-1p-regular.ttf')
+}
+
+@font-face {
+  font-family: 'M+';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/mplus1p/mplus-1p-light.ttf')
+}
+
+@font-face {
+  font-family: 'M+';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/mplus1p/mplus-1p-thin.ttf')
+}
+
+.wf-mplus {
+  font-family: 'M+', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Rounded M+';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/mplus1crounded/rounded-mplus-1c-black.ttf')
+}
+
+@font-face {
+  font-family: 'Rounded M+';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/mplus1crounded/rounded-mplus-1c-heavy.ttf')
+}
+
+@font-face {
+  font-family: 'Rounded M+';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/mplus1crounded/rounded-mplus-1c-bold.ttf')
+}
+
+@font-face {
+  font-family: 'Rounded M+';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/mplus1crounded/rounded-mplus-1c-medium.ttf')
+}
+
+@font-face {
+  font-family: 'Rounded M+';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/mplus1crounded/rounded-mplus-1c-regular.ttf')
+}
+
+@font-face {
+  font-family: 'Rounded M+';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/mplus1crounded/rounded-mplus-1c-light.ttf')
+}
+
+@font-face {
+  font-family: 'Rounded M+';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/mplus1crounded/rounded-mplus-1c-thin.ttf')
+}
+
+
+.wf-roundedmplus {
+  font-family: 'Rounded M+', 'M+', sans-serif;
+}
+
+@import url('http://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/noto/NotoSansCJKjp-Black.otf')
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/noto/NotoSansCJKjp-Bold.otf')
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/noto/NotoSansCJKjp-Medium.otf')
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/noto/NotoSansCJKjp-Regular.otf')
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/noto/NotoSansCJKjp-DemiLight.otf')
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/noto/NotoSansCJKjp-Light.otf')
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 100;
+  src: url('/fonts/noto/NotoSansCJKjp-Thin.otf')
+}
+
+.wf-notosansjapanese {
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/noto/NotoSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/noto/NotoSans-Bold.ttf')
+}
+
+.wf-notosans {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/noto/NotoSerif-Regular.ttf')
+}
+
+.wf-notosans {
+  font-family: 'Noto Serif', sans-serif;
+}
