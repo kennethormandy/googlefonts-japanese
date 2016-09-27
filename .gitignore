@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+
+# Logs
+logs
+*.log*
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directory
+node_modules
+
+# Fonts
+# fonts/
+# *.woff
+# *.woff2
+# *.ttf
+# *.otf
+
+# Compile directories
+www/
+build/*
+
+# Restore static directories
+!build/media/
+build/media/**/*.html
+build/media/**/.DS_Store
+!build/css/
+build/css/**/.DS_Store
+!build/favicon.ico
+!build/apple-touch-icon.png
