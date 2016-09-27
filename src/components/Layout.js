@@ -6,10 +6,9 @@ import ga from 'react-ga'
 class Layout extends React.Component {
   renderChildren (props) {
     return React.Children.map(props.children, child => {
-      if (child.type === Index) {
-        return React.cloneElement(child, {
-          data: props.data
-        })
+      return React.cloneElement(child, {
+        data: props.data
+      })
     })
   }
 
@@ -29,6 +28,7 @@ class Layout extends React.Component {
 }
 
 Layout.defaultProps = {
+  data: data
 }
 
 export default Layout
