@@ -1,7 +1,12 @@
 import React from 'react'
 import data from '../data'
+import dataFonts from '../data/fonts'
+import dataAuthors from '../data/authors'
 import ga from 'react-ga'
 // import NoScript from '../components/NoScript'
+
+data.fonts = dataFonts
+data.authors = dataAuthors
 
 class Layout extends React.Component {
   renderChildren (props) {
@@ -19,6 +24,7 @@ class Layout extends React.Component {
 
   render () {
     const self = this
+
     return (
       <div className="kern liga">
         { self.renderChildren(self.props) }
