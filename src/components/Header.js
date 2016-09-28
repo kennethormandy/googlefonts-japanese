@@ -6,12 +6,12 @@ class Header extends React.Component {
     const data = self.props.data
 
     return (
-      <div className="flex bg-silver black font-family-base">
+      <div className="flex bg-maroon white font-family-base">
         <div className="col-12 md-col-8 lg-col-9">
-          <div className="bg-maroon white sm-flex flex-wrap px2">
-            <h1>
+          <div className="sm-flex flex-wrap px2">
+            <h1 className="h1 font-weight-600">
               <span style={{ fontFamily: 'Product Sans' }}>Google Fonts</span>
-              <span className="font-weight-500" style={{ fontSize: 0.9 + 'em' }}>による早期アクセス日本語フォント</span>
+              <span style={{ fontSize: 0.9 + 'em' }}>による早期アクセス日本語フォント</span>
             </h1>
           </div>
         </div>

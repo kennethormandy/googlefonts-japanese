@@ -8,9 +8,9 @@ class Footer extends React.Component {
     // <hr className="block mx-auto max-width-4 col-12 border-none bg-navy muted-dark pt1 rounded mb4" />
 
     return (
-      <div className="clearfix bg-yellow" style={{ minHeight: 60 + 'vh' }}>
+      <div className="clearfix bg-white" style={{ minHeight: 60 + 'vh' }}>
         <div className="col-12 md-col-8 lg-col-9">
-          <div className="bg-blue sm-flex flex-wrap">
+          <div className="sm-flex flex-wrap">
             <div className="col-4" lang="en">
               <ul className="list-style-none p0 m0">
               <li><a className="border-none" href={ data.baseurl + '/about' }>About</a></li>
