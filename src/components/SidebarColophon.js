@@ -8,27 +8,41 @@ class SidebarColophon extends React.Component {
     var data = self.props.data
     var font = data.fonts[self.props.font]
 
+    var fontNameEn = font.name.ja !== font.name.en ? <span lang="en" className="block font-weight-400 muted">{ font.name.en }</span> : <span className="block speak-none">&nbsp;</span>
+    var fontDesignerNameEn = font.designer.name.ja !== font.designer.name.en ? <span lang="en" className="muted"> { font.designer.name.en }</span> : ''
+
     return (
       <StickyContainer style={{ zIndex: 4 }}>
         <div className="flex flex-wrap justify-end relative font-family-base">
           <div className="col-12 md-col-8 lg-col-9">{ self.props.children }</div>
           <div className="col-12 md-col-4 lg-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto">
-            <div className="js-sidebar col-9 md-col-12 bg-gray right height-100 absolute md-relaitve"
+            <div className={ 'js-sidebar col-9 md-col-12 right height-100 absolute md-relaitve bg-' + self.props.backgroundColor }
                  style={{
                    right: (self.props.show ? '0' : '-50') + '%'
                  }}>
-            <Sticky style={{ zIndex: 3, height: 0 }}>
+            <Sticky style={{ zIndex: 3, height: 0 }}> {/* bottomOffset could be set to this computed height */}
               <div className="right col-9 md-col-12">
-                <div className="p2 bg-silver" style={{ height: 100 + 'vh' }}>
-                  <h2>{ font.name.en }</h2>
+                <div className={ 'h5 md-h4 bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
+                <div className="p2 md-pl3 md-pt3 md-pb3 bg-lighten-3" style={{ height: 100 + 'vh' }}>
+                  <h3 className="border-top pt2 inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
+                  <blockquote>
+                  <p>{ font.designer.quote.ja }</p>
+                  <p lang="en">{ font.designer.quote.en }</p>
+                  <footer>
+                    <span>{ font.designer.name.ja }</span>
+                    { fontDesignerNameEn }
+                  </footer>
+                  </blockquote>
 
                   <CodeBlock language="html">{ '\
 <link href="http://fonts.googleapis.com/earlyaccess/' + self.props.font + '.css" />\
                   ' }</CodeBlock>
+                  <CodeBlock language="css">{ '\
+.wf-' + self.props.font + ' \{ font-family: ' + self.props.font + '; \}\
+                  ' }</CodeBlock>
 
-                  <pre data-language="html"><code>{ self.props.font }</code></pre>
-                  <pre data-language="css"><code>{ self.props.font }</code></pre>
 
+                </div>
                 </div>
               </div>
             </Sticky>
@@ -41,7 +55,8 @@ class SidebarColophon extends React.Component {
 }
 
 SidebarColophon.defaultProps = {
-  show: false // Default to false for pre-render
+  show: false, // Default to false for pre-render
+  backgroundColor: 'silver'
 }
 
 export default SidebarColophon

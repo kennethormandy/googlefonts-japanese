@@ -103,13 +103,13 @@ class Index extends React.Component {
     return (
       <div style={{ height: 100 + '%' }} onClick={ this.onClickSpecimen }>
         <Header { ...self.props } />
-        <SidebarColophon { ...self.props } font="sawarabi" show={ self.state.sidebar }>
+        <SidebarColophon { ...self.props } font="sawarabi" show={ self.state.sidebar } backgroundColor="black">
           { React.createElement(SpecimenSawarabi) }
         </SidebarColophon>
-        <SidebarColophon { ...self.props } font="mplus" show={ self.state.sidebar }>
+        <SidebarColophon { ...self.props } font="mplus" show={ self.state.sidebar } backgroundColor="blue">
           <SpecimenMPlus { ...self.props } />
         </SidebarColophon>
-        <SidebarColophon { ...self.props } font="kokoro" show={ self.state.sidebar }>
+        <SidebarColophon { ...self.props } font="kokoro" show={ self.state.sidebar } backgroundColor="green">
           <SpecimenKokoro { ...self.props } />
         </SidebarColophon>
         <div className="flex-none clearfix relative z4">
