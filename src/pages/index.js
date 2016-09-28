@@ -6,6 +6,7 @@ import SidebarColophon from '../components/SidebarColophon'
 
 import SpecimenSawarabi from '../specimens/Sawarabi'
 import SpecimenMPlus from '../specimens/MPlus'
+import SpecimenRoundedMPlus from '../specimens/RoundedMPlus'
 import SpecimenHannari from '../specimens/Hannari'
 import SpecimenKokoro from '../specimens/Kokoro'
 import SpecimenNotoSansJapanese from '../specimens/NotoSansJapanese'
@@ -87,17 +88,20 @@ class Index extends React.Component {
     return (
       <div style={{ height: 100 + '%' }} onClick={ this.onClickSpecimen }>
         <Header { ...self.props } />
-        <SidebarColophon { ...self.props } font="sawarabi" show={ self.state.sidebar } backgroundColor="black">
-          { React.createElement(SpecimenSawarabi) }
-        </SidebarColophon>
         <SidebarColophon { ...self.props } font="mplus" show={ self.state.sidebar } backgroundColor="blue">
           <SpecimenMPlus { ...self.props } />
+        </SidebarColophon>
+        <SidebarColophon { ...self.props } font="roundedmplus" show={ self.state.sidebar } backgroundColor="blue">
+          <SpecimenRoundedMPlus { ...self.props } />
         </SidebarColophon>
         <SidebarColophon { ...self.props } font="hannari" show={ self.state.sidebar } backgroundColor="red">
           <SpecimenHannari { ...self.props } />
         </SidebarColophon>
         <SidebarColophon { ...self.props } font="kokoro" show={ self.state.sidebar } backgroundColor="green">
           <SpecimenKokoro { ...self.props } />
+        </SidebarColophon>
+        <SidebarColophon { ...self.props } font="sawarabi" show={ self.state.sidebar } backgroundColor="black">
+          { React.createElement(SpecimenSawarabi) }
         </SidebarColophon>
         <SidebarColophon { ...self.props } font="notosansjapanese" show={ self.state.sidebar } backgroundColor="fuchsia">
           <SpecimenNotoSansJapanese { ...self.props } />
