@@ -1,8 +1,9 @@
 {
-  "name": "react-example",
-  "title": "title",
-  "description": "description",
+  "name": "Googleの日本語フォント",
+  "title": "Googleの日本語フォント",
+  "description": "我々は、Webサイトや製品に個性と性能をもたらすための最善の方法は、優れたデザインと技術を通じてであると考えています。私たちの目標は、オープンソースのデザイナーのWebフォントの直感的かつ堅牢なディレクトリを提供することによって、そのプロセスを簡単にすることです。豊富なカタログを使用することで、あなたが共有し、あなたが世界のどこにいるかシームレス-関係なく、任意の設計プロジェクトにタイポグラフィを統合することはできません。",
   "url": "http://example.com",
+  "baseurl": "",
   "action": "http://example.com",
   "og": {
     "title": "Open Graph title",
@@ -11,6 +12,10 @@
   "service": {
     "analytics": false,
     "mailchimp": "//losttype.us2.list-manage.com/subscribe/post?u=03a53a0acb15f9425c135760f&amp;id=8e91cfe1e8"
+  },
+  "social": {
+    "twitter": "googlefonts",
+    "github": "googlefonts"
   },
   "distributor": {
     "name": "The Lost Type Co-op",
