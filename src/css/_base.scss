@@ -430,5 +430,19 @@ a {
   .lg-height-auto { height: auto }
   .lg-height-100 { height: 100% }
   .lg-width-auto { width: auto }
-  .lg-width-100 { width: 100% }  
+  .lg-width-100 { width: 100% }
+}
+
+
+// Shame
+.temp-translate-sidebar {
+  transform: translateX(90%);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.33);
+  &:hover {
+    transform: translateX(0);    
+  }
+  @media #{ $breakpoint-md } {
+    box-shadow: none;
+    transform: none;
+  }
 }

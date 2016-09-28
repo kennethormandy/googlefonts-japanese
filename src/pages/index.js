@@ -29,11 +29,15 @@ class StickySidebar extends React.Component {
       <StickyContainer style={{ zIndex: 4 }}>
         <div className="flex flex-wrap justify-end relative">
           <div className="col-12 md-col-9">{ self.props.children }</div>
-          <div className="col-9 bg-gray md-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto" onClick={ self.onClick }>
+          <div
+            className="col-9 bg-gray md-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto temp-translate-sidebar"
+            style={{
+              // TODO
+              // translate: 'transformX(' + 0 + ')'
+            }}
+            onClick={ self.onClick }>
             <Sticky style={{ zIndex: 3, height: 0 }}>
-              <div className="col-9 right" style={{
-                // transform: 'translateX(' + (self.state.sidebar ? (90 + '%') : (-100 + '%')) + ')'
-              }}>
+              <div className="right col-9 md-col-12">
                 <div className="p2 bg-silver">
                   <h2>{ font.name.en }</h2>
                   <code>{'.wf-example \{ example: ' + self.props.font + ' \}' }</code>
@@ -88,17 +92,17 @@ class Index extends React.Component {
         </StickySidebar>
         <StickySidebar { ...self.props } font="mplus">
           <div style={{ height: 500 + 'px' }} className="bg-aqua">
-            <h1>M+</h1>
+            <h2 className="mt0">M+</h2>
           </div>
         </StickySidebar>
         <StickySidebar { ...self.props } font="kokoro">
           <div style={{ height: 500 + 'px' }} className="bg-olive">
-            <h1>Kokoro</h1>
+            <h2 className="mt0">Kokoro</h2>
           </div>
         </StickySidebar>
         <StickySidebar { ...self.props } font="nicomojiplus">
           <div style={{ height: 500 + 'px' }} className="bg-yellow">
-            <h1>Nicomoji+</h1>
+            <h2 className="mt0">Nicomoji+</h2>
           </div>
         </StickySidebar>
         <div className="flex-none clearfix relative z4">
