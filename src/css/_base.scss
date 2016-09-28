@@ -388,3 +388,47 @@ a {
 .max-width-5 {
   max-width: $width-5;
 }
+
+@media #{ $breakpoint-sm } {
+  .sm-relative { position: relative }
+  .sm-absolute { position: absolute }
+  .sm-fixed { position: fixed }
+}
+
+@media #{ $breakpoint-md } {
+  .md-relative { position: relative }
+  .md-absolute { position: absolute }
+  .md-fixed { position: fixed }
+}
+
+@media #{ $breakpoint-lg } {
+  .lg-relative { position: relative }
+  .lg-absolute { position: absolute }
+  .lg-fixed { position: fixed }
+}
+
+.height-auto { height: auto }
+.height-100 { height: 100% }
+.width-auto { width: auto }
+.width-100 { width: 100% }
+
+@media #{ $breakpoint-sm } {
+  .sm-height-auto { height: auto }
+  .sm-height-100 { height: 100% }
+  .sm-width-auto { width: auto }
+  .sm-width-100 { width: 100% }
+}
+
+@media #{ $breakpoint-md } {
+  .md-height-auto { height: auto }
+  .md-height-100 { height: 100% }
+  .md-width-auto { width: auto }
+  .md-width-100 { width: 100% }
+}
+
+@media #{ $breakpoint-lg } {
+  .lg-height-auto { height: auto }
+  .lg-height-100 { height: 100% }
+  .lg-width-auto { width: auto }
+  .lg-width-100 { width: 100% }  
+}

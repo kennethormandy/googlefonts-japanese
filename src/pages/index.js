@@ -5,26 +5,39 @@ import _ from 'lodash'
 import SpecimenSawarabi from '../specimens/Sawarabi'
 
 class StickySidebar extends React.Component {
+  constructor () {
+    super()
+
+    this.state = {
+      sidebar: true
+    }
+
+    this.onClick = this.onClick.bind(this)
+
+  }
+
+  onClick () {
+    console.log('click')
+  }
+
   render () {
     const self = this
     var data = self.props.data
     var font = data.fonts[self.props.font]
 
-    console.log('props', self.props)
-    console.log(font)
-
-
     return (
       <StickyContainer style={{ zIndex: 4 }}>
-        <div className="flex flex-warp">
-          <div className="col-9">
-            { self.props.children }
-          </div>
-          <div className="col-3">
+        <div className="flex flex-wrap justify-end relative">
+          <div className="col-12 md-col-9">{ self.props.children }</div>
+          <div className="col-9 bg-gray md-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto" onClick={ self.onClick }>
             <Sticky style={{ zIndex: 3, height: 0 }}>
-              <div className="p2 bg-aqua" style={{ height: 100 + 'vh' }}>
-                <h2>{ font.name.en }</h2>
-                <code>{'.wf-example \{ example: ' + self.props.font + ' \}' }</code>
+              <div className="col-9 right" style={{
+                // transform: 'translateX(' + (self.state.sidebar ? (90 + '%') : (-100 + '%')) + ')'
+              }}>
+                <div className="p2 bg-silver">
+                  <h2>{ font.name.en }</h2>
+                  <code>{'.wf-example \{ example: ' + self.props.font + ' \}' }</code>
+                </div>
               </div>
             </Sticky>
           </div>
