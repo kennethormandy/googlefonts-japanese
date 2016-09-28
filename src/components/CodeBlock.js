@@ -5,7 +5,7 @@ class CodeBlock extends React.Component {
     const self = this
 
     return (
-      <pre className="overflow-x-auto h5 line-height-4 bg-navy white rounded p2"
+      <pre className="overflow-x-auto h5 line-height-4 bg-navy white rounded p2 font-family-monospace"
            data-language={ self.props.language }><code>{ self.props.children.toString() }</code></pre>
     )
   }

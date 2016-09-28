@@ -17,10 +17,10 @@ class StickySidebar extends React.Component {
 
     return (
       <StickyContainer style={{ zIndex: 4 }}>
-        <div className="flex flex-wrap justify-end relative">
+        <div className="flex flex-wrap justify-end relative font-family-base">
           <div className="col-12 md-col-8 lg-col-9">{ self.props.children }</div>
           <div className="col-12 md-col-4 lg-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto">
-            <div className="js-sidebar col-9 md-col-12 bg-gray right height-100 border absolute md-relaitve"
+            <div className="js-sidebar col-9 md-col-12 bg-gray right height-100 absolute md-relaitve"
                  style={{
                    right: (self.props.show ? '0' : '-50') + '%'
                  }}>

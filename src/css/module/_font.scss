@@ -24,6 +24,21 @@
   font-weight: inherit;
 }
 
+// Font families
+//
+// Styleguide: module.font
+.font-family-base {
+  font-family: $font-family-base;
+}
+
+.font-family-serif {
+  font-family: $font-family-serif;
+}
+
+.font-family-monospace {
+  font-family: $font-family-monospace;
+}
+
 
 // Line height
 //

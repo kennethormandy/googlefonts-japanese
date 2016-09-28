@@ -4,7 +4,10 @@
 // Sass dependencies are set here.
 //
 // No styleguide reference.
-$font-family-base: sans-serif;
+$font-family-base: "Noto Sans JP", "Noto Sans Japanese", "Noto Sans", sans-serif;
+$font-family-serif: "Noto Serif", Georgia, serif;
+$font-family-monospace: "Noto Mono", "Source Code Pro", "Fira Mono", monospace, monospace;
+
 
 // Colours
 //
@@ -106,11 +109,6 @@ $width-5: $width-4 * 1.5;
 $border-thin: thin;
 $border-medium: medium;
 $border-thick: thick;
-
-// Default font families
-$font-family-base: "Noto Sans Japanese", "Noto Sans", sans-serif;
-$font-family-serif: "Noto Sans Japanese", "Noto Serif", Georgia, serif;
-$font-monospace: "Noto Mono", "Source Code Pro", "Fira Mono", monospace, monospace;
 
 // Custom breakpoints
 // @custom-media --breakpoint-xs (max-width: 40em);
