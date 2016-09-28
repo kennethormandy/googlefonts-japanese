@@ -432,14 +432,3 @@ a {
   .lg-width-auto { width: auto }
   .lg-width-100 { width: 100% }
 }
-
-
-// Shame
-.temp-translate-sidebar {
-  outline: 5px solid blue;
-  // right: -50%;
-  @media #{ $breakpoint-md } {
-    right: 0;
-    box-shadow: none;
-  }
-}
