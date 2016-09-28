@@ -3,6 +3,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import throttle from 'lodash.throttle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import CodeBlock from '../components/CodeBlock'
 
 import SpecimenSawarabi from '../specimens/Sawarabi'
 import SpecimenMPlus from '../specimens/MPlus'
@@ -33,7 +34,14 @@ class StickySidebar extends React.Component {
               <div className="right col-9 md-col-12">
                 <div className="p2 bg-silver">
                   <h2>{ font.name.en }</h2>
-                  <code>{'.wf-example \{ example: ' + self.props.font + ' \}' }</code>
+
+                  <CodeBlock language="html">{ '\
+<link href="http://fonts.googleapis.com/earlyaccess/' + self.props.font + '.css" />\
+                  ' }</CodeBlock>
+
+                  <pre data-language="html"><code>{ self.props.font }</code></pre>
+                  <pre data-language="css"><code>{ self.props.font }</code></pre>
+
                 </div>
               </div>
             </Sticky>
