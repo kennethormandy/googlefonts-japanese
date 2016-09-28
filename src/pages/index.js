@@ -9,21 +9,6 @@ import SpecimenMPlus from '../specimens/MPlus'
 import SpecimenKokoro from '../specimens/Kokoro'
 
 class StickySidebar extends React.Component {
-  constructor () {
-    super()
-
-    this.state = {
-      sidebar: true
-    }
-
-    this.onClick = this.onClick.bind(this)
-
-  }
-
-  onClick () {
-    console.log('click')
-  }
-
   render () {
     const self = this
     var data = self.props.data
