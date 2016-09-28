@@ -15,24 +15,23 @@ $font-family-monospace: "Noto Mono", "Source Code Pro", "Fira Mono", monospace, 
 // mrmrs’ colors library.
 //
 // No styleguide reference.
-// $olive
+$purple: rgb(90, 50, 120);
+$navy: rgb(0, 90, 120);
+$maroon: rgb(213, 58, 104);
+$blue: rgb(140, 150, 190);
+$olive: rgb(130, 200, 180);
+$fuchsia: rgb(250, 210, 210);
+$red: rgb(240, 90, 90);
+$yellow: rgb(250, 220, 115);
+$aqua: rgb(230, 245, 255);
+$green: mix($olive, $aqua, 75%);
 // $lime
 // $teal
-// $green
 // $orange
-// $red
-// $blue
-// $aqua
-// $navy
-// $yellow
-// $fuchsia
-// $purple
-// $maroon
 // $white
 // $silver
 // $gray
-// $black
-
+$black: #111;
 
 // $line-height-1: 1.05;
 // --line-height-2: 1.125;
@@ -79,22 +78,6 @@ $breakpoint-xs: '(max-width: 38em)';
 $breakpoint-sm-md: '(min-width: 38em) and (max-width: 50em)';
 
 // $border-radius: 3px;
-
-
-// Default variables
-$purple: rgb(90, 50, 120);
-$navy: rgb(0, 90, 120);
-// $maroon: rgb(220, 85, 120); // Mariko
-$maroon: rgb(213, 58, 104); // Makes white-on-maroon More accessible
-$blue: rgb(140, 150, 190);
-$olive: rgb(130, 200, 180);
-$fuchsia: rgb(250, 210, 210);
-$red: rgb(240, 90, 90);
-$yellow: rgb(250, 220, 115);
-$black: #111;
-$aqua: rgb(230, 245, 255);
-// $green: rgb(80, 170, 20);
-$green: mix($olive, $aqua, 75%);
 
 $caps-letter-spacing: 0;
 
