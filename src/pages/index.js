@@ -1,6 +1,8 @@
 import React from 'react'
 import { StickyContainer, Sticky } from 'react-sticky';
 import throttle from 'lodash.throttle'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import SpecimenSawarabi from '../specimens/Sawarabi'
 import SpecimenMPlus from '../specimens/MPlus'
@@ -30,15 +32,15 @@ class StickySidebar extends React.Component {
     return (
       <StickyContainer style={{ zIndex: 4 }}>
         <div className="flex flex-wrap justify-end relative">
-          <div className="col-12 md-col-9">{ self.props.children }</div>
+          <div className="col-12 md-col-8 lg-col-9">{ self.props.children }</div>
           <div
-            className="col-12 md-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto"
+            className="col-12 md-col-4 lg-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto"
             style={{
               // outline: '5px solid yellow'
               // TODO
               // translate: 'transformX(' + 0 + ')'
             }}>
-            <div className="js-sidebar col-9 md-col-12 bg-gray right height-100 border absolute md-relaitve temp-translate-sidebar"
+            <div className="js-sidebar col-9 md-col-12 bg-gray right height-100 border absolute md-relaitve"
                  style={{
                    right: (self.props.show ? '0' : '-50') + '%'
                  }}>
@@ -156,8 +158,7 @@ class Index extends React.Component {
 
     return (
       <div style={{ height: 100 + '%' }} onClick={ this.onClickSpecimen }>
-        <h1>{ data.title }</h1>
-        <div className="bg-red" style={{ height: 500 + 'px' }}>Header</div>
+        <Header { ...self.props } />
         <StickySidebar { ...self.props } font="sawarabi" show={ self.state.sidebar }>
           { React.createElement(SpecimenSawarabi) }
         </StickySidebar>
@@ -168,7 +169,7 @@ class Index extends React.Component {
           <SpecimenKokoro { ...self.props } />
         </StickySidebar>
         <div className="flex-none clearfix relative z4">
-          <div className="bg-red" style={{ height: 500 + 'px' }}>Footer</div>
+          <Footer { ...self.props } />
         </div>
       </div>
     )
