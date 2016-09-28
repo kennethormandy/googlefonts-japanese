@@ -103,7 +103,7 @@ class Index extends React.Component {
           <SpecimenNotoSansJapanese { ...self.props } />
         </SidebarColophon>
 
-        <div className="flex-none clearfix relative z4">
+        <div className="flex-none clearfix relative" style={{ zIndex: 7 }}>
           <Footer { ...self.props } />
         </div>
       </div>
