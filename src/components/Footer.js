@@ -16,7 +16,7 @@ class Footer extends React.Component {
         return (
           <li><a href={ '#' + index }>
             <span>{ font.name.ja }<span lang="en" className="muted">{ font.name.en }</span></span>
-            <span class="block">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en }</span></span>
+            <span className="block">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en }</span></span>
           </a></li>
         )
       }
