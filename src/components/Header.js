@@ -10,7 +10,7 @@ class Header extends React.Component {
         <div className="col-12 md-col-8 lg-col-9">
           <header className="sm-flex flex-wrap px2">
             <div className="mx-auto max-width-4 white col-12">
-              <h1 className="h1 font-weight-600 block col-12 md-col-9" style={{ fontSize: 4 + 'vw'}}>
+              <h1 className="h1 font-weight-600 block col-12 md-col-9 lg-col-10" style={{ fontSize: 4 + 'vw'}}>
                 <span style={{ fontFamily: 'Product Sans' }}>Google Fonts</span>
                 <span style={{ fontSize: 0.9 + 'em' }}>による早期アクセス日本語フォント</span>
               </h1>
