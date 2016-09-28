@@ -436,13 +436,10 @@ a {
 
 // Shame
 .temp-translate-sidebar {
-  transform: translateX(90%);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.33);
-  &:hover {
-    transform: translateX(0);    
-  }
+  outline: 5px solid blue;
+  // right: -50%;
   @media #{ $breakpoint-md } {
+    right: 0;
     box-shadow: none;
-    transform: none;
   }
 }
