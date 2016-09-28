@@ -79,26 +79,8 @@ class Index extends React.Component {
     const self = this
     const data = self.props.data
 
-    // var specimenList = ['sawarabi', 'mplus']
-    //
-    // var timeline = [specimenList].map((decade) => {
-    //   return (
-    //     <StickyContainer style={{ zIndex: 4 }}>
-    //       <div className="flex flex-warp">
-    //         <div className="col-9">
-    //           { decade }
-    //         </div>
-    //         <div className="col-3">
-    //           <Sticky style={{ zIndex: 3, height: 0 }}>
-    //             <div className="p2 bg-aqua" style={{ height: 100 + 'vh' }}>
-    //               <code>{'.wf-example \{ example: example \}'}</code>
-    //             </div>
-    //           </Sticky>
-    //         </div>
-    //       </div>
-    //     </StickyContainer>
-    //   )
-    // })
+    // TODO Switch to map like in footer
+    // Not sure how to use imported React elements with this pattern yet
 
     return (
       <div style={{ height: 100 + '%' }} onClick={ this.onClickSpecimen }>

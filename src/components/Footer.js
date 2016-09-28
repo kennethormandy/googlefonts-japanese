@@ -1,4 +1,5 @@
 import React from 'react'
+import map from 'lodash.map'
 
 class Footer extends React.Component {
   render () {
@@ -7,9 +8,24 @@ class Footer extends React.Component {
 
     // <hr className="block mx-auto max-width-4 col-12 border-none bg-navy muted-dark pt1 rounded mb4" />
 
+    // var frag = createFragment(data.fonts)
+    // console.log(frag)
+    var typefaceList = Object.keys(data.fonts).map((index) => {
+      var font = data.fonts[index]
+      if (font.published !== false && font.designer) {
+        return (
+          <li><a href={ '#' + index }>
+            <span>{ font.name.ja }<span lang="en" className="muted">{ font.name.en }</span></span>
+            <span class="block">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en }</span></span>
+          </a></li>
+        )
+      }
+    })
+
     return (
-      <div className="clearfix bg-white" style={{ minHeight: 60 + 'vh' }}>
+      <div className="clearfix bg-white py2 md-py4" style={{ minHeight: 60 + 'vh' }}>
         <div className="col-12 md-col-8 lg-col-9">
+          <div className="mx-auto max-width-4">
           <div className="sm-flex flex-wrap">
             <div className="col-4" lang="en">
               <ul className="list-style-none p0 m0">
@@ -41,7 +57,12 @@ class Footer extends React.Component {
                   </ul>
                 </div>
               </div>
+              <div className="clearfix">
+                <h3>Featued Typefaces</h3>
+                <ul>{ typefaceList }</ul>
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
