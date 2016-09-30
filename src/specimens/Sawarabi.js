@@ -6,7 +6,7 @@ import Section from '../components/Section'
 class SpecimenSawarabi extends React.Component {
   render () {
     return (
-      <Section maxWidth={5} className="bg-black white">
+      <Section maxWidth={5} className="bg-fallback-black white">
         <div className="sm-flex flex-wrap">
           <div className="col-12 sm-col-6 p3">
             <div className="wf-sawarabimincho h4 sm-h5 md-h3 lg-h2 line-height-4">

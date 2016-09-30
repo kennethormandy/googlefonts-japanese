@@ -4,7 +4,7 @@ import Section from '../components/Section'
 class SpecimenNotoSans extends React.Component {
   render () {
     return (
-    <Section className="bg-fuchsia black">
+    <Section className="bg-fallback-fuchsia black">
       <div className="wf-notosansjapanese js-bigIdeasText hide">
         <span className="font-weight-900">本当にすばらしい旅だった</span>
         <span className="font-weight-900">多くの愛すべき人々と出会ったが</span>

@@ -444,3 +444,8 @@ a {
   .lg-width-auto { width: auto }
   .lg-width-100 { width: 100% }
 }
+
+
+.animate-bg {
+  transition: background-color 0.33s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}

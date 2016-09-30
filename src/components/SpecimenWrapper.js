@@ -10,14 +10,13 @@ class SpecimenWrapper extends React.Component {
 
   handleOnEnter (e) {
     const self = this
-    console.log('handle on enter', e)
 
-    self.props.specimenActive(self.props.font)
-    // Callback to change state in parent?
+    if (self.props.specimenActive) {
+      self.props.specimenActive(self.props.font)
+    }
   }
 
   handleOnLeave () {
-    console.log('handle on leave')
     // TODO Cleanup
   }
 
@@ -26,11 +25,16 @@ class SpecimenWrapper extends React.Component {
 
     return (
       <div className="border border-thick">
-        <Waypoint onEnter={ this.handleOnEnter } onLeave={ this.handleOnLeave } />
+        <Waypoint onEnter={ this.handleOnEnter } onLeave={ this.handleOnLeave }>
         { self.props.children }
+        </Waypoint>
       </div>
     )
   }
+}
+
+SpecimenWrapper.defaultProps = {
+  specimenActive: false
 }
 
 export default SpecimenWrapper

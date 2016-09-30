@@ -1,8 +1,10 @@
 import React from 'react'
 import throttle from 'lodash.throttle'
+import Waypoint from 'react-waypoint'
+
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import SpecimenWrapper from '../components/SpecimenWrapper'
+// import SpecimenWrapper from '../components/SpecimenWrapper'
 import SidebarColophon from '../components/SidebarColophon'
 
 import SpecimenSawarabi from '../specimens/Sawarabi'
@@ -20,6 +22,7 @@ class Index extends React.Component {
     this.state = {
       sidebar: false, // Default to false for mobile-first prerender
       active: 'mplus',
+      backgroundColor: 'red',
       viewport: {
         width: 1024, // TODO Change
         height: 768
@@ -81,10 +84,14 @@ class Index extends React.Component {
     }
   }
 
-  handleSpecimenWaypoint (specimenActive) {
+  handleSpecimenWaypoint (font, color) {
     const self = this
 
-    self.setState({ active: specimenActive })
+    console.log(font, color)
+    self.setState({
+      active: font,
+     backgroundColor: color
+    })
   }
 
   render () {
@@ -97,27 +104,40 @@ class Index extends React.Component {
     return (
       <div style={{ height: 100 + '%' }} onClick={ self.onClickSpecimen }>
         <Header { ...self.props } />
-        <div className="bg-purple white fixed top-0 left-0 z4 h1"><code>debug {self.state.active}</code></div>
-        <SidebarColophon { ...self.props } font={ self.state.active } show={ self.state.sidebar } backgroundColor="blue">
+        <div className={ 'white fixed top-0 left-0 z4 h1 animate-bg bg-' + self.state.backgroundColor }><code>debug {self.state.active}</code></div>
+        <SidebarColophon { ...self.props } font={ self.state.active } show={ self.state.sidebar } backgroundColor={ self.state.backgroundColor }>
+
+          <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 
           <SpecimenMPlus { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'mplus', 'red')} />
+
           <SpecimenRoundedMPlus { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'roundedmplus', 'orange')} />
 
-          <SpecimenWrapper
-            font="hannari"
-            specimenActive={self.handleSpecimenWaypoint.bind(self)}>
-            <SpecimenHannari { ...self.props } />
-          </SpecimenWrapper>
-
+          <SpecimenHannari { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'hannari', 'yellow')} />
 
           <SpecimenKokoro { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'kokoro', 'green')} />
+
           <SpecimenSawarabi { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabi', 'blue')} />
+
           <SpecimenNikukyu { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'nikukyu', 'purple')} />
+
           <SpecimenNotoSansJapanese { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'black')} />
+
+          <div className="clearfix">
+            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'gray')} />
+            <Footer { ...self.props } />
+          </div>
+
+          </div>
+
         </SidebarColophon>
-        <div className="flex-none clearfix relative" style={{ zIndex: 7 }}>
-          <Footer { ...self.props } />
-        </div>
       </div>
     )
   }

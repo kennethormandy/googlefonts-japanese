@@ -3,7 +3,7 @@ import React from 'react'
 class SpecimenHannari extends React.Component {
   render () {
     return (
-      <div className="bg-red bg-gradient-red-white white">
+      <div className="bg-fallback-red bg-gradient-red-white white">
         <div className="p2 py4">
         <div className="mx-auto max-width-3">
           <div className="col-12 h1 wf-hannari">
