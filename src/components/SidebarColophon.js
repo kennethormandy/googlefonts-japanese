@@ -23,7 +23,7 @@ class SidebarColophon extends React.Component {
             <Sticky style={{ zIndex: 6, height: 0 }}> {/* bottomOffset could be set to this computed height */}
               <div className="right col-9 md-col-12">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
-                <div className="p2 md-p3 bg-lighten-3" style={{ height: 100 + 'vh' }}>
+                <div className={ 'p2 md-p3 animate-bg bg-' + (self.props.backgroundColor === 'white' ? 'darken-1' : 'lighten-3') } style={{ height: 100 + 'vh' }}>
                   <h3 className="border-top pt2 inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
                   <div style={{ height: 15 + 'em' }}> {/* So the changing content is less jarring */}
                   <blockquote>
