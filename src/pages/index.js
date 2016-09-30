@@ -2,6 +2,7 @@ import React from 'react'
 import throttle from 'lodash.throttle'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import SpecimenWrapper from '../components/SpecimenWrapper'
 import SidebarColophon from '../components/SidebarColophon'
 
 import SpecimenSawarabi from '../specimens/Sawarabi'
@@ -18,6 +19,7 @@ class Index extends React.Component {
 
     this.state = {
       sidebar: false, // Default to false for mobile-first prerender
+      active: 'mplus',
       viewport: {
         width: 1024, // TODO Change
         height: 768
@@ -79,6 +81,12 @@ class Index extends React.Component {
     }
   }
 
+  handleSpecimenWaypoint (specimenActive) {
+    const self = this
+
+    self.setState({ active: specimenActive })
+  }
+
   render () {
     const self = this
     const data = self.props.data
@@ -87,27 +95,24 @@ class Index extends React.Component {
     // Not sure how to use imported React elements with this pattern yet
 
     return (
-      <div style={{ height: 100 + '%' }} onClick={ this.onClickSpecimen }>
+      <div style={{ height: 100 + '%' }} onClick={ self.onClickSpecimen }>
         <Header { ...self.props } />
-        <SidebarColophon { ...self.props } font="mplus" show={ self.state.sidebar } backgroundColor="blue">
+        <div className="bg-purple white fixed top-0 left-0 z4 h1"><code>debug {self.state.active}</code></div>
+        <SidebarColophon { ...self.props } font={ self.state.active } show={ self.state.sidebar } backgroundColor="blue">
+
           <SpecimenMPlus { ...self.props } />
-        </SidebarColophon>
-        <SidebarColophon { ...self.props } font="roundedmplus" show={ self.state.sidebar } backgroundColor="blue">
           <SpecimenRoundedMPlus { ...self.props } />
-        </SidebarColophon>
-        <SidebarColophon { ...self.props } font="hannari" show={ self.state.sidebar } backgroundColor="red">
-          <SpecimenHannari { ...self.props } />
-        </SidebarColophon>
-        <SidebarColophon { ...self.props } font="kokoro" show={ self.state.sidebar } backgroundColor="green">
+
+          <SpecimenWrapper
+            font="hannari"
+            specimenActive={self.handleSpecimenWaypoint.bind(self)}>
+            <SpecimenHannari { ...self.props } />
+          </SpecimenWrapper>
+
+
           <SpecimenKokoro { ...self.props } />
-        </SidebarColophon>
-        <SidebarColophon { ...self.props } font="sawarabi" show={ self.state.sidebar } backgroundColor="black">
-          { React.createElement(SpecimenSawarabi) }
-        </SidebarColophon>
-        <SidebarColophon { ...self.props } font="nikukyu" show={ self.state.sidebar } backgroundColor="green">
+          <SpecimenSawarabi { ...self.props } />
           <SpecimenNikukyu { ...self.props } />
-        </SidebarColophon>
-        <SidebarColophon { ...self.props } font="notosansjapanese" show={ self.state.sidebar } backgroundColor="fuchsia">
           <SpecimenNotoSansJapanese { ...self.props } />
         </SidebarColophon>
         <div className="flex-none clearfix relative" style={{ zIndex: 7 }}>
