@@ -14,9 +14,16 @@ class Footer extends React.Component {
       var font = data.fonts[index]
       if (font.published !== false && font.designer) {
         return (
-          <li><a href={ '#' + index }>
-            <span>{ font.name.ja }<span lang="en" className="muted">{ font.name.en }</span></span>
-            <span className="block">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en }</span></span>
+          <li className="p0 m0"><a className="block" href={ '#' + index }>
+            <div className="flex items-center">
+              <div className="p2 h2 md-h1">
+                <span className={ 'col-6 wf-' + index }>初歩</span>
+              </div>
+              <div className="">
+                <span>{ font.name.ja }<span lang="en" className="muted">{ font.name.en }</span></span>
+                <span className="block">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en }</span></span>
+              </div>
+            </div>
           </a></li>
         )
       }
@@ -59,7 +66,7 @@ class Footer extends React.Component {
               </div>
               <div className="clearfix">
                 <h3>Featued Typefaces</h3>
-                <ul>{ typefaceList }</ul>
+                <ul className="list-style-none p0 m0">{ typefaceList }</ul>
               </div>
             </div>
           </div>
