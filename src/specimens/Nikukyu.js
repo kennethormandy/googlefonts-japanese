@@ -8,7 +8,7 @@ class SpecimenExample extends React.Component {
     const font = data.fonts['nikukyu']
 
     return (
-      <Section maxWidth={5} className="bg-fallback-green black wf-nikukyu">
+      <Section maxWidth={5} className="bg-green black wf-nikukyu">
 
       <div className="mx-auto max-width-5">
           <div className="col-12">
