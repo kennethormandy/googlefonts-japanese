@@ -15,14 +15,16 @@ class Footer extends React.Component {
       var font = data.fonts[index]
       if (font.published !== false && font.designer) {
         return (
-          <li className="p0 m0"><a className="block" href={ '#' + index }>
+          <li className="p0 m0"><a className="block py2" href={ '#' + index }>
             <div className="flex items-center">
-              <div className="p2 h2 md-h1">
-                <span className={ 'col-6 wf-' + index }>初歩</span>
+              <div className="h1 col-4 sm-col-3">
+                <FitText compressor={0.33} minFontSize={24}>
+                  <div className={ 'break-none wf-' + index }>あア</div>
+                </FitText>
               </div>
-              <div className="">
-                <span>{ font.name.ja }<span lang="en" className="muted">{ font.name.en }</span></span>
-                <span className="block">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en }</span></span>
+              <div className="flex-auto">
+                <span>{ font.name.ja } <span lang="en" className="muted">{ font.name.en !== font.name.ja ? font.name.en : '' }</span></span>
+                <span className="block mt1">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en !== font.designer.name.ja ? font.designer.name.en : '' }</span></span>
               </div>
             </div>
           </a></li>
@@ -32,8 +34,8 @@ class Footer extends React.Component {
 
     return (
       <div className="clearfix bg-white bg-fallback-white py2 md-py4" style={{ minHeight: 60 + 'vh' }}>
-        <div className="col-12 md-col-8 lg-col-9">
-          <div className="mx-auto max-width-4">
+        <div className="col-12 px2 sm-px3">
+          <div className="max-width-4">
           <div className="sm-flex flex-wrap">
             <div className="col-4" lang="en">
               <ul className="list-style-none p0 m0">
