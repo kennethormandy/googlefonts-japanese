@@ -104,7 +104,6 @@ class Index extends React.Component {
     return (
       <div style={{ height: 100 + '%' }} onClick={ self.onClickSpecimen }>
         <Header { ...self.props } />
-        <div className={ 'white fixed top-0 left-0 z4 h1 animate-bg bg-' + self.state.backgroundColor }><code>debug {self.state.active}</code></div>
         <SidebarColophon { ...self.props } font={ self.state.active } show={ self.state.sidebar } backgroundColor={ self.state.backgroundColor }>
 
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
