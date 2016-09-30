@@ -198,6 +198,11 @@ a {
 // causing layout to scroll in specific situations.
 //
 // Styleguide: base:break-word
+.break-none {
+  word-wrap: normal;
+  word-break: keep-all;
+}
+
 .break-word {
   word-wrap: break-word;
 }
