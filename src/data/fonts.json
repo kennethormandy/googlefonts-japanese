@@ -1,5 +1,6 @@
 {
 	"example": {
+		"published": false,
 		"name": {
 			"ja": "ちょめちょめ",
 			"en": "Example"
@@ -187,6 +188,7 @@
 		}
 	},
 	"harenosora": {
+		"published": false,
 		"name": {
 			"ja": "はれのそら明朝",
 			"en": "Harenosora Mincho"
@@ -195,7 +197,6 @@
 		"designer": {
 			"url": false,
 			"name": {
-				"ja": "はれのそら明朝",
 				"en": "Yoshihisa Nakai"
 			},
 			"quote": {
@@ -224,6 +225,7 @@
 		}
 	},
 	"keifont": {
+		"published": false,
 		"name": {
 			"ja": "けいふぉんと",
 			"en": "Kei Font"
@@ -236,6 +238,7 @@
 		}
 	},
 	"bokutachino": {
+		"published": false,
 		"name": {
 			"ja": "ぼくたちのゴシック２",
 			"en": "Bokutachi No. 2 Gothic 2"
