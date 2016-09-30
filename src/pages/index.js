@@ -154,8 +154,9 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix">
+            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'fuchsia')}
+                      onLeave={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'gray')} />
             <Footer { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'white')} />
           </div>
 
           </div>
