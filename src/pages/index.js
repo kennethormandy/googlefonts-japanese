@@ -9,6 +9,7 @@ import SpecimenMPlus from '../specimens/MPlus'
 import SpecimenRoundedMPlus from '../specimens/RoundedMPlus'
 import SpecimenHannari from '../specimens/Hannari'
 import SpecimenKokoro from '../specimens/Kokoro'
+import SpecimenNikukyu from '../specimens/Nikukyu'
 import SpecimenNotoSansJapanese from '../specimens/NotoSansJapanese'
 
 class Index extends React.Component {
@@ -103,10 +104,12 @@ class Index extends React.Component {
         <SidebarColophon { ...self.props } font="sawarabi" show={ self.state.sidebar } backgroundColor="black">
           { React.createElement(SpecimenSawarabi) }
         </SidebarColophon>
+        <SidebarColophon { ...self.props } font="nikukyu" show={ self.state.sidebar } backgroundColor="green">
+          <SpecimenNikukyu { ...self.props } />
+        </SidebarColophon>
         <SidebarColophon { ...self.props } font="notosansjapanese" show={ self.state.sidebar } backgroundColor="fuchsia">
           <SpecimenNotoSansJapanese { ...self.props } />
         </SidebarColophon>
-
         <div className="flex-none clearfix relative" style={{ zIndex: 7 }}>
           <Footer { ...self.props } />
         </div>
