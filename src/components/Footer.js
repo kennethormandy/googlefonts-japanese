@@ -1,5 +1,6 @@
 import React from 'react'
 import map from 'lodash.map'
+import FitText from 'react-fittext'
 
 class Footer extends React.Component {
   render () {
