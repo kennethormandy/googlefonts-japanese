@@ -15,7 +15,7 @@ class Footer extends React.Component {
       var font = data.fonts[index]
       if (font.published !== false && font.designer) {
         return (
-          <li className="p0 m0"><a className="block py2" href={ '#' + index }>
+          <li className="p0 m0" key={ 'footer_' + index }><a className="block py2" href={ '#' + index }>
             <div className="flex items-center">
               <div className="h1 col-4 sm-col-3">
                 <FitText compressor={0.33} minFontSize={24}>
