@@ -23,7 +23,7 @@ export default Router.extend({
     'test': 'test',
     'test/': 'test',
     'test/index.html': 'test',
-    '*404': 'fourOhFour'
+    '*404': 'home' // TODO 404 Breaking `#` links
   },
   home () {
     this.renderPage(<Index />)
