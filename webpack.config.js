@@ -21,7 +21,7 @@ var hjsConfig = getConfig({
     // components (dynamic values can be passed into `createElement` too)
     var renderPage = function (page) {
       return context.defaultTemplate({
-        html: '<div id="js-root">' + (page ? ReactDOMServer.renderToString(React.createElement(Layout, {}, React.createElement(page))) : '') + '</div>',
+        html: '<div id="js-root" class="no-js">' + (page ? ReactDOMServer.renderToString(React.createElement(Layout, {}, React.createElement(page))) : '') + '</div>',
         title: data.title,
         lang: 'en',
         metaTags: {

@@ -13,6 +13,11 @@ require('./css/index.scss')
 
 window.app = app.extend({
   init () {
+
+    // Remove `.no-js` class from root for progressively enhanced styling
+    var el = document.getElementById('js-root')
+    el.classList.remove('no-js')
+
     this.router = new Router()
     this.router.history.start()
     loadCSS('http://fonts.googleapis.com/earlyaccess/notosansjp.css')
