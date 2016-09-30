@@ -56,6 +56,6 @@
     "start": "hjs-dev-server",
     "predeploy": "npm run build",
     "prestage": "npm run build && npm run build:nofollow",
-    "stage": "surge ./build react-example.kennethormandy.com"
+    "stage": "surge ./build v2.gf-project-1.kennethormandy.com"
   }
 }
