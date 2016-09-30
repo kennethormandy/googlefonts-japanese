@@ -23,7 +23,7 @@ class Footer extends React.Component {
     })
 
     return (
-      <div className="clearfix bg-white py2 md-py4" style={{ minHeight: 60 + 'vh' }}>
+      <div className="clearfix bg-white bg-fallback-white py2 md-py4" style={{ minHeight: 60 + 'vh' }}>
         <div className="col-12 md-col-8 lg-col-9">
           <div className="mx-auto max-width-4">
           <div className="sm-flex flex-wrap">

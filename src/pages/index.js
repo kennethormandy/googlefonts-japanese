@@ -108,30 +108,54 @@ class Index extends React.Component {
 
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 
+          <div className="clearfix">
           <SpecimenMPlus { ...self.props } />
-          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'mplus', 'red')} />
-
-          <SpecimenRoundedMPlus { ...self.props } />
-          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'roundedmplus', 'orange')} />
-
-          <SpecimenHannari { ...self.props } />
-          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'hannari', 'yellow')} />
-
-          <SpecimenKokoro { ...self.props } />
-          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'kokoro', 'green')} />
-
-          <SpecimenSawarabi { ...self.props } />
-          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabi', 'blue')} />
-
-          <SpecimenNikukyu { ...self.props } />
-          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'nikukyu', 'purple')} />
-
-          <SpecimenNotoSansJapanese { ...self.props } />
-          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'black')} />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'mplus', 'blue')} />
+          </div>
 
           <div className="clearfix">
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'gray')} />
+          <SpecimenRoundedMPlus { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'roundedmplus', 'aqua')} />
+          </div>
+
+          <div className="clearfix">
+          <SpecimenHannari { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'hannari', 'red')} />
+          </div>
+
+          <div className="clearfix">
+          <SpecimenKokoro { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'kokoro', 'green')} />
+          </div>
+
+          <div className="clearfix">
+          <SpecimenSawarabi { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', 'gray')} />
+          </div>
+
+          <div className="clearfix">
+          <SpecimenSawarabi { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', 'gray')} />
+          </div>
+
+          <div className="clearfix">
+          <SpecimenSawarabi { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabi', 'gray')} />
+          </div>
+
+          <div className="clearfix">
+          <SpecimenNikukyu { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'nikukyu', 'olive')} />
+          </div>
+
+          <div className="clearfix">
+          <SpecimenNotoSansJapanese { ...self.props } />
+          <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'fuchsia')} />
+          </div>
+
+          <div className="clearfix">
             <Footer { ...self.props } />
+            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'white')} />
           </div>
 
           </div>
