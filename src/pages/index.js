@@ -84,14 +84,16 @@ class Index extends React.Component {
     }
   }
 
-  handleSpecimenWaypoint (font, color) {
+  handleSpecimenWaypoint (font, color, e) {
     const self = this
 
-    // console.log(font, color)
-    self.setState({
-      active: font,
-     backgroundColor: color
-    })
+    // console.log('[waypoint]', e)
+    if (e && e.currentPosition === 'inside') {
+      self.setState({
+        active: font,
+        backgroundColor: color
+      })
+    }
   }
 
   render () {
@@ -109,53 +111,52 @@ class Index extends React.Component {
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 
           <div className="clearfix" id="mplus">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'mplus', 'blue')} />
             <SpecimenMPlus { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'mplus', 'blue')} />
           </div>
 
           <div className="clearfix" id="roundedmplus">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'roundedmplus', 'aqua')} />
             <SpecimenRoundedMPlus { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'roundedmplus', 'aqua')} />
           </div>
 
           <div className="clearfix" id="hannari">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'hannari', 'red')} />
             <SpecimenHannari { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'hannari', 'red')} />
           </div>
 
           <div className="clearfix" id="kokoro">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'kokoro', 'green')} />
             <SpecimenKokoro { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'kokoro', 'green')} />
           </div>
 
           <div className="clearfix" id="sawarabigothic">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', 'gray')} />
             <SpecimenSawarabi { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', 'gray')} />
           </div>
 
           <div className="clearfix" id="sawarabimincho">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', 'gray')} />
             <SpecimenSawarabi { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', 'gray')} />
           </div>
 
           <div className="clearfix" id="sawarabi">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabi', 'gray')} />
             <SpecimenSawarabi { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'sawarabi', 'gray')} />
           </div>
 
           <div className="clearfix" id="nikukyu">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nikukyu', 'olive')} />
             <SpecimenNikukyu { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'nikukyu', 'olive')} />
           </div>
 
           <div className="clearfix" id="notosansjapanese">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'fuchsia')} />
             <SpecimenNotoSansJapanese { ...self.props } />
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'fuchsia')} />
           </div>
 
           <div className="clearfix">
-            <Waypoint onEnter={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'fuchsia')}
-                      onLeave={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'gray')} />
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'gray')} />
             <Footer { ...self.props } />
           </div>
 
