@@ -38,15 +38,11 @@ class SidebarColophon extends React.Component {
 
                   <div className="mb2">
                   <abbr className="caps muted border-none">HTML</abbr>
-                  <CodeBlock language="html">{ '\
-<link href="http://fonts.googleapis.com/earlyaccess/' + self.props.font + '.css" />\
-                  ' }</CodeBlock>
+                  <CodeBlock language="html">{ '\<link href\=\"http\:\/\/fonts\.googleapis\.com\/earlyaccess\/' + self.props.font + '\.css\" \/\>' }</CodeBlock>
                   </div>
                   <div className="mb2">
                   <abbr className="caps muted border-none">CSS</abbr>
-                  <CodeBlock language="css">{ '\
-.wf-' + self.props.font + ' \{ font-family: ' + self.props.font + '; \}\
-                  ' }</CodeBlock>
+                  <CodeBlock language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: ' + self.props.font + '\; \}' }</CodeBlock>
                   </div>
 
                 </div>
