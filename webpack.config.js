@@ -15,7 +15,7 @@ var pkg = require('./package.json')
 var hjsConfig = getConfig({
   in: 'src/app.js',
   out: 'build',
-  clearBeforeBuild: '!(css|fonts|media|favicon.ico|apple-touch-icon.png)',
+  clearBeforeBuild: '!(css|fonts|media|favicon.ico|apple-touch-icon.png|AUTH)',
   html: function (context) {
     // Use React's `renderToString` method to return an HTML string from our
     // components (dynamic values can be passed into `createElement` too)
