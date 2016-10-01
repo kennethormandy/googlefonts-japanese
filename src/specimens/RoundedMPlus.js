@@ -7,7 +7,6 @@ class SpecimenMPlus extends React.Component {
   render () {
     const self = this
     const data = self.props.data
-    console.log(self.props.font)
     const font = data.fonts['roundedmplus']
 
     return (

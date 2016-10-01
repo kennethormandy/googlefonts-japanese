@@ -74,7 +74,7 @@ class Index extends React.Component {
 
     // TODO Do this a better way, maybe with refs?
     // TODO more possible contextual touch targets
-    console.log(self.state.viewport.width, self.props.sidebarMaxWidth)
+    // console.log(self.state.viewport.width, self.props.sidebarMaxWidth)
     if (self.state.viewport.width < self.props.sidebarMaxWidth) {
       if ((self.state.sidebar === true) || (el && el.classList.contains('js-sidebar'))) {
         self.setState({
@@ -87,7 +87,7 @@ class Index extends React.Component {
   handleSpecimenWaypoint (font, color) {
     const self = this
 
-    console.log(font, color)
+    // console.log(font, color)
     self.setState({
       active: font,
      backgroundColor: color

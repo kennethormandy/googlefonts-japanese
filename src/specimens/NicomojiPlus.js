@@ -9,8 +9,6 @@ class SpecimenKokoro extends React.Component {
     const data = self.props.data
     const font = data.fonts['kokoro']
 
-    console.log(this.props.data)
-
     return (
       <Section
         maxWidth={4}
