@@ -2,11 +2,11 @@ import React from 'react'
 
 class NoScript extends React.Component {
   render () {
+    // https://git.io/vPtBU
     return (
-      <noscript>
-        <link href="/css/fonts.css" rel="stylesheet" />
-        <style></style>
-      </noscript>
+      <noscript dangerouslySetInnerHTML={{
+        __html: '<link href="/css/fonts.css" rel="stylesheet" />'
+      }} />
     )
   }
 }
