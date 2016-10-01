@@ -451,6 +451,25 @@ a {
 }
 
 
-.animate-bg {
-  transition: background-color 0.33s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+// Mix blend mode
+//
+// No styleguide reference.
+.blend-overlay {
+  mix-blend-mode: overlay;
+}
+
+.blend-hardlight {
+  mix-blend-mode: hard-light;
+}
+
+.blend-luminosity {
+  mix-blend-mode: luminosity;
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.blend-exclusion {
+  mix-blend-mode: exclusion;
 }

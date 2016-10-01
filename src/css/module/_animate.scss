@@ -1,0 +1,68 @@
+// Like Animate.css, but only what’s needed
+//
+// Animation utility clases.
+//
+// Markup:
+// <div class="animate animate-ty50">TranslateY from 0 to 50 and back.</div>
+//
+// No styleguide reference.
+.animate {
+  animation-duration: 0.25s;
+}
+
+@keyframes float {
+  from {
+    transform: translate(120vw, -5vh);
+  }
+  to {
+    transform: translate(-120vw, 5vh);
+  }
+}
+
+.animate-float {
+  transform: translate(120vw, -10vh);
+  animation: 3s ease-in-out infinite reverse float;
+}
+
+@keyframes ty50 {
+  0%           { transform: translateY(0%) }
+  #{ 12.5 * 1 }% { transform: translateY(50%) }
+  #{ 12.5 * 2 }% { transform: translateY(50%) }
+  #{ 12.5 * 3 }% { transform: translateY(100%) }
+  #{ 12.5 * 4 }% { transform: translateY(100%) }
+  #{ 12.5 * 5 }% { transform: translateY(50%) }
+  #{ 12.5 * 6 }% { transform: translateY(50%) }
+  #{ 12.5 * 7 }% { transform: translateY(0%) }
+  100% { transform: translateY(0%) }
+
+}
+
+@keyframes tyn50 {
+  0%           { transform: translateY(0%) }
+  #{ 12.5 * 1 }% { transform: translateY(-50%) }
+  #{ 12.5 * 2 }% { transform: translateY(-50%) }
+  #{ 12.5 * 3 }% { transform: translateY(-100%) }
+  #{ 12.5 * 4 }% { transform: translateY(-100%) }
+  #{ 12.5 * 5 }% { transform: translateY(-50%) }
+  #{ 12.5 * 6 }% { transform: translateY(-50%) }
+  #{ 12.5 * 7 }% { transform: translateY(0%) }
+  100% { transform: translateY(0%) }
+}
+
+.animate-ty50 {
+  animation: 6s ease-in-out infinite ty50;
+  animation: 6s cubic-bezier(.92,.11,.06,.89) infinite ty50;
+}
+
+.animate-tyn50 {
+  animation: 6s ease-in-out infinite tyn50;
+  animation: 6s cubic-bezier(.92,.11,.06,.89) infinite tyn50;
+}
+
+.transition-color {
+  transition: color 0.66s ease-in-out;
+}
+
+.animate-bg {
+  transition: background-color 0.33s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
