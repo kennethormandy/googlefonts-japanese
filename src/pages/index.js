@@ -4,7 +4,6 @@ import Waypoint from 'react-waypoint'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-// import SpecimenWrapper from '../components/SpecimenWrapper'
 import SidebarColophon from '../components/SidebarColophon'
 
 import SpecimenSawarabi from '../specimens/Sawarabi'
