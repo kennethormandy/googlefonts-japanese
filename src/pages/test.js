@@ -16,7 +16,7 @@ class Test extends React.Component {
 
     return (
       <div className="clearfix" className={ 'bg-' + self.state.backgroundColor }>
-        <SidebarColophon { ...self.props } font={ 'sawarabi' } show={ true } backgroundColor={ 'bg-' + self.state.backgroundColor }>
+        <SidebarColophon { ...self.props } font={ 'sawarabi' } show={ true } backgroundColor={ self.state.backgroundColor }>
           <SpecimenSawarabi { ...self.props } />
         </SidebarColophon>
       </div>
