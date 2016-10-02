@@ -1,11 +1,11 @@
 {
 	"example": {
 		"published": false,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "ちょめちょめ",
 			"en": "Example"
 		},
-		"fallback": "sans-serif",
 		"designer": {
 			"url": "http://example.com",
 			"name": {
@@ -23,6 +23,10 @@
 			"ja": "さわらび明朝とさわらびゴシック",
 			"en": "Sawarabi Mincho & Gothic"
 		},
+		"description": {
+			"ja": false,
+			"en": "The approach by MShio (a pseudonym) for Sawarabi Mincho and Sawarabi Gothic is comprehensive, as this type family is designed from scratch and for all four scripts: Kanji, Hiragana, Katakana, and Latin. For a freely available Japanese typeface, this is rather a rare case. The font design is delicate and beautiful, and is also suitable for small size typesetting. MShio continues to extend the Kanji character set."
+		},
 		"designer": {
 			"url": false,
 			"name": {
@@ -37,11 +41,15 @@
 	},
 	"sawarabimincho": {
 		"feature_nav": true,
+		"fallback": "serif",
 		"name": {
 			"ja": "さわらび明朝",
 			"en": "Sawarabi Mincho"
 		},
-		"fallback": "serif",
+		"description": {
+			"ja": false,
+			"en": "The approach by MShio (a pseudonym) for Sawarabi Mincho and Sawarabi Gothic is comprehensive, as this type family is designed from scratch and for all four scripts: Kanji, Hiragana, Katakana, and Latin. For a freely available Japanese typeface, this is rather a rare case. The font design is delicate and beautiful, and is also suitable for small size typesetting. MShio continues to extend the Kanji character set."
+		},
 		"designer": {
 			"url": false,
 			"name": {
@@ -56,11 +64,15 @@
 	},
 	"hannari": {
 		"feature_nav": true,
+		"fallback": "serif",
 		"name": {
 			"ja": "はんなり明朝",
 			"en": "Hannari Mincho"
 		},
-		"fallback": "serif",
+		"description": {
+			"ja": false,
+			"en": "Hannari, featured here, and Kokoro are two Mincho Kana-fonts by Nakai Yoshihisa. The design of Hannari is inspired by the historical design of Tsukiji. Hannari show traces of the writing hand—dynamic with big counters and a gentle touch. The Kana of Kokoro are condensed and upright and keep the subtle touch of a casual handwriting. Incorporated with the Kanji of another Mincho font, Hannari and Kokoro give a text a unique atmosphere."
+		},
 		"designer": {
 			"url": false,
 			"name": {
@@ -75,11 +87,15 @@
 	},
 	"kokoro": {
 		"feature_nav": true,
+		"fallback": "serif",
 		"name": {
 			"ja": "こころ明朝",
 			"en": "Kokoro Mincho"
 		},
-		"fallback": "serif",
+		"description": {
+			"ja": false,
+			"en": "Kokoro, featured here, and Hannari are two Mincho Kana-fonts by Nakai Yoshihisa. The design of Hannari is inspired by the historical design of Tsukiji. Hannari show traces of the writing hand—dynamic with big counters and a gentle touch. The Kana of Kokoro are condensed and upright and keep the subtle touch of a casual handwriting. Incorporated with the Kanji of another Mincho font, Hannari and Kokoro give a text a unique atmosphere."
+		},
 		"designer": {
 			"url": false,
 			"name": {
@@ -94,11 +110,11 @@
 	},
 	"mplus": {
 		"feature_nav": true,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "M+",
 			"en": "M+"
 		},
-		"fallback": "sans-serif",
 		"designer": {
 			"url": false,
 			"name": {
@@ -113,11 +129,15 @@
 	},
 	"nicomojiplus": {
 		"feature_nav": true,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "ニコもじ＋",
 			"en": "Nico Moji+"
 		},
-		"fallback": "sans-serif",
+		"description": {
+			"ja": false,
+			"en": "For Nicomoji, Kudo took reference from the logo type of the Japanese video hosting service, niconico doga. The designer created the remaining Hiragana and Katakana (not included in the logo type) in this flat and extended expressive type design."
+		},
 		"designer": {
 			"url": false,
 			"name": {
@@ -132,16 +152,17 @@
 	},
 	"nikukyu": {
 		"feature_nav": true,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "ニクキュウ",
 			"en": "Nikukyu"
 		},
-		"fallback": "sans-serif",
+		"description": "To focus on Kana or even only on Katakana, is a popular method often applied for the design of display fonts. This is the case for Nikukyu, a playful design by Yoshihisa Sakai. The chubby shapes refer to the soft paws of cats. Each character is equipped with a highlight spot.",
 		"designer": {
 			"url": false,
 			"name": {
 				"ja": "中井良尚",
-				"en": false
+				"en": "Yoshihisa Nakai"
 			},
 			"quote": {
 				"ja": "モリっとして、ツヤのあるカタカナフォントです。",
@@ -151,11 +172,15 @@
 	},
 	"sawarabigothic": {
 		"feature_nav": true,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "さわらびゴシック",
 			"en": "Sawarabi Gothic"
 		},
-		"fallback": "sans-serif",
+		"description": {
+			"ja": false,
+			"en": "The approach by MShio (a pseudonym) for Sawarabi Mincho and Sawarabi Gothic is comprehensive, as this type family is designed from scratch and for all four scripts: Kanji, Hiragana, Katakana, and Latin. For a freely available Japanese typeface, this is rather a rare case. The font design is delicate and beautiful, and is also suitable for small size typesetting. MShio continues to extend the Kanji character set."
+		},
 		"designer": {
 			"url": false,
 			"name": {
@@ -170,11 +195,11 @@
 	},
 	"notosansjapanese": {
 		"feature_nav": true,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "Noto Sans Japanese",
 			"en": "Noto Sans Japanese"
 		},
-		"fallback": "sans-serif",
 		"designer": {
 			"url": false,
 			"name": {
@@ -189,11 +214,11 @@
 	},
 	"harenosora": {
 		"published": false,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "はれのそら明朝",
 			"en": "Harenosora Mincho"
 		},
-		"fallback": "sans-serif",
 		"designer": {
 			"url": false,
 			"name": {
@@ -207,11 +232,11 @@
 	},
 	"roundedmplus": {
 		"feature_nav": false,
+		"fallback": "sans-serif",
 		"name": {
 			"ja": "Rounded M+",
 			"en": "Rounded M+"
 		},
-		"fallback": "sans-serif",
 		"designer": {
 			"url": false,
 			"name": {
