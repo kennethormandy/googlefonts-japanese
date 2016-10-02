@@ -17,7 +17,8 @@ class Section extends React.Component {
 Section.defaultProps = {
   maxWidth: 3,
   basePaddingX: 2,
-  basePaddingY: 2
+  basePaddingY: 2,
+  className: ''
 }
 
 export default Section
