@@ -365,6 +365,13 @@ a {
 }
 
 
+// Additional `.muted` utilities
+//
+// No styleguide reference.
+.muted-light { opacity: 0.25; }
+.muted-dark { opacity: 0.75; }
+
+
 // Not muted
 //
 // Like `.not-rounded`, `.no-border`, this will have full opacity, including
@@ -384,7 +391,6 @@ a {
     opacity: 1;
   }
 }
-
 
 // List style
 //
