@@ -1,6 +1,7 @@
 import React from 'react'
 import throttle from 'lodash.throttle'
 import Waypoint from 'react-waypoint'
+import googleFontsBadge from '@googlefonts/badge'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -60,6 +61,8 @@ class Index extends React.Component {
     const self = this
     self.setViewportWidth()
     window.addEventListener('resize', self.handleResize(), false)
+
+    googleFontsBadge()
   }
 
   componentWillUnmount () {

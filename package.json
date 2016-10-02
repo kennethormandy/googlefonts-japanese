@@ -8,6 +8,7 @@
   "private": true,
   "contributors": [],
   "dependencies": {
+    "@googlefonts/badge": "git+https://github.com/kennethormandy/googlefonts-badge.git#v0.6.0",
     "ampersand-app": "1.0.4",
     "ampersand-router": "3.0.2",
     "basscss-sass": "4.0.0",
