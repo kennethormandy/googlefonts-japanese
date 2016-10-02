@@ -1,0 +1,39 @@
+// SVG fill colours
+.fill-black   { fill: $black }
+.fill-gray    { fill: $gray }
+.fill-silver  { fill: $silver }
+.fill-white   { fill: $white }
+.fill-aqua    { fill: $aqua }
+.fill-blue    { fill: $blue }
+.fill-navy    { fill: $navy }
+.fill-teal    { fill: $teal }
+.fill-green   { fill: $green }
+.fill-olive   { fill: $olive }
+.fill-lime    { fill: $lime }
+.fill-yellow  { fill: $yellow }
+.fill-orange  { fill: $orange }
+.fill-red     { fill: $red }
+.fill-fuchsia { fill: $fuchsia }
+.fill-purple  { fill: $purple }
+.fill-maroon  { fill: $maroon }
+
+// Fallback background colors, for dynamic changing backgrounds
+.no-js {
+  .bg-fallback-black   { background-color: $black }
+  .bg-fallback-gray    { background-color: $gray }
+  .bg-fallback-silver  { background-color: $silver }
+  .bg-fallback-white   { background-color: $white }
+  .bg-fallback-aqua    { background-color: $aqua }
+  .bg-fallback-blue    { background-color: $blue }
+  .bg-fallback-navy    { background-color: $navy }
+  .bg-fallback-teal    { background-color: $teal }
+  .bg-fallback-green   { background-color: $green }
+  .bg-fallback-olive   { background-color: $olive }
+  .bg-fallback-lime    { background-color: $lime }
+  .bg-fallback-yellow  { background-color: $yellow }
+  .bg-fallback-orange  { background-color: $orange }
+  .bg-fallback-red     { background-color: $red }
+  .bg-fallback-fuchsia { background-color: $fuchsia }
+  .bg-fallback-purple  { background-color: $purple }
+  .bg-fallback-maroon  { background-color: $maroon }
+}
