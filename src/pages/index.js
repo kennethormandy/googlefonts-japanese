@@ -133,17 +133,8 @@ class Index extends React.Component {
             <SpecimenKokoro { ...self.props } />
           </div>
 
-          <div className="clearfix" id="sawarabigothic">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', 'gray')} />
-            <SpecimenSawarabi { ...self.props } />
-          </div>
-
-          <div className="clearfix" id="sawarabimincho">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', 'gray')} />
-            <SpecimenSawarabi { ...self.props } />
-          </div>
-
           <div className="clearfix" id="sawarabi">
+            {/* TODO Code samples need to be for individual, not specimen */}
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabi', 'gray')} />
             <SpecimenSawarabi { ...self.props } />
           </div>
