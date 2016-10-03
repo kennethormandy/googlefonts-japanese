@@ -1,4 +1,5 @@
 import React from 'react'
+import throttle from 'lodash.throttle'
 
 class SVGBackground extends React.Component {
   constructor() {
@@ -34,6 +35,8 @@ class SVGBackground extends React.Component {
     const eventPageY = e.pageY
     const container = self._container
 
+    console.log(e)
+
     self.setState({
       eventPageX: eventPageX,
       eventPageY: eventPageY,
@@ -49,27 +52,27 @@ class SVGBackground extends React.Component {
     const eventPageX = touch.clientX
     const eventPageY = touch.clientY
 
-    self.setState({
-      eventPageX: eventPageX,
-      eventPageY: eventPageY,
-      offsetTop: 0,
-      offsetLeft: 0
-    })
+    // self.setState({
+    //   eventPageX: eventPageX,
+    //   eventPageY: eventPageY,
+    //   offsetTop: 0,
+    //   offsetLeft: 0
+    // })
   }
 
   render () {
     const self = this
     const state = self.state
-    const cx = ((state.eventPageX) - (state.offsetLeft - (state.r / 2) ))
-    const cy = (state.eventPageY - (state.offsetTop - (state.r / 2) ))
+    const cx = state.eventPageX
+    const cy = state.eventPageY
 
     return (
-      <div className="relative overflow-y-hidden"
+      <div className="overflow-y-hidden"
            onMouseMove={self.handleOnMouseMove}
            onTouchMove={self.handleOnTouchMove}
            ref={(c) => self._container = c}>
-        <div className="relative z1">{ self.props.children }</div>
-        <div className="absolute col-12 top-0">
+        <div className="z1">{ self.props.children }</div>
+        <div className="">
           <svg width="100%"
                height="100%"
                viewBox={'0 0 1122 705'}
@@ -77,14 +80,7 @@ class SVGBackground extends React.Component {
                xmlns="http://www.w3.org/2000/svg"
                style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: 1.41421 }}>
              <g>
-               <circle cx={ 500 - cx } cy={ cy * 0.2 } r={ state.r / 5 } className="fill-red" />
-               <circle cx={ cx + 100 * 0.2 } cy={ 300 - cy * 1.1  } r={ state.r / 3 } className="fill-red" />
-               <circle cx={ cx * 0.1 } cy={ cy * 0.2 } r={ state.r * 0.12 } className="fill-maroon" />
-               <circle cx={ cx * 1.3 } cy={ cy * 3 } r={ state.r * 1.2 } className="fill-red" />
-               <circle cx={ cx * 0.25 } cy={ cy * 1.1 } r={ state.r * 0.5 } className="fill-red" />
-               <circle cx={ cx * 3 } cy={ cy * 0.2 } r={ state.r * 0.6 } className="fill-red" />
-               <circle cx={ cx * 2 } cy={ cy * 3 } r={ state.r * 1 } className="fill-maroon" />
-               <circle cx={ cx * 1 } cy={ cy * 1 } r={ state.r } className="fill-maroon" />
+              <path x={ cx } y={ cy } d="M60,60l-9,0c0,-28.118 -22.804,-50.952 -51,-51l0,-9c33.105,0.043 59.915,26.826 60,60Z" className="fill-maroon" />
              </g>
            </svg>
         </div>

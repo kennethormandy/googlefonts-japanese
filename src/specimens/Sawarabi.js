@@ -2,8 +2,6 @@ import React from 'react'
 import SVGBackground from '../components/SVGBackground'
 import Section from '../components/Section'
 
-// require('../../build/fonts/sawarabigothic/SawarabiGothic-Regular.ttf')
-
 class SpecimenSawarabi extends React.Component {
   render () {
     const self = this
