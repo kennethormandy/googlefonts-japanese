@@ -40,15 +40,17 @@ class Header extends React.Component {
               <HeaderColumn
                 headingClassName="yellow"
                 heading="偉大なタイポグラフィを介してウェブをより美しく高速で、オープン作ります">
-                <p>我々は、Webサイトや製品に個性と性能をもたらすための最善の方法は、優れたデザインと技術を通じてであると考えています。</p>
-                <p>私たちの目標は、オープンソースのデザイナーのWebフォントの直感的かつ堅牢なディレクトリを提供することによって、そのプロセスを簡単にすることです。豊富なカタログを使用することで、あなたが共有し、あなたが世界のどこにいるかシームレス-関係なく、任意の設計プロジェクトにタイポグラフィを統合することはできません。</p>
+                <div style={{ fontSize: 0.95 + 'em', lineHeight: 1.75 }}>
+                  <p>Googleのフォントは、オープンソース、デザイナーのウェブフォントの直感的かつ堅牢なディレクトリを提供します。私たちのアーリーアクセスプログラムは、まだ完全にはサポートされていないフォントのための実験的な遊び場として機能します。</p>
+                  <p>日本の豊かなタイポグラフィは、ウェブフォントとして大きなフォントファイルを提供するために必要な技術インフラに数千文字をデザインするのに必要な時間のかかるプロセスから多くの興味深い課題を提示します。Googleが日本のwebフォントをサポートする上で進捗状況を作るように、私たちはデザイナーと開発者がGoogleのフォントアーリーアクセスから利用できるようになりましたこれらの日本語ウェブフォントを試してみるように誘います。</p>
+                </div>
               </HeaderColumn>
               <HeaderColumn
                 lang="en"
                 headingClassName="muted-dark"
                 heading="Making the web more beautiful, fast, and open through great typography">
-                <p>We believe the best way to bring personality and performance to websites and products is through great design and&nbsp;technology.</p>
-                <p>Our goal is to make that process simple, by offering an intuitive and robust directory of open source designer web fonts. By using our extensive catalog, you can share and integrate typography into any design project seamlessly—no matter where you are in the&nbsp;world.</p>
+                <p><a href="https://fonts.google.com">Google Fonts</a> provides an intuitive and robust directory of open source, designer web fonts. Our <a href="https://fonts.google.com/earlyaccess" title="Google Fonts Early Access">Early Access</a> program serves as an experimental playground for fonts that aren’t yet fully supported.</p>
+                <p>The rich typography of Japan presents many interesting challenges, from the lengthy process needed to design thousands of characters to the technical infrastructure required to serve large font files as web fonts. As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts Early Access.</p>
               </HeaderColumn>
             </div>
           </div>
