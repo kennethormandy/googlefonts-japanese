@@ -21,10 +21,10 @@ class SpecimenNicomojiPlus extends React.Component {
           <div className="line-height-1 mt0 mb2 wf-nicomojiplus mx-auto col-10">
             <Keyframes loop={ true }>
 
-              <Frame duration={ 3000 }><div className="red transition-color"><FitterHappierText text="ニCもじ" /></div></Frame>
-              <Frame duration={ 3000 }><div className="green transition-color"><FitterHappierText text="カフェでコーヒ" /></div></Frame>
-              <Frame duration={ 3000 }><div className="blue transition-color"><FitterHappierText text="おちゃにしますか" /></div></Frame>
-              <Frame duration={ 3000 }><div className="purple transition-color"><FitterHappierText text="いらっしゃいませ" /></div></Frame>
+              <Frame duration={ 2500 }><div className="red transition-color"><FitterHappierText text="ニCもじ" /></div></Frame>
+              <Frame duration={ 2500 }><div className="green transition-color"><FitterHappierText text="カフェでコーヒ" /></div></Frame>
+              <Frame duration={ 2500 }><div className="blue transition-color"><FitterHappierText text="おちゃにしますか" /></div></Frame>
+              <Frame duration={ 2500 }><div className="purple transition-color"><FitterHappierText text="いらっしゃいませ" /></div></Frame>
 
             </Keyframes>
           </div>
