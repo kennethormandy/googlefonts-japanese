@@ -26,16 +26,16 @@ class Header extends React.Component {
     const data = self.props.data
 
     return (
-      <div className="flex bg-maroon white font-family-base">
-        <header className="sm-flex flex-wrap px2">
-          <div className="mx-auto max-width-4 white col-12">
-            <h1 className="h1 font-weight-600 block col-12 md-col-9 lg-col-10" style={{ fontSize: 4 + 'vw'}}>
-              <span style={{ fontFamily: 'Product Sans' }}>Google Fonts</span>
+      <div className="flex bg-white black font-family-base">
+        <header className="sm-flex flex-wrap px2 pb4">
+          <div className="mx-auto max-width-4 col-12">
+            <h1 className="h1 mb0 mb0 font-weight-600 block col-12 md-col-9 lg-col-10" style={{ fontSize: 4 + 'vw'}}>
+              <span className="font-family-product-sans">Google Fonts</span>
               <span style={{ fontSize: 0.9 + 'em' }}>による早期アクセス日本語フォント</span>
             </h1>
           </div>
-          <hr className="block mx-auto max-width-4 border-none col-12 bg-white muted-dark pt1 rounded mt4" />
-          <div className="mx-auto max-width-4 white line-height-4">
+          <hr className="block mx-auto max-width-4 border-none col-12 bg-black muted-dark pt1 rounded mt4" />
+          <div className="mx-auto max-width-4 line-height-4">
             <div className="flex mxn1 md-mxn2">
               <HeaderColumn
                 headingClassName="yellow"
