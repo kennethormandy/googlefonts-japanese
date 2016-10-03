@@ -28,7 +28,7 @@ class SpecimenMPlus extends React.Component {
             </div>
           </div>
 
-          <div className="tyn50 animate animate-tyn50 blend-luminosity relative z2">
+          <div className="tyn50 animate animate-tyn50 blend-luminosity">
             <div className="flex navy wf-roundedmplus h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
               <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />

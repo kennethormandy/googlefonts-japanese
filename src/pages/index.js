@@ -128,7 +128,7 @@ class Index extends React.Component {
             <SpecimenHannari { ...self.props } />
           </div>
 
-          <div className="clearfix" id="kokoro">
+          <div className="clearfix" id="kokoro" style={{ minHeight: 100 + 'vh' }}>
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'kokoro', 'green')} />
             <SpecimenKokoro { ...self.props } />
           </div>
