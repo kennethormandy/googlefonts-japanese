@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '../components/Section'
+import FitterHappierText from '../vendor/react-fitter-happier-text'
 
 class SpecimenNicomojiPlus extends React.Component {
   render () {
@@ -12,10 +13,18 @@ class SpecimenNicomojiPlus extends React.Component {
         maxWidth={4}
         basePaddingX={3}
         className="bg-fallback-black green wf-nicomojiplus">
-        <div className="h2 lg-h1">
-          <h2 className="mt0 red">{ font.name.ja } { font.name.ja }</h2>
-          <p>どうやらアトモスフェアの高い位置まで到達したようだった。空は真っ暗で、星の瞬きもなくなっていた。丘の上では彼方に広がる水平線が同じ高さに見えるのと同じ錯覚によって、眼下に真っ暗な雲が広がり、車は巨大な暗い空間の真ん中に浮いているように見えた。その空間の上半分は銀色にきらめいていた。</p>
+
+        <img src="/media/illustration-storefront-2-outlined.svg" class="col-12 block" />
+        <div class="flex items-center px1 center height-nicomojiplus">
+          <div class="h0 line-height-1 mt0 mb2 wf-nicomojiplus mx-auto">
+            <FitterHappierText text="ニCもじ" />
+            <FitterHappierText text="カフェでコーヒ" />
+            <FitterHappierText text="おちゃにしますか?" />
+            <FitterHappierText text="いらっしゃいませ!" />
+          </div>
         </div>
+        <img src="/media/illustration-storefront-3-outlined.svg" class="col-12 block" />
+
       </Section>
     )
   }

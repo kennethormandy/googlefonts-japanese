@@ -145,7 +145,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="nicomojiplus">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomojiplus', 'olive')} />
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomojiplus', 'black')} />
             <SpecimenNicomojiPlus { ...self.props } />
           </div>
 
