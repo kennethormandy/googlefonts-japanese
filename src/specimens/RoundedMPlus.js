@@ -17,7 +17,7 @@ class SpecimenRoundedMPlus extends React.Component {
 
           <div className="mx-auto max-width-4">
             <div className="sm-flex mxn1 sm-mxn2 md-mxn3 py3 md-py3">
-              <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-mplus navy">
+              <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-mplus white">
                 <GlyphColumn fontWeight={ 200 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 300 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 400 } value="すると、夜空に最初の流れ星が現れた。" />
@@ -27,7 +27,7 @@ class SpecimenRoundedMPlus extends React.Component {
                 <GlyphColumn fontWeight={ 900 } value="すると、夜空に最初の流れ星が現れた。" />
                 <h3 className="h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none center">{ font.name.ja }</h3>
               </div>
-              <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-roundedmplus navy">
+              <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-roundedmplus white">
                 <GlyphColumn fontWeight={ 200 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 300 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 400 } value="すると、夜空に最初の流れ星が現れた。" />
