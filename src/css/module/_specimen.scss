@@ -52,6 +52,20 @@
   }
 }
 
+// .h0-nicomojiplus {
+//   font-size: $h1 * 2;
+// }
+
+.height-nicomojiplus {
+  height: 2rem;
+  @media #{ $breakpoint-sm } {
+    height: 5rem;
+  }
+  @media #{ $breakpoint-md } {
+    height: 10rem;
+  }
+}
+
 // Drop shadow
 //
 // Styleguide: module.dropshadow

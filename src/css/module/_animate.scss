@@ -63,6 +63,11 @@
   transition: color 0.66s ease-in-out;
 }
 
+.transition-fill {
+  transition: fill 0.66s ease-in-out;
+}
+
+
 .animate-bg {
   transition: background-color 0.33s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
