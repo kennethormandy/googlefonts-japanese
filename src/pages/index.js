@@ -23,7 +23,7 @@ class Index extends React.Component {
     this.state = {
       sidebar: true, // Default to true for mobile-first prerender
       active: 'mplus',
-      backgroundColor: 'blue',
+      backgroundColor: 'gray',
       viewport: {
         width: 1024, // TODO Change
         height: 768
