@@ -37,3 +37,8 @@
   .bg-fallback-purple  { background-color: $purple }
   .bg-fallback-maroon  { background-color: $maroon }
 }
+
+// Gradients
+.bg-gradient-transparent-white-transparent {
+  background-image: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, 0.50) 55%, rgba($white, 0.50) 65%, rgba($white, 0) 100%);
+}
