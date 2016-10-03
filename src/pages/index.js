@@ -13,6 +13,7 @@ import SpecimenRoundedMPlus from '../specimens/RoundedMPlus'
 import SpecimenHannari from '../specimens/Hannari'
 import SpecimenKokoro from '../specimens/Kokoro'
 import SpecimenNikukyu from '../specimens/Nikukyu'
+import SpecimenNicomojiPlus from '../specimens/NicomojiPlus'
 import SpecimenNotoSansJapanese from '../specimens/NotoSansJapanese'
 
 class Index extends React.Component {
@@ -150,6 +151,11 @@ class Index extends React.Component {
           <div className="clearfix" id="nikukyu">
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nikukyu', 'olive')} />
             <SpecimenNikukyu { ...self.props } />
+          </div>
+
+          <div className="clearfix" id="nicomojiplus">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomojiplus', 'olive')} />
+            <SpecimenNicomojiPlus { ...self.props } />
           </div>
 
           <div className="clearfix" id="notosansjapanese">
