@@ -233,6 +233,7 @@
 	"roundedmplus": {
 		"feature_nav": false,
 		"fallback": "sans-serif",
+		"description": "Rounded Mgen+ by MM from Jikasei Font Kobo extends the M+ family withby a rounded version, for all weights and styles.",
 		"name": {
 			"ja": "Rounded M+",
 			"en": "Rounded M+"
