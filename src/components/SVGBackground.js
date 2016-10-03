@@ -64,7 +64,7 @@ class SVGBackground extends React.Component {
     const cy = (state.eventPageY - (state.offsetTop - (state.r / 2) ))
 
     return (
-      <div
+      <div className="relative overflow-y-hidden"
            onMouseMove={self.handleOnMouseMove}
            onTouchMove={self.handleOnTouchMove}
            ref={(c) => self._container = c}>
