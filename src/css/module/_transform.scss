@@ -1,0 +1,55 @@
+// Responsive translation utilities
+//
+// Basscss-like translation classes, use `x` for horizontal
+// or `y` for vertical, and `n` for negative translations.
+//
+// Note that in their current state these classes couldn’t be
+// combined since they both use the high-level `transform` property,
+// but I don’t anticipate using that anywhere in the site anyway.
+//
+// No styleguide reference.
+.ty50 {  transform: translateY(50%) }
+.tyn50 { transform: translateY(-50%) }
+
+@media #{ $breakpoint-sm } {
+
+  .sm-ty1 { transform: translateX($space-1) }
+  .sm-ty2 { transform: translateX($space-2) }
+  .sm-ty3 { transform: translateX($space-3) }
+  .sm-ty4 { transform: translateX($space-4) }
+
+  .sm-tyn1 { transform: translateX(-1 * $space-1) }
+  .sm-tyn2 { transform: translateX(-1 * $space-2) }
+  .sm-tyn3 { transform: translateX(-1 * $space-3) }
+  .sm-tyn4 { transform: translateX(-1 * $space-4) }
+
+  .sm-ty1 { transform: translateY($space-1) }
+  .sm-ty2 { transform: translateY($space-2) }
+  .sm-ty3 { transform: translateY($space-3) }
+  .sm-ty4 { transform: translateY($space-4) }
+
+  .sm-tyn1 { transform: translateY(-1 * $space-1) }
+  .sm-tyn2 { transform: translateY(-1 * $space-2) }
+  .sm-tyn3 { transform: translateY(-1 * $space-3) }
+  .sm-tyn4 { transform: translateY(-1 * $space-4) }
+
+}
+
+@media #{ $breakpoint-sm } {
+  .translate-banner > :nth-child(2) { transform: translateX($space-4); }
+  .translate-banner > :nth-child(3) { transform: translateY($space-3); }
+  .translate-banner > :nth-child(6) { transform: translateY($space-4); }
+  .translate-banner > :nth-child(7) { transform: translateY(-1 * $space-3); }
+  .translate-banner > :nth-child(8) { transform: translateY(-1 * $space-2); }
+}
+
+// Specific translation classes
+.translate-hannari {
+  @media #{ $breakpoint-md } {
+    transform: translate(-50%, 50%);
+  }
+}
+
+.transform-square {
+  transform: rotate(135deg) translateY(-115%);
+}
