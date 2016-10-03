@@ -1,0 +1,90 @@
+// Specific specimen classes
+//
+// Used for the specimens in the case where we really are designing something one-off that doesn’t need to be a utility class. This might otherwise be solved by inline styles or CSS modules, but this is not part of this project right now.
+//
+// Markup:
+// <h2 className="h0-hannari">
+//   <div>あかるく、</div>
+//   <div>やさしく、</div>
+//   <div>ふんわり。</div>
+// </h2>
+//
+// Styleguide: module.heading
+.h0-hannari {
+  font-size: 20vw;
+  @media #{ $breakpoint-md } {
+    font-size: 12.5vw;
+  }
+  @media #{ $breakpoint-lg } {
+    font-size: $h1 * 6;
+  }
+}
+
+// Styles specific to the Kokoro section
+.h0-kokoro {
+  font-size: $h1;
+  line-height: 1.25;
+  @media #{ $breakpoint-md } {
+    font-size: $h1 * 1.5;
+  }
+  @media #{ $breakpoint-lg } {
+    font-size: $h1 * 2.2;
+  }
+}
+
+.height-kokoro-book {
+  height: 600px;
+  @media #{ $breakpoint-md } {
+    height: 400px;
+  }
+  @media #{ $breakpoint-lg } {
+    height: 600px;
+  }
+}
+
+.height-kokoro-page {
+  height: 300px;
+  @media #{ $breakpoint-md } {
+    height: 400px;
+  }
+  @media #{ $breakpoint-lg } {
+    height: 600px;
+  }
+}
+
+// Drop shadow
+//
+// Styleguide: module.dropshadow
+.ds-bookcover {
+  box-shadow: 3px  3px 0 3px darken($navy, 7.5%),
+              3px -1px 0 3px $navy,
+             -3px  3px 0 3px darken($navy, 7.5%),
+             -3px -1px 0 3px $navy,
+              0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.ds-page-right {
+  box-shadow: inset -2px -2px 20px $darken-1,
+              inset 0 -2px 0 2px $darken-1,
+              inset 0 -1px 0 1px $darken-2;
+  @media #{ breakpoint-sm } {
+    border-left: 1px solid $darken-1;
+    box-shadow: inset -2px -2px 20px $darken-1,
+                inset -2px 0 0 2px $darken-1,
+                inset -1px 0 0 1px $darken-2;
+  }
+}
+
+.ds-page-left {
+  border-bottom: 1px solid $darken-1;
+  box-shadow: inset -2px -2px 20px $darken-1,
+              inset 0 -2px 0 -2px $darken-1,
+              inset 0 -1px 0 -1px $darken-2;
+
+  @media #{ breakpoint-sm } {
+    border-bottom: 0;
+    box-shadow: inset -2px -2px 20px $darken-1,
+                inset -2px 0 0 -2px $darken-1,
+                inset -1px 0 0 -1px $darken-2;
+  }
+}
