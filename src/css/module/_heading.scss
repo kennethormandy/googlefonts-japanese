@@ -1,0 +1,21 @@
+// Specific headings
+//
+// Used for the specimens in the case where we really are designing something one-off that doesn’t need to be a utility class. This might otherwise be solved by inline styles or CSS modules, but this is not part of this project right now.
+//
+// Markup:
+// <h2 className="h0-hannari">
+//   <div>あかるく、</div>
+//   <div>やさしく、</div>
+//   <div>ふんわり。</div>
+// </h2>
+//
+// Styleguide: module.heading
+.h0-hannari {
+  font-size: 20vw;
+  @media #{ $breakpoint-md } {
+    font-size: 12.5vw;
+  }
+  @media #{ $breakpoint-lg } {
+    font-size: $h1 * 6;
+  }
+}
