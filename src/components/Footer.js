@@ -53,16 +53,16 @@ class Footer extends React.Component {
               </div>
               <div className="clearfix">
                 <h3 className="h3">Made by Friends of Google Fonts</h3>
-                <div className="flex mxn1" lang="en">
-                  <div className="col-4 px1">
+                <div className="sm-flex mxn1" lang="en">
+                  <div className="col-12 sm-col-4 px1">
                     <a className="" href={ data.authors['marikotakagi'].url }>{ data.authors['marikotakagi'].name }</a>
                     <p className="mt0">{ data.authors['marikotakagi'].credit }</p>
                   </div>
-                  <div className="col-4 px1">
+                  <div className="col-12 sm-col-4 px1">
                     <a className="" href={ data.authors['kennethormandy'].url }>{ data.authors['kennethormandy'].name }</a>
                     <p className="mt0">{ data.authors['kennethormandy'].credit }</p>
                   </div>
-                  <div className="col-4 px1">
+                  <div className="col-12 sm-col-4 px1">
                     <a href="https://fonts.google.com">Google Fonts</a>
                     <ul className="list-style-none m0 p0">
                       <li><a className="border-none" href={ data.authors['yuinchien'].url }>{ data.authors['yuinchien'].name }, art direction</a></li>
