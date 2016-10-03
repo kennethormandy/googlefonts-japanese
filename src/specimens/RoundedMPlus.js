@@ -1,9 +1,9 @@
 import React from 'react'
+import FitText from 'react-fittext'
 import Section from '../components/Section'
+import GlyphColumn from '../components/GlyphColumn'
 
-// require('../../build/fonts/sawarabigothic/SawarabiGothic-Regular.ttf')
-
-class SpecimenMPlus extends React.Component {
+class SpecimenRoundedMPlus extends React.Component {
   render () {
     const self = this
     const data = self.props.data
@@ -11,20 +11,41 @@ class SpecimenMPlus extends React.Component {
 
     return (
       <Section
-        maxWidth={4}
+        maxWidth={5}
         basePaddingX={3}
-        className="bg-fallback-blue black wf-roundedmplus">
-        <div className="h2 lg-h1">
-          <h2 className="mt0">{ font.name.ja } { font.name.en }</h2>
-          <p>どうやらアトモスフェアの高い位置まで到達したようだった。空は真っ暗で、星の瞬きもなくなっていた。丘の上では彼方に広がる水平線が同じ高さに見えるのと同じ錯覚によって、眼下に真っ暗な雲が広がり、車は巨大な暗い空間の真ん中に浮いているように見えた。その空間の上半分は銀色にきらめいていた。</p>
+        className="bg-fallback-navy black wf-mplus">
+
+          <div className="mx-auto max-width-4">
+            <div className="sm-flex mxn1 sm-mxn2 md-mxn3 py3 md-py3">
+              <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-mplus navy">
+                <GlyphColumn fontWeight={ 200 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 300 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 400 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 500 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 600 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 700 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 900 } value="すると、夜空に最初の流れ星が現れた。" />
+                <h3 className="h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none center">{ font.name.ja }</h3>
+              </div>
+              <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-roundedmplus navy">
+                <GlyphColumn fontWeight={ 200 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 300 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 400 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 500 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 600 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 700 } value="すると、夜空に最初の流れ星が現れた。" />
+                <GlyphColumn fontWeight={ 900 } value="すると、夜空に最初の流れ星が現れた。" />
+                <h3 className="h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none center">{ data.fonts['roundedmplus'].name.ja }</h3>
+              </div>
+            </div>
         </div>
       </Section>
     )
   }
 }
 
-SpecimenMPlus.defaultProps = {
+SpecimenRoundedMPlus.defaultProps = {
   data: {}
 }
 
-export default SpecimenMPlus
+export default SpecimenRoundedMPlus
