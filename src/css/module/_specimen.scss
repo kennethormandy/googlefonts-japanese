@@ -9,7 +9,7 @@
 //   <div>ふんわり。</div>
 // </h2>
 //
-// Styleguide: module.heading
+// Styleguide: module.specimen
 .h0-hannari {
   font-size: 20vw;
   @media #{ $breakpoint-md } {
@@ -63,6 +63,49 @@
   }
   @media #{ $breakpoint-md } {
     height: 10rem;
+  }
+}
+
+// Nikukyu specific styles
+.img-nikukyu-ladybug {
+  &:before {
+    content: attr(data-prefix);
+    display: inline-block;
+    transform-origin: right;
+    font-size: $h4;
+    transform: translate(50px, -30px) rotate(-40deg);
+    position: absolute;
+    @media #{ $breakpoint-md } {
+      transform: translate(50px, 20px) rotate(-40deg);
+    }
+    @media #{ $breakpoint-lg } {
+      transform: translate(60px, 10px) rotate(-40deg);
+    }
+  }
+  img {
+    transform: translate(25px, 50px);
+    @media #{ $breakpoint-sm } {
+      transform: translate(50px, 65px);
+    }
+    @media #{ $breakpoint-md } {
+      transform: translate(50px, 75px);
+    }
+    @media #{ $breakpoint-lg } {
+      transform: translate(50px, 100px);
+    }
+  }
+}
+
+.h0-nikukyu {
+  font-size: $h1 * 1.5;
+  @media #{ $breakpoint-sm } {
+    font-size: $h1 * 3.25;
+  }
+  @media #{ $breakpoint-md } {
+    font-size: $h1 * 3.75;
+  }
+  @media #{ $breakpoint-lg } {
+    font-size: $h1 * 4;
   }
 }
 
