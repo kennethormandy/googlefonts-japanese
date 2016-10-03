@@ -80,7 +80,10 @@ class SVGBackground extends React.Component {
                xmlns="http://www.w3.org/2000/svg"
                style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: 1.41421 }}>
              <g>
-              <path x={ cx } y={ cy } d="M60,60l-9,0c0,-28.118 -22.804,-50.952 -51,-51l0,-9c33.105,0.043 59.915,26.826 60,60Z" className="fill-maroon" />
+              {/*
+              <path x={ cx } y={ cy } d="M60,60l-9,0c0,-28.118 -22.804,-50.952 -51,-51l0,-9c33.105,0.043 59.915,26.826 60,60Z" className="fill-red" />
+              <path x={ cx + 100 } y={ cy + 100 } d="M60,60l-9,0c0,-28.118 -22.804,-50.952 -51,-51l0,-9c33.105,0.043 59.915,26.826 60,60Z" className="fill-red" />
+              */}
              </g>
            </svg>
         </div>
