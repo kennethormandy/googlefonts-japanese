@@ -22,7 +22,7 @@ class SidebarColophon extends React.Component {
     }
 
     return (
-      <StickyContainer style={{ zIndex: 5 }}>
+      <StickyContainer style={{ zIndex: 5, overflow: 'hidden' }}>
         <div className="flex flex-wrap justify-end relative font-family-base">
           <div className="col-12 md-col-8 lg-col-9">{ self.props.children }</div>
           <div className="col-12 md-col-4 lg-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto">
