@@ -7,17 +7,17 @@ class SpecimenMPlus extends React.Component {
   render () {
     const self = this
     const data = self.props.data
-    const font = data.fonts['mplus']
+    const font = data.fonts['mplus1p']
 
     return (
       <Section
         maxWidth={5}
         basePaddingX={3}
-        className="bg-fallback-blue black wf-mplus">
+        className="bg-fallback-blue black wf-mplus1p">
 
         <div className="py4">
           <div className="ty50 relative animate animate-ty50">
-            <div className="flex wf-mplus yellow h0">
+            <div className="flex wf-mplus1p yellow h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
               <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
               <GlyphColumn value="に" compressor={ 0.125 } fontWeight={ 400 } className="flex-auto" />
@@ -29,7 +29,7 @@ class SpecimenMPlus extends React.Component {
           </div>
 
           <div className="tyn50 animate animate-tyn50 blend-luminosity">
-            <div className="flex navy wf-roundedmplus h0">
+            <div className="flex navy wf-roundedmplus1c h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
               <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
               <GlyphColumn value="に" compressor={ 0.125 } fontWeight={ 400 } className="flex-auto" />

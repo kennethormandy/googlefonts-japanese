@@ -8,8 +8,8 @@ import Footer from '../components/Footer'
 import SidebarColophon from '../components/SidebarColophon'
 
 import SpecimenSawarabi from '../specimens/Sawarabi'
-import SpecimenMPlus from '../specimens/MPlus'
-import SpecimenRoundedMPlus from '../specimens/RoundedMPlus'
+import SpecimenMPlus1p from '../specimens/MPlus1p'
+import SpecimenRoundedMPlus1c from '../specimens/RoundedMPlus1c'
 import SpecimenHannari from '../specimens/Hannari'
 import SpecimenKokoro from '../specimens/Kokoro'
 import SpecimenNikukyu from '../specimens/Nikukyu'
@@ -22,7 +22,7 @@ class Index extends React.Component {
 
     this.state = {
       sidebar: true, // Default to true for mobile-first prerender
-      active: 'mplus',
+      active: 'mplus1p',
       backgroundColor: 'gray',
       viewport: {
         width: 1024, // TODO Change
@@ -113,14 +113,14 @@ class Index extends React.Component {
 
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 
-          <div className="clearfix" id="mplus">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'mplus', 'blue')} />
-            <SpecimenMPlus { ...self.props } />
+          <div className="clearfix" id="mplus1p">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'mplus1p', 'blue')} />
+            <SpecimenMPlus1p { ...self.props } />
           </div>
 
-          <div className="clearfix" id="roundedmplus">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'roundedmplus', 'navy')} />
-            <SpecimenRoundedMPlus { ...self.props } />
+          <div className="clearfix" id="roundedmplus1c">
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'roundedmplus1c', 'navy')} />
+            <SpecimenRoundedMPlus1c { ...self.props } />
           </div>
 
           <div className="clearfix" id="hannari">
@@ -133,9 +133,15 @@ class Index extends React.Component {
             <SpecimenKokoro { ...self.props } />
           </div>
 
-          <div className="clearfix" id="sawarabi">
+          <div className="clearfix" id="sawarabimincho">
             {/* TODO Code samples need to be for individual, not specimen */}
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabi', 'gray')} />
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', 'gray')} />
+            <SpecimenSawarabi { ...self.props } />
+          </div>
+
+          <div className="clearfix" id="sawarabigothic">
+            {/* TODO Code samples need to be for individual, not specimen */}
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', 'gray')} />
             <SpecimenSawarabi { ...self.props } />
           </div>
 
@@ -145,7 +151,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="nicomojiplus">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomojiplus', 'black')} />
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomoji', 'black')} />
             <SpecimenNicoMoji { ...self.props } />
           </div>
 
@@ -155,7 +161,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', 'gray')} />
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosans', 'gray')} />
             <Footer { ...self.props } />
           </div>
 

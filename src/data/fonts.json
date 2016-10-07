@@ -31,7 +31,7 @@
 		},
 		"description": {
 			"ja": false,
-			"en": "Sawarabi Mincho (さわらび明朝) is a Japanese font by mshio. With a delicate and beautiful design, it is suitable for text and headline usage. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 2,250 kanji are available in this version, and the project is under active development. There is also another related family, Sawarabi Gothic."
+			"en": "Sawarabi Mincho (さわらび明朝) is a Japanese font by mshio. With a delicate and beautiful design, it is suitable for text and headline usage. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 2,250 kanji are available in this version, and the project is under active development."
 		},
 		"designer": {
 			"url": false,
@@ -99,7 +99,7 @@
 			}
 		}
 	},
-	"mplus": {
+	"mplus1p": {
 		"feature_nav": true,
 		"fallback": "sans-serif",
 		"license": "OFL",
@@ -132,7 +132,7 @@
 		"license": "OFL",
 		"glyph_count": 774,
 		"kanji": true,
-		"google_fonts_id": "Mplus+1p",
+		"google_fonts_id": "nico+moji",
 		"name": {
 			"ja": "ニコモジ",
 			"en": "Nico Moji"
@@ -160,11 +160,14 @@
 		"glyph_count": 182,
 		"kanji": "IPA",
 		"google_fonts_id": "Nikukyu",
-			"name": {
+		"name": {
 			"ja": "ニクキュウ",
 			"en": "Nikukyu"
 		},
-		"description": "Nikukyu (ニクキュウ) is a fun and playful Japanese font, inspired by the soft pads of cat paws: each character is equipted with a highlight spot. The spaces between horizontal strokes are small and tight, so this font is best used in large sizes.",
+		"description": {
+			"ja": false,
+			"en": "Nikukyu (ニクキュウ) is a fun and playful Japanese font, inspired by the soft pads of cat paws: each character is equipted with a highlight spot. The spaces between horizontal strokes are small and tight, so this font is best used in large sizes."
+		},
 		"designer": {
 			"url": false,
 			"name": {
@@ -190,7 +193,7 @@
 		},
 		"description": {
 			"ja": false,
-			"en": "Sawarabi Gothic (さわらびゴシック) is a Japanese font by mshio. Carefully designed for high legibility, it works well in small text sizes. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 4,469 kanji are available in this version, and the project is under active development. There is also another related family, Sawarabi Mincho."
+			"en": "Sawarabi Gothic (さわらびゴシック) is a Japanese font by mshio. Carefully designed for high legibility, it works well in small text sizes. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 4,469 kanji are available in this version, and the project is under active development."
 		},
 		"designer": {
 			"url": false,
@@ -228,7 +231,30 @@
 			}
 		}
 	},
-	"roundedmplus": {
+	"notosans": {
+		"feature_nav": true,
+		"fallback": "sans-serif",
+		"license": "OFL",
+		"glyph_count": false,
+		"kanji": true,
+		"google_fonts_id": "Noto+Sans+Japanese",
+		"name": {
+			"ja": "Noto Sans",
+			"en": "Noto Sans"
+		},
+		"designer": {
+			"url": "https://www.google.com/get/noto/",
+			"name": {
+				"ja": "Google",
+				"en": "Google"
+			},
+			"quote": {
+				"ja": false,
+				"en": "Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. Here, the Noto Sans is used to display both Japanese and English."
+			}
+		}
+	},
+	"roundedmplus1c": {
 		"feature_nav": false,
 		"fallback": "sans-serif",
 		"license": "OFL",

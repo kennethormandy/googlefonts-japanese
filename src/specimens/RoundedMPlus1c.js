@@ -7,7 +7,7 @@ class SpecimenRoundedMPlus extends React.Component {
   render () {
     const self = this
     const data = self.props.data
-    const font = data.fonts['roundedmplus']
+    const font = data.fonts['roundedmplus1c']
 
     return (
       <Section
@@ -25,7 +25,7 @@ class SpecimenRoundedMPlus extends React.Component {
                 <GlyphColumn fontWeight={ 600 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 700 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 900 } value="すると、夜空に最初の流れ星が現れた。" />
-                <h3 className="h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none center">{ font.name.ja }</h3>
+                <h3 className="h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none center">{ data.fonts['mplus1p'].name.ja }</h3>
               </div>
               <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-roundedmplus white">
                 <GlyphColumn fontWeight={ 200 } value="すると、夜空に最初の流れ星が現れた。" />
@@ -35,7 +35,7 @@ class SpecimenRoundedMPlus extends React.Component {
                 <GlyphColumn fontWeight={ 600 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 700 } value="すると、夜空に最初の流れ星が現れた。" />
                 <GlyphColumn fontWeight={ 900 } value="すると、夜空に最初の流れ星が現れた。" />
-                <h3 className="h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none center">{ data.fonts['roundedmplus'].name.ja }</h3>
+                <h3 className="h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none center">{ font.name.ja }</h3>
               </div>
             </div>
         </div>
