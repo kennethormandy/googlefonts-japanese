@@ -29,6 +29,7 @@ class Layout extends React.Component {
     return (
       <div className="kern liga">
         { self.renderChildren(self.props) }
+        <script async src="https://fonts.googleapis.com/measure?debug=true"></script>
         <NoScript />
       </div>
     )
