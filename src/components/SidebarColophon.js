@@ -12,7 +12,7 @@ class SidebarColophon extends React.Component {
     var fontNameEn = font.name.ja !== font.name.en ? <span lang="en" className="block font-weight-400 muted">{ font.name.en }</span> : <span className="block speak-none">&nbsp;</span>
     var fontDesignerNameEn = font.designer.name.ja !== font.designer.name.en ? <span lang="en" className="muted"> { font.designer.name.en }</span> : ''
 
-
+    // TODO switch to toggle
     if (font.description) {
       if (font.description.ja && font.description.en) {
         desc = <div><p className="mt0">{ font.description.ja }</p><p lang="en">{ font.description.en }</p></div>
