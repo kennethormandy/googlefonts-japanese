@@ -34,7 +34,7 @@ class SidebarColophon extends React.Component {
               <div className="right col-9 md-col-12">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
                 <div className={ 'p2 md-p3 animate-bg transition-color ' + (self.props.backgroundColor === 'white' ? 'bg-darken-1' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') } style={{ height: 100 + 'vh' }}>
-                  <h3 className="border-top pt2 inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
+                  <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
 
                   {/* Fixes heights so the changing content is less jarring */}
                   <div style={{ minHeight: 12 + 'em' }} className="mb3">
@@ -50,11 +50,11 @@ class SidebarColophon extends React.Component {
 
 
                   <div className="mb2">
-                  <abbr className="caps muted border-none">HTML</abbr>
+                  <abbr className="muted border-none">HTML</abbr>
                   <CodeBlock language="html">{ '\<link href\=\"http\:\/\/fonts\.googleapis\.com\/earlyaccess\/' + self.props.font + '\.css\" \/\>' }</CodeBlock>
                   </div>
                   <div className="mb2">
-                  <abbr className="caps muted border-none">CSS</abbr>
+                  <abbr className="muted border-none">CSS</abbr>
                   <CodeBlock language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: ' + self.props.font + '\; \}' }</CodeBlock>
                   </div>
 
