@@ -18,9 +18,10 @@ window.app = app.extend({
     var el = document.getElementById('js-root')
     el.classList.remove('no-js')
 
+    // Load UI fonts
+    // Remainder are loaded when Layout mounts
     loadCSS('http://fonts.googleapis.com/earlyaccess/notosansjp.css')
     loadCSS('https://fonts.googleapis.com/css?family=Noto+Sans')
-    loadCSS('/css/fonts.css')
 
     this.router = new Router()
     this.router.history.start()
