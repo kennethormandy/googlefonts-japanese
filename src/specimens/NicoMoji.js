@@ -8,7 +8,7 @@ class SpecimenNicoMojiPlus extends React.Component {
   render () {
     const self = this
     const data = self.props.data
-    const font = data.fonts['nicomojiplus']
+    const font = data.fonts['nicomoji']
 
     return (
       <Section
