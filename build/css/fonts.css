@@ -44,14 +44,6 @@
   font-family: 'Kokoro', script;
 }
 
-/* Check if this can be available on Early Access too */
-@font-face {
-  font-family: 'Noto Mono';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/fonts/noto/NotoMono-Regular.ttf')
-}
-
 @font-face {
   font-family: 'Nico Moji+';
   font-style: normal;

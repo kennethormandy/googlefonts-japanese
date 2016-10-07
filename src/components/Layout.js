@@ -2,6 +2,7 @@ import React from 'react'
 import data from '../data'
 import dataFonts from '../data/fonts'
 import dataAuthors from '../data/authors'
+import { loadCSS } from 'fg-loadcss'
 import ga from 'react-ga'
 import smoothscroll from 'smoothscroll'
 import NoScript from '../components/NoScript'
@@ -21,6 +22,11 @@ class Layout extends React.Component {
   componentDidMount () {
     ga.initialize(data.service.analytics)
     ga.pageview(window.location.pathname.toString())
+    // Non-critical UI
+    // TODO Check on existing hosted version
+    // although I’m using a fairly heavily subset version here
+    loadCSS('/css/notosansmono.css')
+
   }
 
   render () {

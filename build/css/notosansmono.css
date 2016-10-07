@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Noto Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/noto/NotoMono-Regular.woff2') format('woff2'),
+       url('/fonts/noto/NotoMono-Regular.woff')  format('woff'),
+       url('/fonts/noto/NotoMono-Regular.ttf')   format('truetype');
+}
