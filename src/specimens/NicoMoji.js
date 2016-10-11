@@ -1,10 +1,9 @@
 import React from 'react'
 import { Keyframes, Frame } from 'react-keyframes'
-import map from 'lodash.map'
 import Section from '../components/Section'
 import FitterHappierText from '../vendor/react-fitter-happier-text'
 
-class SpecimenNicoMojiPlus extends React.Component {
+class SpecimenNicoMoji extends React.Component {
   render () {
     const self = this
     const data = self.props.data
@@ -36,8 +35,8 @@ class SpecimenNicoMojiPlus extends React.Component {
   }
 }
 
-SpecimenNicoMojiPlus.defaultProps = {
+SpecimenNicoMoji.defaultProps = {
   data: {}
 }
 
-export default SpecimenNicoMojiPlus
+export default SpecimenNicoMoji
