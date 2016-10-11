@@ -24,6 +24,8 @@ window.app = app.extend({
     // Remainder are loaded when Layout mounts
     loadCSS('http://fonts.googleapis.com/earlyaccess/notosansjp.css')
     loadCSS('https://fonts.googleapis.com/css?family=Noto+Sans')
+    // TODO loadCSS('http://fonts.googleapis.com/earlyaccess/productsans.css')
+
 
     this.router = new Router()
     this.router.history.start()
