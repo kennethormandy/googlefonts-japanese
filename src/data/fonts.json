@@ -214,7 +214,10 @@
 		"glyph_count": 6934,
 		"kanji": true,
 		"google_fonts_id": "Noto+Sans+Japanese",
-
+		"description": {
+			"ja": false,
+			"en": "Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. This is the Sans Japanese family. It has Regular and Bold styles and is hinted."
+		},
 		"name": {
 			"ja": "Noto Sans Japanese",
 			"en": "Noto Sans Japanese"
@@ -227,7 +230,7 @@
 			},
 			"quote": {
 				"ja": false,
-				"en": "Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. This is the Sans Japanese family. It has Regular and Bold styles and is hinted."
+				"en": false
 			}
 		}
 	},
@@ -242,6 +245,10 @@
 			"ja": "Noto Sans",
 			"en": "Noto Sans"
 		},
+		"description": {
+			"ja": false,
+			"en": "Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. Here, the Noto Sans is used to display both Japanese and English."
+		},
 		"designer": {
 			"url": "https://www.google.com/get/noto/",
 			"name": {
@@ -250,7 +257,7 @@
 			},
 			"quote": {
 				"ja": false,
-				"en": "Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. Here, the Noto Sans is used to display both Japanese and English."
+				"en": false
 			}
 		}
 	},
@@ -261,7 +268,10 @@
 		"glyph_count": 8546,
 		"kanji": true,
 		"google_fonts_id": "Rounded+Mplus+1c",
-		"description": "The Rounded M+ Project develops versions of the M+ Fonts with rounded terminals. This set, Rounded M+ 1c, are fonts with proportional Latin and fixed-fullwidth Japanese, and 7 weights from Thin to Black. The Kana have traditional slightly curved strokes. The Latin is optimized to be well-proportioned for text typesetting.",
+		"description": {
+			"ja": false,
+			"en": "The Rounded M+ Project develops versions of the M+ Fonts with rounded terminals. This set, Rounded M+ 1c, are fonts with proportional Latin and fixed-fullwidth Japanese, and 7 weights from Thin to Black. The Kana have traditional slightly curved strokes. The Latin is optimized to be well-proportioned for text typesetting."
+		},
 		"name": {
 			"ja": "Rounded M+ 1c",
 			"en": "Rounded M+ 1c"
