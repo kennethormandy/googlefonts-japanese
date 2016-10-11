@@ -1,6 +1,7 @@
 {
 	"example": {
 		"load": false,
+		"published": false,
 		"fallback": "sans-serif",
 		"name": {
 			"ja": "ちょめちょめ",
@@ -209,6 +210,7 @@
 	},
 	"notosansjapanese": {
 		"load": false,
+		"published": true,
 		"feature_nav": true,
 		"fallback": "sans-serif",
 		"license": "OFL",
@@ -237,6 +239,7 @@
 	},
 	"notosans": {
 		"load": false,
+		"published": false,
 		"feature_nav": true,
 		"fallback": "sans-serif",
 		"license": "OFL",
@@ -292,6 +295,7 @@
 	},
 	"harenosora": {
 		"load": false,
+		"published": false,
 		"fallback": "sans-serif",
 		"name": {
 			"ja": "はれのそら明朝",
@@ -310,6 +314,7 @@
 	},
 	"keifont": {
 		"load": false,
+		"published": false,
 		"name": {
 			"ja": "けいふぉんと",
 			"en": "Kei Font"
@@ -323,6 +328,7 @@
 	},
 	"bokutachino": {
 		"load": false,
+		"published": false,
 		"name": {
 			"ja": "ぼくたちのゴシック２",
 			"en": "Bokutachi No. 2 Gothic 2"
