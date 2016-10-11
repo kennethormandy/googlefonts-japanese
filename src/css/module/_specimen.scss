@@ -12,11 +12,13 @@
 // Styleguide: module.specimen
 .h0-hannari {
   font-size: 20vw;
+  min-height: 100vw;
   @media #{ $breakpoint-md } {
     font-size: 12.5vw;
   }
   @media #{ $breakpoint-lg } {
     font-size: $h1 * 6;
+    min-height: 900px;
   }
 }
 
