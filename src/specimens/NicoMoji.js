@@ -14,11 +14,11 @@ class SpecimenNicoMojiPlus extends React.Component {
       <Section
         maxWidth={4}
         basePaddingX={3}
-        className="bg-fallback-black green wf-nicomojiplus overflow-hidden">
+        className="bg-fallback-black green wf-nicomoji overflow-hidden">
 
         <img src="/media/illustration-storefront-2-outlined.svg" className="col-12 block" />
         <div className="flex items-center px3 my3 center height-nicomojiplus blue">
-          <div className="line-height-1 mt0 mb2 wf-nicomojiplus mx-auto col-10">
+          <div className="line-height-1 mt0 mb2 wf-nicomoji mx-auto col-10">
             <Keyframes loop={ true }>
 
               <Frame duration={ 2500 }><div className="red transition-color"><FitterHappierText text="ニCもじ" /></div></Frame>
