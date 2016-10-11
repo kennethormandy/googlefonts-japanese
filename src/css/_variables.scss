@@ -102,9 +102,9 @@ $breakpoint-sm: "(min-width: 40em)";
 $breakpoint-sm-md: "(min-width: 40em) and (max-width: 52em)";
 // @custom-media --breakpoint-md-lg (min-width: 52em) and (max-width: 64em);
 $breakpoint-md: "(min-width: 52em)";
-$breakpoint-md-lg: "(min-width: 52em) and (max-width: 64em)";
+$breakpoint-md-lg: "(min-width: 52em) and (max-width: 68em)";
 // @custom-media --breakpoint-lg (min-width: 64em);
-$breakpoint-lg: "(min-width: 64em)";
+$breakpoint-lg: "(min-width: 68em)";
 
 // Breakheights, for vertical Media Queries
 $breakheight-xs: "(max-height: 40em)";
