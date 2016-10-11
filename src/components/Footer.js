@@ -1,17 +1,13 @@
 import React from 'react'
-import map from 'lodash.map'
-import FitText from 'react-fittext'
+import _map from 'lodash.map'
+import FitText from '../vendor/react-fittext'
 
 class Footer extends React.Component {
   render () {
     const self = this
     const data = self.props.data
 
-    // <hr className="block mx-auto max-width-4 col-12 border-none bg-navy muted-dark pt1 rounded mb4" />
-
-    // var frag = createFragment(data.fonts)
-    // console.log(frag)
-    var typefaceList = Object.keys(data.fonts).map((index) => {
+    var typefaceList = _map(Object.keys(data.fonts), function (index) {
       var font = data.fonts[index]
       if (font.published !== false && font.designer) {
         return (
