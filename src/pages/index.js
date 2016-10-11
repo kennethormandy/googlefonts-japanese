@@ -71,22 +71,28 @@ class Index extends React.Component {
     window.removeEventListener('resize', self.handleResize(), false)
   }
 
-  onClickSpecimen (e, f) {
+  setSidebarState (newSidebarState) {
     const self = this
-    var el = self.refs.sidebar.refs.sidebar || false
+    console.log('[sidebar]', 'force update')
+    self.refs.sidebar.forceUpdate()
 
-    console.log('el', el)
-
-    // TODO Do this a better way, maybe with refs?
-    // TODO more possible contextual touch targets
-    // console.log(self.state.viewport.width, self.props.sidebarMaxWidth)
     if (self.state.viewport.width < self.props.sidebarMaxWidth) {
-      if ((self.state.sidebar === true) || (typeof el !== 'undefined')) {
-        self.setState({
-          sidebar: !self.state.sidebar
-        })
-      }
+      self.setState({
+        sidebar: (typeof newSidebarState !== 'undefined') ? newSidebarState : !self.state.sidebar
+      })
     }
+  }
+
+  onSwipedLeftSidebar () {
+    this.setSidebarState(true)
+  }
+
+  onSwipedRightSidebar () {
+    this.setSidebarState(false)
+  }
+
+  onClickSpecimen () {
+    this.setSidebarState()
   }
 
   handleSpecimenWaypoint (font, color, e) {
@@ -111,7 +117,16 @@ class Index extends React.Component {
     return (
       <div style={{ height: 100 + '%' }}>
         <Header { ...self.props } />
-        <SidebarColophon { ...self.props } ref="sidebar" show={ self.state.sidebar } onClickSidebar={ self.onClickSpecimen } viewport={ self.state.viewport } font={ self.state.active } backgroundColor={ self.state.backgroundColor }>
+        <SidebarColophon { ...self.props }
+          ref="sidebar"
+          show={ self.state.sidebar }
+          onClickSidebar={ self.onClickSpecimen }
+          onSwipedLeft={ self.props.onSwipedLeftSidebar }
+          onSwipedRight={ self.props.onSwipedRightSidebar }
+          font={ self.state.active }
+          backgroundColor={ self.state.backgroundColor }>
+
+          <div className="fixed top-0 left-0 bg-purple p2 white">{ self.state.sidebar.toString() }</div>
 
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 

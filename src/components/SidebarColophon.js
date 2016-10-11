@@ -23,20 +23,22 @@ class SidebarColophon extends React.Component {
     }
 
     return (
-      <Swipeable onSwipedLeft={ self.props.onClickSidebar } onSwipedRight={ self.props.onClickSidebar }>
       <StickyContainer style={{ zIndex: 5, overflow: 'hidden' }}>
         <div className="flex flex-wrap justify-start md-justify-end relative font-family-base">
           <div className="col-10 md-col-8 lg-col-9">{ self.props.children }</div>
           <div className="col-12 md-col-4 lg-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto">
-            <div ref="sidebar" className={ 'col-9 md-col-12 right height-100 absolute md-relaitve animate-bg animate-left bg-' + self.props.backgroundColor }
+            <div ref="sidebar" className="col-9 md-col-12 right height-100 absolute md-relaitve transition-sidebar"
                  style={{
                   //  transform: 'translateX(' + (self.props.show ? '0' : '-60') + '%)',
-                   right: (self.props.show ? '0' : '-58') + '%'
+                   left: (self.props.show ? 25 : 83.3333333) + '%'
                  }}>
-            <Sticky style={{ zIndex: 10, height: 0 }} onClick={ self.props.onClickSidebar }> {/* bottomOffset could be set to this computed height */}
+            <Sticky style={{ zIndex: 10, height: 0 }} onClick={ self.props.onClickSidebar }>
+            {/* bottomOffset could be set to this computed height */}
+              <div className={ 'bg-' + self.props.backgroundColor }>
+              <Swipeable onSwipedLeft={ self.props.onSwipedLeftSidebar } onSwipedRight={ self.props.onSwipedRightSidebar }>
               <div className="right col-12 md-col-12 ds-sidebar md-ds-none">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
-                <div className={ 'p2 md-p3 animate-bg transition-color ' + (self.props.backgroundColor === 'white' ? 'bg-darken-1' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') } style={{ height: 100 + 'vh' }}>
+                <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-darken-1' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') } style={{ height: 100 + 'vh' }}>
                   <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
 
                   {/* Fixes heights so the changing content is less jarring */}
@@ -63,13 +65,14 @@ class SidebarColophon extends React.Component {
 
                 </div>
                 </div>
+               </div>
+              </Swipeable>
               </div>
             </Sticky>
             </div>
           </div>
         </div>
       </StickyContainer>
-      </Swipeable>
     )
   }
 }

@@ -71,3 +71,13 @@
 .transition-color {
   transition: color 0.33s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
+
+.transition-sidebar {
+  transition: color 0.33s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+              background-color 0.33s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+  .sticky {
+    outline: 2px solid red;
+    transition: left 1s ease-in-out;
+  }
+}
