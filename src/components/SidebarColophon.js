@@ -3,6 +3,13 @@ import { StickyContainer, Sticky } from 'react-sticky'
 import CodeBlock from '../components/CodeBlock'
 
 class SidebarColophon extends React.Component {
+  componentDidMount () {
+    const self = this
+    self.setState({
+      show: false
+    })
+  }
+
   render () {
     const self = this
     var data = self.props.data
@@ -23,15 +30,16 @@ class SidebarColophon extends React.Component {
 
     return (
       <StickyContainer style={{ zIndex: 5, overflow: 'hidden' }}>
-        <div className="flex flex-wrap justify-end relative font-family-base">
-          <div className="col-12 md-col-8 lg-col-9">{ self.props.children }</div>
+        <div className="flex flex-wrap justify-start md-justify-end relative font-family-base">
+          <div className="col-10 md-col-8 lg-col-9">{ self.props.children }</div>
           <div className="col-12 md-col-4 lg-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto">
-            <div className={ 'js-sidebar col-9 md-col-12 right height-100 absolute md-relaitve animate-bg bg-' + self.props.backgroundColor }
+            <div ref="sidebar" className={ 'col-9 md-col-12 right height-100 absolute md-relaitve animate-bg animate-left bg-' + self.props.backgroundColor }
                  style={{
-                   right: (self.props.show ? '0' : '-50') + '%'
+                  //  transform: 'translateX(' + (self.props.show ? '0' : '-60') + '%)',
+                   right: (self.props.show ? '0' : '-58') + '%'
                  }}>
-            <Sticky style={{ zIndex: 10, height: 0 }}> {/* bottomOffset could be set to this computed height */}
-              <div className="right col-9 md-col-12">
+            <Sticky style={{ zIndex: 10, height: 0 }} onClick={ self.props.onClickSidebar }> {/* bottomOffset could be set to this computed height */}
+              <div className="right col-12 md-col-12 ds-sidebar md-ds-none">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
                 <div className={ 'p2 md-p3 animate-bg transition-color ' + (self.props.backgroundColor === 'white' ? 'bg-darken-1' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') } style={{ height: 100 + 'vh' }}>
                   <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
@@ -72,7 +80,8 @@ class SidebarColophon extends React.Component {
 
 SidebarColophon.defaultProps = {
   show: false, // Default to false for pre-render
-  backgroundColor: 'silver'
+  backgroundColor: 'silver',
+  onClickSidebar: false
 }
 
 export default SidebarColophon

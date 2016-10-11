@@ -147,3 +147,16 @@
                 inset -1px 0 0 -1px $darken-2;
   }
 }
+
+
+// Sidebar
+// Drop shadow
+.ds-sidebar {
+  box-shadow: -5px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+@media #{ $breakpoint-md } {
+  .md-ds-none {
+    box-shadow: none;
+  }  
+}

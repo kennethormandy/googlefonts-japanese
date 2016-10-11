@@ -73,13 +73,15 @@ class Index extends React.Component {
 
   onClickSpecimen (e, f) {
     const self = this
-    var el = e.target || false
+    var el = self.refs.sidebar.refs.sidebar || false
+
+    console.log('el', el)
 
     // TODO Do this a better way, maybe with refs?
     // TODO more possible contextual touch targets
     // console.log(self.state.viewport.width, self.props.sidebarMaxWidth)
     if (self.state.viewport.width < self.props.sidebarMaxWidth) {
-      if ((self.state.sidebar === true) || (el && el.classList.contains('js-sidebar'))) {
+      if ((self.state.sidebar === true) || (typeof el !== 'undefined')) {
         self.setState({
           sidebar: !self.state.sidebar
         })
@@ -107,9 +109,9 @@ class Index extends React.Component {
     // Not sure how to use imported React elements with this pattern yet
 
     return (
-      <div style={{ height: 100 + '%' }} onClick={ self.onClickSpecimen }>
+      <div style={{ height: 100 + '%' }}>
         <Header { ...self.props } />
-        <SidebarColophon { ...self.props } font={ self.state.active } show={ self.state.sidebar } backgroundColor={ self.state.backgroundColor }>
+        <SidebarColophon { ...self.props } ref="sidebar" show={ self.state.sidebar } onClickSidebar={ self.onClickSpecimen } viewport={ self.state.viewport } font={ self.state.active } backgroundColor={ self.state.backgroundColor }>
 
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 
