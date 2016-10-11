@@ -412,6 +412,10 @@ a {
   max-width: $width-5;
 }
 
+.max-width-6 {
+  max-width: $width-6;
+}
+
 @media #{ $breakpoint-sm } {
   .sm-relative { position: relative }
   .sm-absolute { position: absolute }
