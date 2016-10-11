@@ -6,6 +6,7 @@ var React = require('react')
 var ReactDOMServer = require('react-dom/server')
 var getConfig = require('hjs-webpack')
 var sizeOf = require('image-size')
+var merge = require('lodash.merge')
 var Layout = require('./src/components/Layout').default
 var Index = require('./src/pages/index').default
 var data = require('./src/data')
@@ -51,4 +52,12 @@ var hjsConfig = getConfig({
   }
 })
 
+var additionalLoaders = [
+  {
+    test: /\.md$/,
+    loader: 'html!markdown'
+  }
+]
+
+hjsConfig.module.loaders.push(additionalLoaders)
 module.exports = hjsConfig
