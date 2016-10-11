@@ -28,7 +28,11 @@ class Header extends React.Component {
 
     var typefaceList = _map(Object.keys(data.fonts), function (index) {
       var font = data.fonts[index]
-      var fontWeight = (index === 'mplus1p' || index === 'roundedmplus1c' || index === 'notosansjapanese') ? 800 : 400
+      var fontWeight =  400
+
+      // TODO
+      // Nikukyu = only second glyph
+      // Ones with Kanji = add 安
 
       if (font.published !== false && font.designer) {
         return (
@@ -51,14 +55,14 @@ class Header extends React.Component {
 
     return (
       <div className="bg-white black font-family-base relative pb4 bg-pink black" style={{ zIndex: 100 }}>
-        <header className="mx-auto max-width-4 mb4">
-          <div className="px1 sm-px0">
-            <div className="muted py3 h4 md-h3 font-family-product-sans"><span className="font-weight-600">Google Fonts</span> + Japanese – Early Access</div>
-            <h1 className="h1 mt0 mb0 font-weight-600 block col-12 md-col-9 lg-col-10" style={{ fontSize: 4 + 'vw'}}>
-              <span className="font-family-product-sans">Google Fonts</span>
-              <span className="maroon" style={{ fontSize: 0.9 + 'em' }}>による早期アクセス日本語フォント</span>
-            </h1>
-          </div>
+        <header className="mx-auto max-width-4 mb4 px1 md-px2">
+          <div className="muted py3 h4 md-h3 font-family-product-sans" lang="en"><span className="font-weight-600">Google Fonts + Japanese</span> Early Access</div>
+          <FitText compressor={ 0.9 }>
+          <h1 className="h1 line-height-2 my0 mb3 font-weight-500">
+            <span className="font-family-product-sans font-weight-600">Google Fonts</span>
+            <span style={{ fontSize: 0.9 + 'em' }}>&nbsp;+&nbsp;日本語&nbsp;<span className="maroon">早期アクセス</span></span>
+          </h1>
+          </FitText>
           <div className="sm-flex sm-mxn1 md-mxn2 line-height-4">
             <HeaderColumn>
               <div style={{ fontSize: 0.95 + 'em', lineHeight: 1.75 }}>
