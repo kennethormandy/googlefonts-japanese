@@ -18,9 +18,9 @@ class Footer extends React.Component {
                   <div className={ 'break-none wf-' + index }>あア</div>
                 </FitText>
               </div>
-              <div className="flex-auto">
+              <div className="flex-auto line-height-3">
                 <span>{ font.name.ja } <span lang="en" className="muted">{ font.name.en !== font.name.ja ? font.name.en : '' }</span></span>
-                <span className="block mt1">{ font.designer.name.ja } <span lang="muted" className="muted">{ font.designer.name.en !== font.designer.name.ja ? font.designer.name.en : '' }</span></span>
+                <span className="block mt1">{ font.designer.name.ja } <span lang="en" className="muted">{ font.designer.name.en !== font.designer.name.ja ? font.designer.name.en : '' }</span></span>
               </div>
             </div>
           </a></li>
