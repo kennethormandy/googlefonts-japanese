@@ -9,6 +9,7 @@ class SidebarColophon extends React.Component {
     var data = self.props.data
     var font = data.fonts[self.props.font]
     var desc = ''
+    var quote = ''
     var sidebarStyles = {}
 
     var fontNameEn = font.name.ja !== font.name.en ? <span lang="en" className="block font-weight-400 muted">{ font.name.en }</span> : <span className="block speak-none">&nbsp;</span>
@@ -31,6 +32,18 @@ class SidebarColophon extends React.Component {
     // }
     if (font.description && font.description.en) {
       desc = <p className="m0" lang="en">{ font.description.en }</p>
+    }
+
+    console.log(font.name, font.designer.quote.ja)
+
+    if (font.designer.quote.ja || font.designer.quote.en) {
+      quote = <blockquote>
+          <p className="md-h3 lg-h2">{ font.designer.quote.ja }</p>
+          <p className="muted-dark" lang="en">{ font.designer.quote.en }</p>
+          <footer>
+            <span>{ font.designer.name.ja }</span> <span className="muted-dark" lang="en">{ fontDesignerNameEn }</span>
+          </footer>
+        </blockquote>
     }
 
     return (
@@ -57,15 +70,7 @@ class SidebarColophon extends React.Component {
                   {/* TODO might need to change this minHeight based on CSS breakpoints */}
                   <div style={{ minHeight: 12 + 'em' }} className="h5 md-h4">{ desc }</div>
 
-                  <div style={{ minHeight: 12 + 'em' }} className="mb3">
-                    <blockquote>
-                      <p className="md-h3 lg-h2">{ font.designer.quote.ja }</p>
-                      <p className="muted-dark" lang="en">{ font.designer.quote.en }</p>
-                      <footer>
-                        <span>{ font.designer.name.ja }</span> <span className="muted-dark" lang="en">{ fontDesignerNameEn }</span>
-                      </footer>
-                    </blockquote>
-                  </div>
+                  <div style={{ minHeight: 12 + 'em' }} className="mb3">{ quote }</div>
 
                   <div className="mb2">
                   <abbr className="muted border-none">HTML</abbr>
