@@ -1,15 +1,9 @@
 import React from 'react'
 import { StickyContainer, Sticky } from 'react-sticky'
 import CodeBlock from '../components/CodeBlock'
+import Swipeable from 'react-swipeable'
 
 class SidebarColophon extends React.Component {
-  componentDidMount () {
-    const self = this
-    self.setState({
-      show: false
-    })
-  }
-
   render () {
     const self = this
     var data = self.props.data
@@ -29,6 +23,7 @@ class SidebarColophon extends React.Component {
     }
 
     return (
+      <Swipeable onSwipedLeft={ self.props.onClickSidebar } onSwipedRight={ self.props.onClickSidebar }>
       <StickyContainer style={{ zIndex: 5, overflow: 'hidden' }}>
         <div className="flex flex-wrap justify-start md-justify-end relative font-family-base">
           <div className="col-10 md-col-8 lg-col-9">{ self.props.children }</div>
@@ -74,12 +69,12 @@ class SidebarColophon extends React.Component {
           </div>
         </div>
       </StickyContainer>
+      </Swipeable>
     )
   }
 }
 
 SidebarColophon.defaultProps = {
-  show: false, // Default to false for pre-render
   backgroundColor: 'silver',
   onClickSidebar: false
 }
