@@ -25,6 +25,8 @@
 		"license": "OFL",
 		"glyph_count": 3589,
 		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Sawarabi+Mincho",
 		"name": {
 			"ja": "さわらび明朝",
@@ -52,6 +54,8 @@
 		"license": "OFL",
 		"glyph_count": 230,
 		"kanji": "IPA",
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Hannari",
 		"name": {
 			"ja": "はんなり明朝",
@@ -79,6 +83,8 @@
 		"license": "OFL",
 		"glyph_count": 231,
 		"kanji": "IPA",
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Kokoro",
 		"name": {
 			"ja": "こころ明朝",
@@ -106,6 +112,8 @@
 		"license": "OFL",
 		"glyph_count": 8676,
 		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Mplus+1p",
 		"name": {
 			"ja": "M+ 1p",
@@ -132,7 +140,9 @@
 		"fallback": "cursive",
 		"license": "OFL",
 		"glyph_count": 774,
-		"kanji": true,
+		"kanji": false,
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "nico+moji",
 		"name": {
 			"ja": "ニコモジ",
@@ -160,6 +170,8 @@
 		"license": "OFL",
 		"glyph_count": 182,
 		"kanji": "IPA",
+		"katakana": true,
+		"hiragana": false,
 		"google_fonts_id": "Nikukyu",
 		"name": {
 			"ja": "ニクキュウ",
@@ -187,6 +199,8 @@
 		"license": "OFL",
 		"glyph_count": 6945,
 		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Sawarabi+Gothic",
 		"name": {
 			"ja": "さわらびゴシック",
@@ -216,6 +230,8 @@
 		"license": "OFL",
 		"glyph_count": 6934,
 		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Noto+Sans+Japanese",
 		"description": {
 			"ja": false,
@@ -245,6 +261,8 @@
 		"license": "OFL",
 		"glyph_count": false,
 		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Noto+Sans+Japanese",
 		"name": {
 			"ja": "Noto Sans",
@@ -272,6 +290,8 @@
 		"license": "OFL",
 		"glyph_count": 8546,
 		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
 		"google_fonts_id": "Rounded+Mplus+1c",
 		"description": {
 			"ja": false,
