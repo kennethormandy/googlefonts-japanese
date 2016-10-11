@@ -26,7 +26,7 @@ class Header extends React.Component {
     const data = self.props.data
 
     return (
-      <div className="flex bg-white black font-family-base">
+      <div className="flex bg-white black font-family-base relative" style={{ zIndex: 100 }}>
         <header className="sm-flex flex-wrap px2 pb4">
           <div className="mx-auto max-width-4 col-12">
             <h1 className="h1 mb0 mb0 font-weight-600 block col-12 md-col-9 lg-col-10" style={{ fontSize: 4 + 'vw'}}>
