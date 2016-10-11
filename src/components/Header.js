@@ -29,18 +29,22 @@ class Header extends React.Component {
     var typefaceList = _map(Object.keys(data.fonts), function (index) {
       var font = data.fonts[index]
       var fontWeight =  400
-
-      // TODO
-      // Nikukyu = only second glyph
-      // Ones with Kanji = add 安
+      var fontString = 'アあ '
 
       if (font.published !== false && font.designer) {
+        if (font.hiragana === false) {
+          fontString = 'ア  '
+        }
+        if (font.kanji === true) {
+          fontString = 'アあ安'
+        }
+
         return (
           <li className="col-12 sm-col-6 md-col-4 px2 m0" key={ 'header_' + index }><a className="block py2 border-none" href={ '#' + index }>
             <div className="flex items-center">
               <div className="h1 col-4 sm-col-3 md-col-5 center maroon">
                 <FitText compressor={0.33} minFontSize={24}>
-                  <div className={ 'break-none wf-' + index + ' font-weight-' + fontWeight }>あア</div>
+                  <div className={ 'break-none wf-' + index + ' font-weight-' + fontWeight }>{ fontString }</div>
                 </FitText>
               </div>
               <div className="flex-auto line-height-2 pl2">
