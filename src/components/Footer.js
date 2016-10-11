@@ -40,9 +40,8 @@ class Footer extends React.Component {
               <ul className="list-style-none p0 m0" lang="en">
               <li><a href={ data.baseurl + '/about' }>About</a></li>
               <li><a href={ data.baseurl + '/contributing' }>Contribute</a></li>
-              {/* TODO Add SVGs */}
               <li className="fill-navy"><a href={ 'https://twitter.com/' + data.social.twitter }>@{ data.social.twitter } on Twitter</a></li>
-              <li className="fill-navy"><a href={ 'https://twitter.com/' + data.social.github }>@{ data.social.github } on GitHub</a></li>
+              <li className="fill-navy"><a href={ 'https://github.com/' + data.social.github }>@{ data.social.github } on GitHub</a></li>
               </ul>
             </div>
             <div className="col-12 md-col-8">
