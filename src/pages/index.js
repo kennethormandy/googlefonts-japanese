@@ -216,7 +216,7 @@ class Index extends React.Component {
 
 Index.defaultProps = {
   // $breakpoint-md
-  sidebarMaxWidth: 800
+  sidebarMaxWidth: 830
 }
 
 export default Index
