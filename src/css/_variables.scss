@@ -17,7 +17,7 @@ $font-family-monospace: "Noto Mono", "Source Code Pro", "Fira Mono", monospace, 
 // No styleguide reference.
 $purple: rgb(90, 50, 120);
 $navy: rgb(0, 90, 120);
-$maroon: rgb(213, 58, 104);
+$maroon: #880E4F; // Material Design Pink 900
 $blue: rgb(140, 150, 190);
 $olive: rgb(130, 200, 180);
 $fuchsia: rgb(250, 210, 210);
@@ -33,6 +33,9 @@ $green: mix($olive, $aqua, 75%);
 // $gray
 $silver: #F0F0F0;
 $black: #111;
+
+// Custom
+$pink: #F8BBD0; // Material Design Pink 100
 
 // $line-height-1: 1.05;
 // --line-height-2: 1.125;
