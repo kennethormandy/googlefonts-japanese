@@ -32,9 +32,11 @@ class Footer extends React.Component {
       <div className="clearfix bg-white bg-fallback-white py2 md-py4" style={{ minHeight: 60 + 'vh' }}>
         <div className="mx-auto max-width-4 px2 sm-px3">
           <div className="md-flex flex-wrap">
-            <div className="col-12 md-col-4 md-pr3" lang="en">
-              <p className="md-mt4">Check back often!</p>
-              <p>We’ll update this page with samples as new fonts are added to Early Access, and provide information about our own experiments and technology when possible.</p>
+            <div className="col-12 md-col-4 md-pr3 md-pt4">
+              <p>ぜひ定期的にチェックしてください</p>
+              <p>このページでは、早期アクセスに追加された新しいフォントのサンプルをご利用いただけます。また、Google での試験運用や技術についてお知らせすることもあります。[a]フッターの開始</p>
+              <p lang="en">Check back often!</p>
+              <p lang="en">We’ll update this page with samples as new fonts are added to Early Access, and provide information about our own experiments and technology when possible.</p>
               <ul className="list-style-none p0 m0">
               <li><a href={ data.baseurl + '/about' }>About</a></li>
               <li><a href={ data.baseurl + '/contributing' }>Contribute</a></li>
