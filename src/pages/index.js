@@ -31,8 +31,9 @@ class Index extends React.Component {
     }
 
     // If window is less than medium breakpoint, this.setState({ sidebar: true })
-
     this.onClickSpecimen = this.onClickSpecimen.bind(this)
+    this.onSwipedRightSidebar = this.onSwipedRightSidebar.bind(this)
+    this.onSwipedLeftSidebar = this.onSwipedLeftSidebar.bind(this)
 
     this.getViewportWidth = () => {
       if (window && document) {
@@ -73,7 +74,6 @@ class Index extends React.Component {
 
   setSidebarState (newSidebarState) {
     const self = this
-    console.log('[sidebar]', 'force update')
     self.refs.sidebar.forceUpdate()
 
     if (self.state.viewport.width < self.props.sidebarMaxWidth) {
@@ -84,21 +84,23 @@ class Index extends React.Component {
   }
 
   onSwipedLeftSidebar () {
-    this.setSidebarState(true)
+    const self = this
+    self.setSidebarState(true)
   }
 
   onSwipedRightSidebar () {
-    this.setSidebarState(false)
+    const self = this
+    self.setSidebarState(false)
   }
 
   onClickSpecimen () {
-    this.setSidebarState()
+    const self = this
+    self.setSidebarState()
   }
 
   handleSpecimenWaypoint (font, color, e) {
     const self = this
 
-    // console.log('[waypoint]', e)
     if (e && e.currentPosition === 'inside') {
       self.setState({
         active: font,
@@ -121,13 +123,11 @@ class Index extends React.Component {
           ref="sidebar"
           show={ self.state.sidebar }
           onClickSidebar={ self.onClickSpecimen }
-          onSwipedLeft={ self.props.onSwipedLeftSidebar }
-          onSwipedRight={ self.props.onSwipedRightSidebar }
+          onSwipedLeft={ self.onSwipedLeftSidebar }
+          onSwipedRight={ self.onSwipedRightSidebar }
           font={ self.state.active }
+          viewport={ self.state.viewport }
           backgroundColor={ self.state.backgroundColor }>
-
-          <div className="fixed top-0 left-0 bg-purple p2 white">{ self.state.sidebar.toString() }</div>
-
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 
           <div className="clearfix" id="mplus1p">

@@ -9,9 +9,16 @@ class SidebarColophon extends React.Component {
     var data = self.props.data
     var font = data.fonts[self.props.font]
     var desc = ''
+    var sidebarStyles = {}
 
     var fontNameEn = font.name.ja !== font.name.en ? <span lang="en" className="block font-weight-400 muted">{ font.name.en }</span> : <span className="block speak-none">&nbsp;</span>
     var fontDesignerNameEn = font.designer.name.ja !== font.designer.name.en ? <span lang="en" className="muted"> { font.designer.name.en }</span> : ''
+
+    if (self.props.viewport.width > self.props.sidebarMaxWidth) {
+      sidebarStyles.left = 0
+    } else {
+      sidebarStyles.left = (self.props.show ? 25 : 83.3333333) + '%'
+    }
 
     // TODO switch to toggle
     if (font.description) {
@@ -28,17 +35,18 @@ class SidebarColophon extends React.Component {
           <div className="col-10 md-col-8 lg-col-9">{ self.props.children }</div>
           <div className="col-12 md-col-4 lg-col-3 absolute md-relative top-0 right-0 height-100 md-height-auto">
             <div ref="sidebar" className="col-9 md-col-12 right height-100 absolute md-relaitve transition-sidebar"
-                 style={{
-                  //  transform: 'translateX(' + (self.props.show ? '0' : '-60') + '%)',
-                   left: (self.props.show ? 25 : 83.3333333) + '%'
-                 }}>
+                 style={ sidebarStyles }>
             <Sticky style={{ zIndex: 10, height: 0 }} onClick={ self.props.onClickSidebar }>
             {/* bottomOffset could be set to this computed height */}
               <div className={ 'bg-' + self.props.backgroundColor }>
-              <Swipeable onSwipedLeft={ self.props.onSwipedLeftSidebar } onSwipedRight={ self.props.onSwipedRightSidebar }>
+              <Swipeable
+                onSwipedLeft={ self.props.onSwipedLeft }
+                onSwipedRight={ self.props.onSwipedRight }>
               <div className="right col-12 md-col-12 ds-sidebar md-ds-none">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
-                <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-darken-1' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') } style={{ height: 100 + 'vh' }}>
+                <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-darken-1' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') }
+                     style={{ height: 100 + 'vh' }}>
+
                   <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
 
                   {/* Fixes heights so the changing content is less jarring */}
@@ -79,7 +87,13 @@ class SidebarColophon extends React.Component {
 
 SidebarColophon.defaultProps = {
   backgroundColor: 'silver',
-  onClickSidebar: false
+  onClickSidebar: false,
+  onSwipedLeft: false,
+  onSwipedRight: false,
+  viewport: {
+    width: 1024,
+    height: 768
+  }
 }
 
 export default SidebarColophon
