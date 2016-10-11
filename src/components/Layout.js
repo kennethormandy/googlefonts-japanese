@@ -22,21 +22,6 @@ class Layout extends React.Component {
   componentDidMount () {
     ga.initialize(data.service.analytics)
     ga.pageview(window.location.pathname.toString())
-
-    // Specimen
-    Object.keys(data.fonts).map((index) => {
-      var font = data.fonts[index]
-      if (font.published !== false) {
-        console.log('loading ' + index)
-        loadCSS('http://fonts.googleapis.com/earlyaccess/' + index + '.css')
-      }
-    })
-
-    // Non-critical UI
-    // TODO Check on existing hosted version
-    // although I’m using a fairly heavily subset version here
-    loadCSS('/css/notosansmono.css')
-
   }
 
   render () {

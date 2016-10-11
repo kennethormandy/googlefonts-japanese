@@ -1,6 +1,8 @@
 import 'es6-shim'
 import app from 'ampersand-app'
+import _map from 'lodash.map'
 import { loadCSS } from 'fg-loadcss'
+import data from './data'
 import Router from './router'
 
 // CSS
@@ -25,6 +27,21 @@ window.app = app.extend({
 
     this.router = new Router()
     this.router.history.start()
+
+
+    // Specimen
+    _map(Object.keys(data.fonts), function (index) {
+      var font = data.fonts[index]
+      if (font.load !== false) {
+        console.log('loading ' + index)
+        loadCSS('http://fonts.googleapis.com/earlyaccess/' + index + '.css')
+      }
+    })
+
+    // Non-critical UI
+    // TODO Check on existing hosted version
+    // although I’m using a fairly heavily subset version here
+    loadCSS('/css/notosansmono.css')
   }
 })
 
