@@ -1,32 +1,31 @@
 {
-  "name": "Googleの日本語フォント",
-  "title": "Googleの日本語フォント",
+  "name": "Google Fonts + 日本語 – 早期アクセス",
+  "title": "Google Fonts + 日本語 – 早期アクセス",
   "description": "As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts Early Access.",
   "url": "http://example.com",
   "baseurl": "",
   "action": "http://example.com",
   "og": {
-    "title": "Open Graph title",
-    "description": "Open Graph description"
+    "title": "Google Fonts + 日本語 – 早期アクセス",
+    "description": "As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts Early Access.",
   },
   "service": {
-    "analytics": false,
-    "mailchimp": "//losttype.us2.list-manage.com/subscribe/post?u=03a53a0acb15f9425c135760f&amp;id=8e91cfe1e8"
+    "analytics": false
   },
   "social": {
     "twitter": "googlefonts",
     "github": "googlefonts"
   },
   "distributor": {
-    "name": "The Lost Type Co-op",
-    "twitter": "losttypecoop",
-    "instagram": "losttypecoop",
-    "url": "http://losttype.com"
+    "name": "Google Fonts",
+    "twitter": "googlefonts",
+    "instagram": "google",
+    "url": "https://fonts.google.com"
   },
   "author": {
-    "name": "Author Name",
-    "twitter": "example",
-    "instagram": "example",
-    "url": "http://example.com"
+    "name": "Friends of Google Fonts",
+    "twitter": "googlefonts",
+    "instagram": "googlefonts",
+    "url": "https://fonts.google.com"
   }
 }
