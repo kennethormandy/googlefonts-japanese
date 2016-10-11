@@ -10,6 +10,7 @@ class SidebarColophon extends React.Component {
     var font = data.fonts[self.props.font]
     var desc = ''
     var quote = ''
+    var codeBlock = ''
     var sidebarStyles = {}
 
     var fontNameEn = font.name.ja !== font.name.en ? <span lang="en" className="block font-weight-400 muted">{ font.name.en }</span> : <span className="block speak-none">&nbsp;</span>
@@ -20,6 +21,8 @@ class SidebarColophon extends React.Component {
     } else {
       sidebarStyles.left = (self.props.show ? 25 : 83.3333333) + '%'
     }
+
+    console.log('code block', self.props.showCodeBlock)
 
     // TODO switch to toggle
     // There are no translated versions of the descriptions right now
@@ -34,8 +37,6 @@ class SidebarColophon extends React.Component {
       desc = <p className="m0" lang="en">{ font.description.en }</p>
     }
 
-    console.log(font.name, font.designer.quote.ja)
-
     if (font.designer.quote.ja || font.designer.quote.en) {
       quote = <blockquote>
           <p className="md-h3 lg-h2">{ font.designer.quote.ja }</p>
@@ -44,6 +45,19 @@ class SidebarColophon extends React.Component {
             <span>{ font.designer.name.ja }</span> <span className="muted-dark" lang="en">{ fontDesignerNameEn }</span>
           </footer>
         </blockquote>
+    }
+
+    if (self.props.showCodeBlock) {
+      codeBlock = <div>
+        <div className="mb2">
+          <abbr className="muted border-none">HTML</abbr>
+          <CodeBlock language="html">{ '\<link href\=\"http\:\/\/fonts\.googleapis\.com\/earlyaccess\/' + self.props.font + '\.css\" \/\>' }</CodeBlock>
+        </div>
+        <div className="mb2">
+          <abbr className="muted border-none">CSS</abbr>
+          <CodeBlock language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: ' + self.props.font + '\; \}' }</CodeBlock>
+        </div>
+      </div>
     }
 
     return (
@@ -61,7 +75,7 @@ class SidebarColophon extends React.Component {
                 onSwipedRight={ self.props.onSwipedRight }>
               <div className="right col-12 md-col-12 ds-sidebar md-ds-none">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
-                <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-darken-1' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') }
+                <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-white' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') }
                      style={{ height: 100 + 'vh' }}>
 
                   <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
@@ -72,14 +86,7 @@ class SidebarColophon extends React.Component {
 
                   <div style={{ minHeight: 12 + 'em' }} className="mb3">{ quote }</div>
 
-                  <div className="mb2">
-                  <abbr className="muted border-none">HTML</abbr>
-                  <CodeBlock language="html">{ '\<link href\=\"http\:\/\/fonts\.googleapis\.com\/earlyaccess\/' + self.props.font + '\.css\" \/\>' }</CodeBlock>
-                  </div>
-                  <div className="mb2">
-                  <abbr className="muted border-none">CSS</abbr>
-                  <CodeBlock language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: ' + self.props.font + '\; \}' }</CodeBlock>
-                  </div>
+                  { codeBlock }
 
                 </div>
                 </div>
@@ -100,6 +107,7 @@ SidebarColophon.defaultProps = {
   onClickSidebar: false,
   onSwipedLeft: false,
   onSwipedRight: false,
+  showCodeBlock: true,
   viewport: {
     width: 1024,
     height: 768
