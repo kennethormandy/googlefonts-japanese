@@ -54,7 +54,7 @@ class SidebarColophon extends React.Component {
         </div>
         <div className="mb2">
           <abbr className="muted border-none">CSS</abbr>
-          <CodeBlock language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: ' + self.props.font + '\; \}' }</CodeBlock>
+          <CodeBlock language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: \"' + (font.name.ja !== font.name.en ? font.name.en : font.name.ja) + '\"\; \}' }</CodeBlock>
         </div>
       </div>
     }
