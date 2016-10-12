@@ -60,13 +60,6 @@ class Footer extends React.Component {
                     <a className="" href={ data.authors['kennethormandy'].url }>{ data.authors['kennethormandy'].name }</a>
                     <p className="mt0">{ data.authors['kennethormandy'].credit }</p>
                   </div>
-                  <div className="col-12 sm-col-4 px1">
-                    <a href="https://fonts.google.com">Google Fonts</a>
-                    <ul className="list-style-none m0 p0">
-                      <li><a className="border-none" href={ data.authors['yuinchien'].url }>{ data.authors['yuinchien'].name }, art direction</a></li>
-                      <li><a className="border-none" href={ data.authors['lassefister'].url }>{ data.authors['lassefister'].name }, font mastering</a></li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>

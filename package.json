@@ -6,7 +6,14 @@
   "repository": "https://github.com/kennethormandy/react-example",
   "author": "Kenneth Ormandy <hello@kennethormandy.com> (http://kennethormandy.com)",
   "private": true,
-  "contributors": [],
+  "contributors": [
+    "Mariko Takagi (http://www.mikan.de)",
+    "Kenneth Ormandy <hello@kennethormandy.com>",
+    "Dave Crossland",
+    "Yuin Chien",
+    "Omer Ziv",
+    "Lasse Fister"
+  ],
   "dependencies": {
     "@googlefonts/badge": "git+https://github.com/kennethormandy/googlefonts-badge.git#v0.6.0",
     "ampersand-app": "1.0.4",
