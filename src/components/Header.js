@@ -1,6 +1,7 @@
 import React from 'react'
 import _map from 'lodash.map'
 import FitText from '../vendor/react-fittext'
+import FontList from '../components/FontList'
 
 class HeaderColumn extends React.Component {
   render () {
@@ -26,40 +27,6 @@ class Header extends React.Component {
     const self = this
     const data = self.props.data
 
-    var typefaceList = _map(Object.keys(data.fonts), function (index) {
-      var font = data.fonts[index]
-      var fontWeight =  400
-      var fontString = 'アあ '
-      var fontSizeAdjust = typeof font.font_size_adjust === 'undefined' ? 1 : (1 / font.font_size_adjust)
-
-      console.log(font.font_size_adjust, fontSizeAdjust)
-
-      if (font.published !== false && font.designer) {
-        if (font.hiragana === false) {
-          fontString = 'ア  '
-        }
-        if (font.kanji === true) {
-          fontString = 'アあ安'
-        }
-
-        return (
-          <li className="col-12 sm-col-6 md-col-4 px2 m0" key={ 'header_' + index }><a className="block py2 border-none" href={ '#' + index }>
-            <div className="flex items-center">
-              <div className="h1 col-4 sm-col-3 md-col-5 center maroon">
-                <FitText compressor={ 0.33 * fontSizeAdjust } minFontSize={ 24 }>
-                  <div className={ 'break-none wf-' + index + ' font-weight-' + fontWeight } style={{ fontSize: (font.font_size_adjust || 1) + 'em' }}>{ fontString }</div>
-                </FitText>
-              </div>
-              <div className="flex-auto line-height-2 pl2">
-                <span>{ font.name.ja } <span lang="en" className="muted-dark">{ font.name.en !== font.name.ja ? font.name.en : '' }</span></span>
-                <span className="block mt1">{ font.designer.name.ja } <span lang="en" className="muted-dark">{ font.designer.name.en !== font.designer.name.ja ? font.designer.name.en : '' }</span></span>
-              </div>
-            </div>
-          </a></li>
-        )
-      }
-    })
-
     return (
       <div className="bg-white black font-family-base relative pb4 bg-pink black" style={{ zIndex: 100 }}>
         <header className="mx-auto max-width-4 mb4 px1 md-px2">
@@ -84,7 +51,7 @@ class Header extends React.Component {
           </div>
         </header>
         <div className="mx-auto max-width-6">
-          <ul className="flex flex-wrap m0 p0 list-style-none items-center">{ typefaceList }</ul>
+          <FontList className="sm-col-6 md-col-4 px2" textAlignment="center" { ...self.props } />
         </div>
       </div>
     )
