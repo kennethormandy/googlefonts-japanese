@@ -37,8 +37,6 @@
 // @import "~basscss-sass/scss/highlight-dark";
 
 @import "~utility-opentype/css/utility-opentype.css";
-// @import "module/utility-opentype-off.scss";
-// @import "~draft-js/dist/Draft.css";
 
 // Base
 @import "base";
@@ -53,7 +51,7 @@
 @import "module/color";
 @import "module/specimen";
 @import "module/transform";
-@import "module/syntax-highlighting";
+// @import "module/syntax-highlighting";
 
 // State
 //
