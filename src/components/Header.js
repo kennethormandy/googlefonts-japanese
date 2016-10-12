@@ -30,6 +30,9 @@ class Header extends React.Component {
       var font = data.fonts[index]
       var fontWeight =  400
       var fontString = 'アあ '
+      var fontSizeAdjust = typeof font.font_size_adjust === 'undefined' ? 1 : (1 / font.font_size_adjust)
+
+      console.log(font.font_size_adjust, fontSizeAdjust)
 
       if (font.published !== false && font.designer) {
         if (font.hiragana === false) {
@@ -43,8 +46,8 @@ class Header extends React.Component {
           <li className="col-12 sm-col-6 md-col-4 px2 m0" key={ 'header_' + index }><a className="block py2 border-none" href={ '#' + index }>
             <div className="flex items-center">
               <div className="h1 col-4 sm-col-3 md-col-5 center maroon">
-                <FitText compressor={0.33} minFontSize={24}>
-                  <div className={ 'break-none wf-' + index + ' font-weight-' + fontWeight }>{ fontString }</div>
+                <FitText compressor={ 0.33 * fontSizeAdjust } minFontSize={ 24 }>
+                  <div className={ 'break-none wf-' + index + ' font-weight-' + fontWeight } style={{ fontSize: (font.font_size_adjust || 1) + 'em' }}>{ fontString }</div>
                 </FitText>
               </div>
               <div className="flex-auto line-height-2 pl2">
