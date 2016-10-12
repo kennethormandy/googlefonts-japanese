@@ -19,32 +19,61 @@
 			}
 		}
 	},
-	"sawarabimincho": {
+	"mplus1p": {
 		"feature_nav": true,
-		"fallback": "serif",
+		"fallback": "sans-serif",
 		"license": "OFL",
-		"glyph_count": 3589,
+		"glyph_count": 8676,
 		"kanji": true,
 		"katakana": true,
 		"hiragana": true,
-		"google_fonts_id": "Sawarabi+Mincho",
+		"google_fonts_id": "Mplus+1p",
 		"name": {
-			"ja": "さわらび明朝",
-			"en": "Sawarabi Mincho"
+			"ja": "M+ 1p",
+			"en": "M+ 1p"
 		},
 		"description": {
 			"ja": false,
-			"en": "Sawarabi Mincho (さわらび明朝) is a Japanese font by mshio. With a delicate and beautiful design, it is suitable for text and headline usage. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 2,250 kanji are available in this version, and the project is under active development."
+			"en": "The M+ Outline Fonts Project develops a superfamily set of several families: 4 families with proportional Latin, 3 with fixed-halfwidth Latin, and 2 with fixed-fullwidth Japanese Kana variations. This set, M+ 1p, are fonts with proportional Latin and fixed-fullwidth Japanese, and 7 weights from Thin to Black. The Kana have contrasting straight lines and hand-drawn curves. The Latin is aimed to be a sophisticated and relaxed design."
 		},
 		"designer": {
 			"url": false,
 			"name": {
-				"ja": "mishio",
-				"en": "mishio"
+				"ja": "森下浩司",
+				"en": null
 			},
 			"quote": {
-				"ja": "本文用のフォントとして使いやすくなるようにイメージしています。",
-				"en": "Designed and optimised as text type."
+				"ja": "日常的に使うための飽きのこない、それでいてちょっと気になるデザイン。",
+				"en": null
+			}
+		}
+	},
+	"roundedmplus1c": {
+		"feature_nav": false,
+		"fallback": "sans-serif",
+		"license": "OFL",
+		"glyph_count": 8546,
+		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
+		"google_fonts_id": "Rounded+Mplus+1c",
+		"description": {
+			"ja": false,
+			"en": "The Rounded M+ Project develops versions of the M+ Fonts with rounded terminals. This set, Rounded M+ 1c, are fonts with proportional Latin and fixed-fullwidth Japanese, and 7 weights from Thin to Black. The Kana have traditional slightly curved strokes. The Latin is optimized to be well-proportioned for text typesetting."
+		},
+		"name": {
+			"ja": "Rounded M+ 1c",
+			"en": "Rounded M+ 1c"
+		},
+		"designer": {
+			"url": false,
+			"name": {
+				"ja": "自家製フォント工房",
+				"en": null
+			},
+			"quote": {
+				"ja": "明るく伸びやかなデザインを心がけた。",
+				"en": "I intended a design that is openminded and relaxed."
 			}
 		}
 	},
@@ -108,32 +137,61 @@
 			}
 		}
 	},
-	"mplus1p": {
+	"sawarabimincho": {
 		"feature_nav": true,
-		"fallback": "sans-serif",
+		"fallback": "serif",
 		"license": "OFL",
-		"glyph_count": 8676,
+		"glyph_count": 3589,
 		"kanji": true,
 		"katakana": true,
 		"hiragana": true,
-		"google_fonts_id": "Mplus+1p",
+		"google_fonts_id": "Sawarabi+Mincho",
 		"name": {
-			"ja": "M+ 1p",
-			"en": "M+ 1p"
+			"ja": "さわらび明朝",
+			"en": "Sawarabi Mincho"
 		},
 		"description": {
 			"ja": false,
-			"en": "The M+ Outline Fonts Project develops a superfamily set of several families: 4 families with proportional Latin, 3 with fixed-halfwidth Latin, and 2 with fixed-fullwidth Japanese Kana variations. This set, M+ 1p, are fonts with proportional Latin and fixed-fullwidth Japanese, and 7 weights from Thin to Black. The Kana have contrasting straight lines and hand-drawn curves. The Latin is aimed to be a sophisticated and relaxed design."
+			"en": "Sawarabi Mincho (さわらび明朝) is a Japanese font by mshio. With a delicate and beautiful design, it is suitable for text and headline usage. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 2,250 kanji are available in this version, and the project is under active development."
 		},
 		"designer": {
 			"url": false,
 			"name": {
-				"ja": "森下浩司",
-				"en": null
+				"ja": "mishio",
+				"en": "mishio"
 			},
 			"quote": {
-				"ja": "日常的に使うための飽きのこない、それでいてちょっと気になるデザイン。",
-				"en": null
+				"ja": "本文用のフォントとして使いやすくなるようにイメージしています。",
+				"en": "Designed and optimised as text type."
+			}
+		}
+	},
+	"sawarabigothic": {
+		"feature_nav": true,
+		"fallback": "sans-serif",
+		"license": "OFL",
+		"glyph_count": 6945,
+		"kanji": true,
+		"katakana": true,
+		"hiragana": true,
+		"google_fonts_id": "Sawarabi+Gothic",
+		"name": {
+			"ja": "さわらびゴシック",
+			"en": "Sawarabi Gothic"
+		},
+		"description": {
+			"ja": false,
+			"en": "Sawarabi Gothic (さわらびゴシック) is a Japanese font by mshio. Carefully designed for high legibility, it works well in small text sizes. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 4,469 kanji are available in this version, and the project is under active development."
+		},
+		"designer": {
+			"url": false,
+			"name": {
+				"ja": "mishio",
+				"en": "mishio"
+			},
+			"quote": {
+				"ja": "本文用のフォントとして使いやすくなるようにイメージしています。",
+				"en": "Designed and optimised as text type."
 			}
 		}
 	},
@@ -197,35 +255,6 @@
 			}
 		}
 	},
-	"sawarabigothic": {
-		"feature_nav": true,
-		"fallback": "sans-serif",
-		"license": "OFL",
-		"glyph_count": 6945,
-		"kanji": true,
-		"katakana": true,
-		"hiragana": true,
-		"google_fonts_id": "Sawarabi+Gothic",
-		"name": {
-			"ja": "さわらびゴシック",
-			"en": "Sawarabi Gothic"
-		},
-		"description": {
-			"ja": false,
-			"en": "Sawarabi Gothic (さわらびゴシック) is a Japanese font by mshio. Carefully designed for high legibility, it works well in small text sizes. It already has many hiragana, katakana, ruled lines, and so on, but it does not yet have enough kanji glyphs. Only 4,469 kanji are available in this version, and the project is under active development."
-		},
-		"designer": {
-			"url": false,
-			"name": {
-				"ja": "mishio",
-				"en": "mishio"
-			},
-			"quote": {
-				"ja": "本文用のフォントとして使いやすくなるようにイメージしています。",
-				"en": "Designed and optimised as text type."
-			}
-		}
-	},
 	"notosansjapanese": {
 		"load": false,
 		"published": true,
@@ -281,35 +310,7 @@
 			}
 		}
 	},
-	"roundedmplus1c": {
-		"feature_nav": false,
-		"fallback": "sans-serif",
-		"license": "OFL",
-		"glyph_count": 8546,
-		"kanji": true,
-		"katakana": true,
-		"hiragana": true,
-		"google_fonts_id": "Rounded+Mplus+1c",
-		"description": {
-			"ja": false,
-			"en": "The Rounded M+ Project develops versions of the M+ Fonts with rounded terminals. This set, Rounded M+ 1c, are fonts with proportional Latin and fixed-fullwidth Japanese, and 7 weights from Thin to Black. The Kana have traditional slightly curved strokes. The Latin is optimized to be well-proportioned for text typesetting."
-		},
-		"name": {
-			"ja": "Rounded M+ 1c",
-			"en": "Rounded M+ 1c"
-		},
-		"designer": {
-			"url": false,
-			"name": {
-				"ja": "自家製フォント工房",
-				"en": null
-			},
-			"quote": {
-				"ja": "明るく伸びやかなデザインを心がけた。",
-				"en": "I intended a design that is openminded and relaxed."
-			}
-		}
-	},
+
 	"harenosora": {
 		"load": false,
 		"published": false,
