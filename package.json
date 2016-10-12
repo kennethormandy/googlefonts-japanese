@@ -15,7 +15,7 @@
     "Lasse Fister"
   ],
   "dependencies": {
-    "@googlefonts/badge": "git+https://github.com/kennethormandy/googlefonts-badge.git#v0.6.1",
+    "@googlefonts/badge": "git+https://github.com/kennethormandy/googlefonts-badge.git#v0.6.2",
     "ampersand-app": "1.0.4",
     "ampersand-router": "3.0.2",
     "basscss-sass": "4.0.0",
