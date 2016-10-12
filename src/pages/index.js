@@ -135,28 +135,32 @@ class Index extends React.Component {
 
           <div className="clearfix" id="mplus1p">
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'mplus1p', {
-              backgroundColor: 'blue'
+              backgroundColor: 'blue',
+              codeBlock: true
             })} />
             <SpecimenMPlus1p { ...self.props } />
           </div>
 
           <div className="clearfix" id="roundedmplus1c">
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'roundedmplus1c', {
-              backgroundColor: 'navy'
+              backgroundColor: 'navy',
+              codeBlock: true
             })} />
             <SpecimenRoundedMPlus1c { ...self.props } />
           </div>
 
           <div className="clearfix" id="hannari">
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'hannari', {
-              backgroundColor: 'red'
+              backgroundColor: 'red',
+              codeBlock: true
             })} />
             <SpecimenHannari { ...self.props } />
           </div>
 
           <div className="clearfix" id="kokoro" style={{ minHeight: 100 + 'vh' }}>
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'kokoro', {
-              backgroundColor: 'green'
+              backgroundColor: 'green',
+              codeBlock: true
             })} />
             <SpecimenKokoro { ...self.props } />
           </div>
@@ -164,7 +168,8 @@ class Index extends React.Component {
           <div className="clearfix" id="sawarabimincho">
             {/* TODO Code samples need to be for individual, not specimen */}
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', {
-              backgroundColor: 'gray'
+              backgroundColor: 'gray',
+              codeBlock: true
             })} />
             <SpecimenSawarabi { ...self.props } />
           </div>
@@ -172,28 +177,32 @@ class Index extends React.Component {
           <div className="clearfix" id="sawarabigothic">
             {/* TODO Code samples need to be for individual, not specimen */}
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', {
-              backgroundColor: 'gray'
+              backgroundColor: 'gray',
+              codeBlock: true
             })} />
             <SpecimenSawarabi { ...self.props } />
           </div>
 
           <div className="clearfix" id="nikukyu">
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nikukyu', {
-              backgroundColor: 'olive'
+              backgroundColor: 'olive',
+              codeBlock: true
             })} />
             <SpecimenNikukyu { ...self.props } />
           </div>
 
           <div className="clearfix" id="nicomoji">
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomoji', {
-              backgroundColor: 'black'
+              backgroundColor: 'black',
+              codeBlock: true
             })} />
             <SpecimenNicoMoji { ...self.props } />
           </div>
 
           <div className="clearfix" id="notosansjapanese">
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', {
-              backgroundColor: 'fuchsia'
+              backgroundColor: 'fuchsia',
+              codeBlock: true
             })} />
             <SpecimenNotoSansJapanese { ...self.props } />
           </div>

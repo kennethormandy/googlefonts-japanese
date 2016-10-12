@@ -22,8 +22,6 @@ class SidebarColophon extends React.Component {
       sidebarStyles.left = (self.props.show ? 25 : 83.3333333) + '%'
     }
 
-    console.log('code block', self.props.showCodeBlock)
-
     // TODO switch to toggle
     // There are no translated versions of the descriptions right now
     // if (font.description) {
@@ -47,7 +45,7 @@ class SidebarColophon extends React.Component {
         </blockquote>
     }
 
-    if (self.props.showCodeBlock) {
+    if (self.props.showCodeBlock !== false) {
       codeBlock = <div>
         <div className="mb2">
           <abbr className="muted border-none">HTML</abbr>
