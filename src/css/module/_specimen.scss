@@ -160,3 +160,25 @@
     box-shadow: none;
   }
 }
+
+// Height for font list
+//
+// TODO This would make more sense inline since it truly
+// is a one-off, but to take care of the media queries
+// it’s easier to include it as a class right now.
+// Would probably also make more sense to use a `min-height`
+// media query instead of a `min-width` one.
+//
+// Styleguide: specimen.height
+.height-fontlist-item {
+  height: 5rem;
+  @media #{ $breakpoint-sm } {
+    height: 6rem;
+  }
+  @media #{ $breakpoint-md } {
+    height: 7rem;
+  }
+  @media #{ $breakpoint-lg } {
+    height: 8rem;
+  }
+}

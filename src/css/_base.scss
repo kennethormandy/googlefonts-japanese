@@ -416,6 +416,42 @@ a {
   max-width: $width-6;
 }
 
+.md-max-width-4 {
+  @media #{ $breakpoint-md } {
+    max-width: $width-4;
+  }
+}
+
+.md-max-width-5 {
+  @media #{ $breakpoint-md } {
+    max-width: $width-5;
+  }
+}
+
+.md-max-width-6 {
+  @media #{ $breakpoint-md } {
+    max-width: $width-6;
+  }
+}
+
+.lg-max-width-4 {
+  @media #{ $breakpoint-lg } {
+    max-width: $width-4;
+  }
+}
+
+.lg-max-width-5 {
+  @media #{ $breakpoint-lg } {
+    max-width: $width-5;
+  }
+}
+
+.lg-max-width-6 {
+  @media #{ $breakpoint-lg } {
+    max-width: $width-6;
+  }
+}
+
 @media #{ $breakpoint-sm } {
   .sm-relative { position: relative }
   .sm-absolute { position: absolute }
