@@ -208,7 +208,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix">
-            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosans', {
+            <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'footer', {
               backgroundColor: 'white',
               codeBlock: false
             })} />

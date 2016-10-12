@@ -12,9 +12,10 @@ class SidebarColophon extends React.Component {
     var quote = ''
     var codeBlock = ''
     var sidebarStyles = {}
+    var fontNameHeading = font.name.ja
 
-    var fontNameEn = font.name.ja !== font.name.en ? <span lang="en" className="block font-weight-400 muted">{ font.name.en }</span> : <span className="block speak-none">&nbsp;</span>
-    var fontDesignerNameEn = font.designer.name.ja !== font.designer.name.en ? <span lang="en" className="muted"> { font.designer.name.en }</span> : ''
+    var fontNameEn = (font.name.ja !== font.name.en) ? <span lang="en" className="block font-weight-400 muted">{ font.name.en }</span> : <span className="block speak-none">&nbsp;</span>
+    var fontDesignerNameEn = (font.designer.name.ja) !== font.designer.name.en ? <span lang="en" className="muted"> { font.designer.name.en }</span> : ''
 
     if (self.props.viewport.width > self.props.sidebarMaxWidth) {
       sidebarStyles.left = 0
@@ -76,7 +77,7 @@ class SidebarColophon extends React.Component {
                 <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-white' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') }
                      style={{ height: 100 + 'vh' }}>
 
-                  <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ font.name.ja }{ fontNameEn }</h3>
+                  <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ fontNameHeading }{ fontNameEn }</h3>
 
                   {/* Fixes heights so the changing content is less jarring */}
                   {/* TODO might need to change this minHeight based on CSS breakpoints */}

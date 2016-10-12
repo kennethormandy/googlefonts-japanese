@@ -257,30 +257,23 @@
 			}
 		}
 	},
-	"notosans": {
+	"footer": {
 		"load": false,
 		"published": false,
-		"feature_nav": true,
-		"fallback": "sans-serif",
-		"license": "OFL",
-		"glyph_count": false,
-		"kanji": true,
-		"katakana": true,
-		"hiragana": true,
-		"google_fonts_id": "Noto+Sans+Japanese",
+		"feature_nav": false,
 		"name": {
-			"ja": "Noto Sans",
-			"en": "Noto Sans"
+			"ja": "Google Fonts + 日本語 早期アクセス",
+			"en": "Google Fonts + Japanese Early Access"
 		},
 		"description": {
 			"ja": false,
 			"en": "Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. Here, the Noto Sans is used to display both Japanese and English."
 		},
 		"designer": {
-			"url": "https://www.google.com/get/noto/",
+			"url": false,
 			"name": {
-				"ja": "Google",
-				"en": "Google"
+				"ja": false,
+				"en": false
 			},
 			"quote": {
 				"ja": false,
