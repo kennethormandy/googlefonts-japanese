@@ -48,7 +48,7 @@ class Footer extends React.Component {
             <div className="col-12 md-col-8">
               <div className="clearfix mb4">
                 <h3 className="h3 mt0">Featured Typefaces</h3>
-                <FontList color="black" maxFontSize={48} textAlignment="left" firstColumnLgCol={3} { ...self.props } />
+                <FontList color="red" maxFontSize={48} textAlignment="left" firstColumnLgCol={3} { ...self.props } />
               </div>
               <div className="clearfix">
                 <h3 className="h3">Made by Friends of Google Fonts</h3>

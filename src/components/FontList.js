@@ -52,7 +52,7 @@ class FontList extends React.Component {
 
 FontList.defaultProps = {
   data: {},
-  color: 'maroon',
+  color: 'black',
   maxFontSize: 120,
   minFontSize: 24,
   firstColumnLgCol: 5, // TODO This this a quick fix, could be much nicer. Fixes column width on footer
