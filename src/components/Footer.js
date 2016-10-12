@@ -33,7 +33,7 @@ class Footer extends React.Component {
       <div className="clearfix bg-white bg-fallback-white py2 md-py4" style={{ minHeight: 60 + 'vh' }}>
         <div className="mx-auto max-width-5 px2 sm-px3">
           <div className="md-flex flex-wrap">
-            <div className="col-12 lg-col-4 md-pr4 md-mb4 lg-mt4">
+            <div className="col-12 lg-col-4 md-pr4 mb4 lg-mt4">
               <p>ぜひ定期的にチェックしてください。</p>
               <p>このページでは、早期アクセスに追加された新しいフォントのサンプルをご利用いただけます。また、Google での試験運用や技術についてお知らせすることもあります。</p>
               <p lang="en">Check back often!</p>
