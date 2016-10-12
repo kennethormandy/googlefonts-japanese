@@ -34,7 +34,7 @@ class Footer extends React.Component {
         <div className="mx-auto max-width-5 px2 sm-px3">
           <div className="md-flex flex-wrap">
             <div className="col-12 lg-col-4 md-pr4 md-mb4 lg-mt4">
-              <p>ぜひ定期的にチェックしてください</p>
+              <p>ぜひ定期的にチェックしてください。</p>
               <p>このページでは、早期アクセスに追加された新しいフォントのサンプルをご利用いただけます。また、Google での試験運用や技術についてお知らせすることもあります。</p>
               <p lang="en">Check back often!</p>
               <p lang="en">We’ll update this page with samples as new fonts are added to Early Access, and provide information about our own experiments and technology when possible.</p>
