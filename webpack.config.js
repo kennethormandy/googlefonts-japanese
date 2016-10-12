@@ -25,6 +25,7 @@ var hjsConfig = getConfig({
         html: '<div id="js-root" class="no-js">' + (page ? ReactDOMServer.renderToString(React.createElement(Layout, {}, React.createElement(page))) : '') + '</div>',
         title: data.title,
         lang: 'en',
+        head: '<link rel="icon" href="https://www.gstatic.com/images/branding/product/ico/google_fonts_lodp.ico" type="image/x-icon">',
         metaTags: {
           description: data.description,
           'og:url': data.url,
