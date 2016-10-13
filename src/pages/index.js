@@ -7,11 +7,12 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import SidebarColophon from '../components/SidebarColophon'
 
-import SpecimenSawarabi from '../specimens/Sawarabi'
 import SpecimenMPlus1p from '../specimens/MPlus1p'
 import SpecimenRoundedMPlus1c from '../specimens/RoundedMPlus1c'
 import SpecimenHannari from '../specimens/Hannari'
 import SpecimenKokoro from '../specimens/Kokoro'
+import SpecimenSawarabiGothic from '../specimens/SawarabiGothic'
+import SpecimenSawarabiMincho from '../specimens/SawarabiMincho'
 import SpecimenNikukyu from '../specimens/Nikukyu'
 import SpecimenNicoMoji from '../specimens/NicoMoji'
 import SpecimenNotoSansJapanese from '../specimens/NotoSansJapanese'
@@ -166,21 +167,19 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="sawarabimincho">
-            {/* TODO Code samples need to be for individual, not specimen */}
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', {
               backgroundColor: 'gray',
               codeBlock: true
             })} />
-            <SpecimenSawarabi { ...self.props } />
+            <SpecimenSawarabiMincho { ...self.props } />
           </div>
 
           <div className="clearfix" id="sawarabigothic">
-            {/* TODO Code samples need to be for individual, not specimen */}
             <Waypoint onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', {
               backgroundColor: 'gray',
               codeBlock: true
             })} />
-            <SpecimenSawarabi { ...self.props } />
+            <SpecimenSawarabiGothic { ...self.props } />
           </div>
 
           <div className="clearfix" id="nikukyu">
