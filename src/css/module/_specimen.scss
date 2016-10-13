@@ -24,13 +24,16 @@
 
 // Styles specific to the Kokoro section
 .h0-kokoro {
-  font-size: $h1;
-  line-height: 1.25;
+  font-size: $h1 * 0.85;
+  line-height: 1.75;
+  @media #{ $breakpoint-sm } {
+    font-size: $h1 * 0.85;
+  }
   @media #{ $breakpoint-md } {
     font-size: $h1 * 1.5;
   }
   @media #{ $breakpoint-lg } {
-    font-size: $h1 * 2.2;
+    font-size: 2.75rem;
   }
 }
 
