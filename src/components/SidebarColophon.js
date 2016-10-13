@@ -47,14 +47,14 @@ class SidebarColophon extends React.Component {
     }
 
     if (self.props.showCodeBlock !== false) {
-      codeBlock = <div>
+      codeBlock = <div className="mxn2 md-mxn3">
         <div className="mb2">
-          <abbr className="muted border-none">HTML</abbr>
-          <CodeBlock language="html">{ '\<link href\=\"http\:\/\/fonts\.googleapis\.com\/earlyaccess\/' + self.props.font + '\.css\" \/\>' }</CodeBlock>
+          <abbr className="border-none h5 m0 line-height-1 pl2 md-pl3">HTML</abbr>
+          <CodeBlock rounded={ false } language="html">{ '\<link href\=\"http\:\/\/fonts\.googleapis\.com\/earlyaccess\/' + self.props.font + '\.css\" \/\>' }</CodeBlock>
         </div>
         <div className="mb2">
-          <abbr className="muted border-none">CSS</abbr>
-          <CodeBlock language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: \"' + (font.name.ja !== font.name.en ? font.name.en : font.name.ja) + '\"\; \}' }</CodeBlock>
+          <abbr className="border-none h5 m0 line-height-1 pl2 md-pl3">CSS</abbr>
+          <CodeBlock rounded={ false } language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: \"' + (font.name.ja !== font.name.en ? font.name.en : font.name.ja) + '\"\; \}' }</CodeBlock>
         </div>
       </div>
     }
