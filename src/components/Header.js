@@ -48,7 +48,7 @@ class Header extends React.Component {
             </HeaderColumn>
           </div>
         </header>
-        <div className="mx-auto mx-max-width-5 lg-max-width-6">
+        <div className="mx-auto md-max-width-5 lg-max-width-6">
           <FontList className="sm-col-6 md-col-4 px2" textAlignment="center" { ...self.props } />
         </div>
       </div>
