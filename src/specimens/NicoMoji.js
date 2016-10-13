@@ -15,7 +15,7 @@ class SpecimenNicoMoji extends React.Component {
         basePaddingX={3}
         className="bg-fallback-black green wf-nicomoji overflow-hidden">
 
-        <img src="/media/illustration-storefront-2-outlined.svg" className="col-12 block" />
+        <img src="/media/illustration-storefront-2-outlined.svg" className="col-12 block" role="presentation" alt="" />
         <div className="flex items-center px3 my3 center height-nicomojiplus blue">
           <div className="line-height-1 mt0 mb2 wf-nicomoji mx-auto col-10">
             <Keyframes loop={ true }>
@@ -28,7 +28,7 @@ class SpecimenNicoMoji extends React.Component {
             </Keyframes>
           </div>
         </div>
-        <img src="/media/illustration-storefront-3-outlined.svg" className="col-12 block" />
+        <img src="/media/illustration-storefront-3-outlined.svg" className="col-12 block" role="presentation" alt="" />
 
       </Section>
     )
