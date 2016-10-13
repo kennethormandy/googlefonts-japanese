@@ -39,7 +39,7 @@ class Footer extends React.Component {
               <p lang="en">Check back often!</p>
               <p lang="en">We’ll update this page with samples as new fonts are added to Early Access, and provide information about our own experiments and technology when possible.</p>
               <ul className="list-style-none p0 m0" lang="en">
-              <li><a href={ data.baseurl + '/contributing' } aria-label="Read more about contributing to this open source site.">Contribute</a></li>
+              <li><a href={ data.repository + '/blob/master/CONTRIBUTING.md' } aria-label="Read more about contributing to this open source site.">Contribute</a></li>
               <li className="fill-navy"><a href={ 'https://twitter.com/' + data.social.twitter }>@{ data.social.twitter } on Twitter</a></li>
               <li className="fill-navy"><a href={ 'https://github.com/' + data.social.github }>@{ data.social.github } on GitHub</a></li>
               </ul>
