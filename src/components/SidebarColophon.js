@@ -74,7 +74,7 @@ class SidebarColophon extends React.Component {
                 onSwipedRight={ self.props.onSwipedRight }>
               <div className="right col-12 md-col-12 ds-sidebar md-ds-none">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
-                <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-white' : 'bg-lighten-3') + ' ' + (self.props.backgroundColor === 'black' ? 'white' : '') }
+                <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-white' : 'bg-lighten-3') + ' ' + ((self.props.backgroundColor === 'black' || self.props.backgroundColor === 'gray') ? 'white' : '') }
                      style={{ height: 100 + 'vh' }}>
 
                   <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ fontNameHeading }{ fontNameEn }</h3>
