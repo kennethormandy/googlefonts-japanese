@@ -49,20 +49,19 @@
 @import "module/border";
 @import "module/animate";
 @import "module/color";
-@import "module/specimen";
 @import "module/transform";
 // @import "module/syntax-highlighting";
+
+// Specimen
+//
+// If you are unsure where to put your styles,
+// custom styles for specific specimens can go
+// in the `specimen` partial—this sort of acts
+// as the shame file, but still well-documented.
+// Tag @kennethormandy in your pull request.
+@import "module/specimen";
 
 // State
 //
 // Styleguide: state
 @import "state";
-
-// Shame
-//
-// If you are unsure what to do,
-// put it here and tag @kennethormandy
-// in your commit message.
-//
-// Styleguide: shame
-// @import "module/shame";

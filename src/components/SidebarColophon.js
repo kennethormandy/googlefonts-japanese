@@ -38,8 +38,8 @@ class SidebarColophon extends React.Component {
 
     if (font.designer.quote.ja || font.designer.quote.en) {
       quote = <blockquote>
-          <p className="md-h3 lg-h2">{ font.designer.quote.ja }</p>
-          <p className="muted-dark" lang="en">{ font.designer.quote.en }</p>
+          <p className="sidebar-quote">{ font.designer.quote.ja }</p>
+          <p className="xsh-hide smh-hide muted-dark" lang="en">{ font.designer.quote.en }</p>
           <footer>
             <span>{ font.designer.name.ja }</span> <span className="muted-dark" lang="en">{ fontDesignerNameEn }</span>
           </footer>
@@ -49,11 +49,11 @@ class SidebarColophon extends React.Component {
     if (self.props.showCodeBlock !== false) {
       codeBlock = <div className="mxn2 md-mxn3">
         <div className="mb2">
-          <abbr className="border-none h5 m0 line-height-1 pl2 md-pl3">HTML</abbr>
+          <abbr className="xsh-hide smh-hide border-none h5 m0 line-height-1 pl2 md-pl3">HTML</abbr>
           <CodeBlock rounded={ false } language="html">{ '\<link href\=\"http\:\/\/fonts\.googleapis\.com\/earlyaccess\/' + self.props.font + '\.css\" \/\>' }</CodeBlock>
         </div>
         <div className="mb2">
-          <abbr className="border-none h5 m0 line-height-1 pl2 md-pl3">CSS</abbr>
+          <abbr className="xsh-hide smh-hide border-none h5 m0 line-height-1 pl2 md-pl3">CSS</abbr>
           <CodeBlock rounded={ false } language="css">{ '\.wf-' + self.props.font + ' \{ font-family\: \"' + (font.name.ja !== font.name.en ? font.name.en : font.name.ja) + '\"\; \}' }</CodeBlock>
         </div>
       </div>
@@ -75,15 +75,15 @@ class SidebarColophon extends React.Component {
               <div className="right col-12 md-col-12 ds-sidebar md-ds-none">
                 <div className={ 'h5 md-h4 animate-bg bg-' + self.props.backgroundColor } style={{ height: 100 + 'vh' }}>
                 <div className={ 'p2 md-p3 animate-bg transition-color transition-sidebar ' + (self.props.backgroundColor === 'white' ? 'bg-white' : 'bg-lighten-3') + ' ' + ((self.props.backgroundColor === 'black' || self.props.backgroundColor === 'gray') ? 'white' : '') }
-                     style={{ height: 100 + 'vh' }}>
+                     style={{ minHeight: 100 + 'vh' }}>
 
                   <h3 className="border-top pt2 onum pnum inline-block mt0 font-weight-600">{ fontNameHeading }{ fontNameEn }</h3>
 
                   {/* Fixes heights so the changing content is less jarring */}
                   {/* TODO might need to change this minHeight based on CSS breakpoints */}
-                  <div style={{ minHeight: 12 + 'em' }} className="h5 md-h4">{ desc }</div>
+                  <div className="height-sidebar-description">{ desc }</div>
 
-                  <div style={{ minHeight: 12 + 'em' }} className="mb3">{ quote }</div>
+                  <div className="height-sidebar-quote mb3">{ quote }</div>
 
                   { codeBlock }
 

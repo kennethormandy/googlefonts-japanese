@@ -43,12 +43,13 @@ $line-height-4: 1.7;
 $caps-letter-spacing: 0;
 // $bold-font-weight: 400;
 
-// $h1: 4.5rem;
-// $h2: 2.66rem;
-// $h3: 1.4rem;
-// $h4: 1.125rem;
-// $h5: 1rem;
-// $h6: 0.8rem;
+// Basscss type scale
+$h6: 0.66rem;
+$h5: 0.875rem;
+$h4: 1rem;
+$h3: 1.25rem;
+$h2: 1.5rem;
+$h1: 2rem;
 
 // $space-1: 0.5rem;
 // $space-2: 1rem;
@@ -108,12 +109,9 @@ $breakpoint-md-lg: "(min-width: 52em) and (max-width: 68em)";
 $breakpoint-lg: "(min-width: 68em)";
 
 // Breakheights, for vertical Media Queries
-$breakheight-xs: "(max-height: 40em)";
-
-// Basscss type scale
-$h6: 0.66rem;
-$h5: 0.875rem;
-$h4: 1rem;
-$h3: 1.25rem;
-$h2: 1.5rem;
-$h1: 2rem;
+$breakheight-xs: "(max-height: 20em)";
+$breakheight-sm: "(min-height: 20em)";
+$breakheight-sm-md: "(min-height: 20em) and (max-height: 40em)";
+$breakheight-md: "(min-height: 40em)";
+$breakheight-md-lg: "(min-height: 40em) and (max-height: 50em)";
+$breakheight-lg: "(min-height: 50em)";

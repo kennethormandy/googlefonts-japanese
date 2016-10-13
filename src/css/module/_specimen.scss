@@ -216,3 +216,67 @@
     height: 8rem;
   }
 }
+
+// Sidebar description and quote
+//
+// This is a quick fix with less utilitarian
+// classes to make it possible to change the
+// font size based on a one-off vertical media query.
+//
+// Styleguide: module.specimen.sidebar
+.height-sidebar-quote {
+  min-height: 5rem;
+  .sidebar-quote {
+    font-size: $h5;
+  }
+  @media #{ $breakheight-sm } {
+    .sidebar-quote {
+      font-size: $h4;
+    }
+  }
+  @media #{ $breakheight-md } {
+    min-height: 12em;
+    .sidebar-quote {
+      font-size: $h3;
+    }
+  }
+  @media #{ $breakheight-md } {
+    .sidebar-quote {
+      font-size: $h3;
+    }
+  }
+  @media #{ $breakheight-lg } {
+    .sidebar-quote {
+      font-size: $h2;
+    }
+  }
+}
+
+.height-sidebar-description {
+  min-height: 5rem;
+  font-size: $h5;
+  @media #{ $breakheight-sm } {
+    font-size: $h4;
+  }
+  @media #{ $breakheight-md } {
+    font-size: $h4;
+    min-height: 12rem;
+  }
+}
+
+// Hide and show over breakheights
+@media #{ $breakheight-xs } {
+  .xsh-hide { display: none !important }
+}
+
+@media #{ $breakheight-sm-md } {
+  .smh-hide { display: none !important }
+}
+
+@media #{ $breakheight-md-lg } {
+  .mdh-hide { display: none !important }
+}
+
+@media #{ $breakheight-lg } {
+  .lgh-hide { display: none !important }
+}
