@@ -30,7 +30,7 @@ class Header extends React.Component {
     return (
       <div className="bg-white black font-family-base relative pb4 bg-white black" style={{ zIndex: 100 }}>
         <header className="mx-auto md-max-width-4 lg-max-width-5 mb4 px1 md-px2 lg-px3 pt2 md-pt3 font-weight-500">
-          <div className="h4 md-h3 red" lang="en">Google Fonts + Japanese Early Access</div>
+          <div className="h4 md-h3 red-small" lang="en">Google Fonts + Japanese Early Access</div>
           <div className="col-12 md-col-9">
             <FitText compressor={ 1 }>
               <h1 className="h1 line-height-2 my0 mb3 red font-weight-500">

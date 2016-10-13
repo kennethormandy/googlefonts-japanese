@@ -55,3 +55,20 @@
 .border-muted-light {
   border-color: rgba(0, 0, 0, 0.25);
 }
+
+// Red small
+//
+// Optically correct red used at a smaller size, also increases
+// the contrast to pass accessibility guidelines. This is used in the
+// main header.
+//
+// Markup:
+// <header class="red-small">
+//   <p>Secondary</p>
+//   <h1 class="h1">Main heading</h1>
+// </header>
+//
+// Styleguide: color.red-small
+.red-small {
+  color: #E62525;
+}
