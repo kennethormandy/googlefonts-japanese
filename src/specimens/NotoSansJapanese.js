@@ -5,7 +5,8 @@ class SpecimenNotoSans extends React.Component {
   render () {
     return (
     <div className="relative overflow-hidden">
-    <Section className="bg-fallback-fuchsia black">
+    <Section className="bg-fallback-fuchsia black" verticalCenter={ true }>
+      {/*
       <div className="wf-notosansjapanese js-bigIdeasText hide">
         <span className="font-weight-900">本当にすばらしい旅だった</span>
         <span className="font-weight-900">多くの愛すべき人々と出会ったが</span>
@@ -14,13 +15,14 @@ class SpecimenNotoSans extends React.Component {
         <span className="font-weight-200">それでも、訪れたすべての都市でたくさん旅をした。</span>
         <span className="font-weight-100"> 多くの人々がいたが、時間が足りなかった。</span>
       </div>
-      <div className="mx-auto h1 my3 wf-notosansjapanese relative z3">
-        <span className="font-weight-900">本当にすばらしい旅だった。多くの愛すべき人</span>
-        <span className="font-weight-700">々と出会ったが、彼らと再び会うことはないだ</span>
-        <span className="font-weight-500">ろう。一生は短く、誰もがリダウトの安全と繁栄</span>
-        <span className="font-weight-400">のために尽力しなければならない。それでも、</span>
-        <span className="font-weight-300">訪れたすべての都市でたくさん旅をした。多く</span>
-        <span className="font-weight-200">の人々がいたが、時間が足りなかった。</span>
+      */}
+      <div className="mx-auto h1 my3 wf-notosansjapanese relative z3 line-height-4">
+        <span className="font-weight-900">本当にすばらしい旅だった。</span>
+        <span className="font-weight-700">多くの愛すべき人々と出会ったが、</span>
+        <span className="font-weight-500">彼らと再び会うことはないだろう。</span>
+        <span className="font-weight-400">一生は短く、誰もがリダウトの安全と繁栄のために尽力しなければならない。</span>
+        <span className="font-weight-300">それでも、訪れたすべての都市でたくさん旅をした。</span>
+        <span className="font-weight-200">多くの人々がいたが、時間が足りなかった。</span>
       </div>
     </Section>
     <div className="transform-square bg-aqua muted absolute bottom-0 left-0 blend-multiply z2" style={{ minWidth: 200 + 'vw', minHeight: 200 + 'vw', transform: 'rotate(135deg) translate(50%, 50%)' }}></div>

@@ -4,9 +4,9 @@ import React from 'react'
 class Section extends React.Component {
   render () {
     return (
-      <div className={ this.props.className + ' px' + this.props.basePaddingX + ' py' + this.props.basePaddingY + ' sm-py3 md-py4 overflow-hidden' }
+      <div className={ this.props.className + ' px' + this.props.basePaddingX + ' py' + this.props.basePaddingY + ' sm-py3 md-py4 overflow-hidden' + (this.props.verticalCenter === true ? ' flex items-stretch ' : '') }
            style={{ minHeight: 80 + 'vh' }}>
-        <div className={ 'max-width-' + this.props.maxWidth + ' mx-auto' }>
+        <div className={ 'max-width-' + this.props.maxWidth + ' mx-auto ' + (this.props.verticalCenter === true ? 'self-center' : '') }>
           {this.props.children}
         </div>
       </div>
@@ -18,7 +18,8 @@ Section.defaultProps = {
   maxWidth: 3,
   basePaddingX: 2,
   basePaddingY: 2,
-  className: ''
+  className: '',
+  verticalCenter: false
 }
 
 export default Section
