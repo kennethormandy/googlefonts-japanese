@@ -35,7 +35,6 @@ window.app = app.extend({
     _map(Object.keys(data.fonts), function (index) {
       var font = data.fonts[index]
       if (font.load !== false) {
-        console.log('loading ' + index)
         loadCSS('http://fonts.googleapis.com/earlyaccess/' + index + '.css')
       }
     })
