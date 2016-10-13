@@ -29,7 +29,7 @@ class SpecimenMPlus extends React.Component {
           </GlyphColumnCaption>
 
           <div className="ty50 relative animate animate-ty50">
-            <div className="flex wf-mplus1p yellow h0">
+            <div className="flex wf-mplus1p white h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
               <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
               <GlyphColumn value="に" compressor={ 0.125 } fontWeight={ 400 } className="flex-auto" />
@@ -41,7 +41,7 @@ class SpecimenMPlus extends React.Component {
           </div>
 
           <div className="tyn50 animate animate-tyn50 blend-luminosity">
-            <div className="flex navy wf-roundedmplus1c h0">
+            <div className="flex muted wf-roundedmplus1c h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
               <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
               <GlyphColumn value="に" compressor={ 0.125 } fontWeight={ 400 } className="flex-auto" />
