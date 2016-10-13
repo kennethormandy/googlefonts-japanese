@@ -2,6 +2,7 @@ import React from 'react'
 import FitText from '../vendor/react-fittext'
 import Section from '../components/Section'
 import GlyphColumn from '../components/GlyphColumn'
+import GlyphColumnCaption from '../components/GlyphColumnCaption'
 
 class SpecimenMPlus extends React.Component {
   render () {
@@ -16,6 +17,17 @@ class SpecimenMPlus extends React.Component {
         className="bg-fallback-blue black wf-mplus1p">
 
         <div className="py4">
+
+          <GlyphColumnCaption className="flex">
+            <div className="flex-auto pl2">Thin</div>
+            <div className="flex-auto pl2">Light</div>
+            <div className="flex-auto pl2">Regular</div>
+            <div className="flex-auto pl2">Medium</div>
+            <div className="flex-auto pl2">Bold</div>
+            <div className="flex-auto pl2">Heavy</div>
+            <div className="flex-auto pl2">Black</div>
+          </GlyphColumnCaption>
+
           <div className="ty50 relative animate animate-ty50">
             <div className="flex wf-mplus1p yellow h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
@@ -40,7 +52,7 @@ class SpecimenMPlus extends React.Component {
             </div>
           </div>
 
-          <div className="flex h6 sm-h5 md-h4 font-weight-400 white font-family-base select-none">
+          <GlyphColumnCaption className="flex">
             <div className="flex-auto pl2">Thin</div>
             <div className="flex-auto pl2">Light</div>
             <div className="flex-auto pl2">Regular</div>
@@ -48,7 +60,7 @@ class SpecimenMPlus extends React.Component {
             <div className="flex-auto pl2">Bold</div>
             <div className="flex-auto pl2">Heavy</div>
             <div className="flex-auto pl2">Black</div>
-          </div>
+          </GlyphColumnCaption>
 
         </div>
       </Section>
