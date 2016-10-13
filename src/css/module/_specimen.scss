@@ -36,8 +36,11 @@
 
 .height-kokoro-book {
   height: 600px;
-  @media #{ $breakpoint-md } {
+  @media #{ $breakpoint-sm } {
     height: 400px;
+  }
+  @media #{ $breakpoint-md } {
+    height: 600px;
   }
   @media #{ $breakpoint-lg } {
     height: 600px;
@@ -46,8 +49,11 @@
 
 .height-kokoro-page {
   height: 300px;
-  @media #{ $breakpoint-md } {
+  @media #{ $breakpoint-sm } {
     height: 400px;
+  }
+  @media #{ $breakpoint-md } {
+    height: 300px;
   }
   @media #{ $breakpoint-lg } {
     height: 600px;
@@ -132,6 +138,18 @@
                 inset -2px 0 0 2px $darken-1,
                 inset -1px 0 0 1px $darken-2;
   }
+  @media #{ breakpoint-md } {
+    border-left: none;
+    box-shadow: inset -2px -2px 20px $darken-1,
+                inset 0 -2px 0 2px $darken-1,
+                inset 0 -1px 0 1px $darken-2;
+  }
+  @media #{ breakpoint-lg } {
+    border-left: 0;
+    box-shadow: inset -2px -2px 20px $darken-1,
+                inset -2px 0 0 2px $darken-1,
+                inset -1px 0 0 1px $darken-2;
+  }
 }
 
 .ds-page-left {
@@ -141,6 +159,19 @@
               inset 0 -1px 0 -1px $darken-2;
 
   @media #{ breakpoint-sm } {
+    border-bottom: 0;
+    box-shadow: inset -2px -2px 20px $darken-1,
+                inset -2px 0 0 -2px $darken-1,
+                inset -1px 0 0 -1px $darken-2;
+  }
+  @media #{ breakpoint-sm } {
+    border-bottom: 1px solid $darken-1;
+    box-shadow: inset -2px -2px 20px $darken-1,
+                inset 0 -2px 0 -2px $darken-1,
+                inset 0 -1px 0 -1px $darken-2;
+
+  }
+  @media #{ breakpoint-lg } {
     border-bottom: 0;
     box-shadow: inset -2px -2px 20px $darken-1,
                 inset -2px 0 0 -2px $darken-1,
