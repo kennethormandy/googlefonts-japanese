@@ -3,16 +3,21 @@ import React from 'react'
 class CodeBlock extends React.Component {
   render () {
     const self = this
+    var className = 'overflow-x-auto h5 md-h4 line-height-3 bg-lighten-2 black p2 font-family-monospace'
 
+    if (self.props.rounded) {
+      className += ' rounded'
+    }
     return (
-      <pre className="overflow-x-auto h5 md-h4 line-height-4 bg-lighten-2 black rounded p2 font-family-monospace"
+      <pre className={ className }
            data-language={ self.props.language }><code>{ self.props.children.toString() }</code></pre>
     )
   }
 }
 
 CodeBlock.defaultProps = {
-  language: 'auto'
+  language: 'auto',
+  rounded: true
 }
 
 export default CodeBlock
