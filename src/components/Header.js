@@ -32,7 +32,7 @@ class Header extends React.Component {
         <header className="mx-auto md-max-width-4 lg-max-width-5 mb4 px1 md-px2 lg-px3 pt2 md-pt3 font-weight-500">
           <div className="h4 md-h3 font-family-product-sans red" lang="en">Google Fonts + Japanese Early Access</div>
           <FitText compressor={ 0.95 }>
-          <h1 className="h1 line-height-2 my0 mb3 md-mb4 red">
+          <h1 className="h1 line-height-2 my0 mb3 red">
             <span className="font-family-product-sans">Google Fonts</span>
             <span style={{ fontSize: 0.9 + 'em' }} className="font-family-600">&nbsp;+&nbsp;日本語 <span>早期アクセス</span></span>
           </h1>
