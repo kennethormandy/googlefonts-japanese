@@ -4,8 +4,7 @@ import Router from 'ampersand-router'
 
 import Layout from './components/Layout'
 import Index from './pages/index'
-import Test from './pages/test'
-import Contributing from './pages/contributing'
+// import Contributing from './pages/contributing'
 import FourOhFour from './pages/404'
 
 export default Router.extend({
@@ -21,12 +20,9 @@ export default Router.extend({
   },
   routes: {
     '': 'home',
-    'test': 'test',
-    'test/': 'test',
-    'test/index.html': 'test',
-    'contributing': 'contributing',
-    'contributing/': 'contributing',
-    'contributing/index.html': 'contributing',
+    // 'contributing': 'contributing',
+    // 'contributing/': 'contributing',
+    // 'contributing/index.html': 'contributing',
     '*404': 'home' // TODO 404 Breaking `#` links
   },
   home () {

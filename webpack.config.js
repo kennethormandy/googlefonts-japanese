@@ -9,7 +9,6 @@ var sizeOf = require('image-size')
 var merge = require('lodash.merge')
 var Layout = require('./src/components/Layout').default
 var Index = require('./src/pages/index').default
-var Contributing = require('./src/pages/contributing').default
 var data = require('./src/data')
 var ogImage = sizeOf('./build/media/og-image.png')
 var pkg = require('./package.json')
@@ -55,12 +54,13 @@ var hjsConfig = getConfig({
   }
 })
 
-var additionalLoaders = [
-  {
-    test: /\.md$/,
-    loader: 'html!markdown'
-  }
-]
+// Only needed if custom contributing page is used
+// var additionalLoaders = [
+//   {
+//      test: /\.md$/,
+//      loader: 'html!markdown'
+//   }
+// ]
+// hjsConfig.module.loaders.push(additionalLoaders)
 
-hjsConfig.module.loaders.push(additionalLoaders)
 module.exports = hjsConfig
