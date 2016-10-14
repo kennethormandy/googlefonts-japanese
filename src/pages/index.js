@@ -51,7 +51,7 @@ class Index extends React.Component {
       var viewport = this.getViewportWidth();
       this.setState({
         viewport: viewport,
-        sidebar: (viewport.width > this.props.sidebarMaxWidth) ? true : false
+        sidebar: viewport.width > this.props.sidebarMaxWidth
       });
     };
 
@@ -79,7 +79,7 @@ class Index extends React.Component {
 
     if (self.state.viewport.width < self.props.sidebarMaxWidth) {
       self.setState({
-        sidebar: (typeof newSidebarState !== 'undefined') ? newSidebarState : !self.state.sidebar
+        sidebar: (typeof newSidebarState === 'undefined') ? !self.state.sidebar : newSidebarState
       });
     }
   }
@@ -113,7 +113,6 @@ class Index extends React.Component {
 
   render() {
     const self = this;
-    const data = self.props.data;
 
     // TODO Switch to map like in footer
     // Not sure how to use imported React elements with this pattern yet
