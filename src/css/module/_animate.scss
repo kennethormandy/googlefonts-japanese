@@ -59,6 +59,10 @@
   animation: 6s cubic-bezier(.92,.11,.06,.89) infinite tyn50;
 }
 
+.animate-pause {
+  animation-play-state: paused;
+}
+
 .transition-fill {
   transition: fill 0.66s ease-in-out;
 }

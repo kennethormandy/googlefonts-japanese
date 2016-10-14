@@ -4,14 +4,34 @@ import GlyphColumn from '../components/GlyphColumn';
 import GlyphColumnCaption from '../components/GlyphColumnCaption';
 
 class SpecimenMPlus extends React.Component {
+  constructor () {
+    super()
+
+    this.state = {
+      animate: false
+    }
+
+    this.handleOnClick = this.handleOnClick.bind(this)
+  }
+
+  handleOnClick () {
+    const self = this
+
+    self.setState({
+      animate: !self.state.animate
+    })
+  }
+
   render() {
+    const self = this
+
     return (
       <Section
         maxWidth={5}
         basePaddingX={3}
         className="bg-fallback-blue black wf-mplus1p">
 
-        <div className="py4">
+        <div className="py4" onClick={ self.handleOnClick }>
 
           <GlyphColumnCaption className="flex">
             <div className="flex-auto pl2">Thin</div>
@@ -23,7 +43,7 @@ class SpecimenMPlus extends React.Component {
             <div className="flex-auto pl2">Black</div>
           </GlyphColumnCaption>
 
-          <div className="ty50 relative animate animate-ty50">
+          <div className={ 'relative ty50 animate animate-ty50 ' + (self.state.animate ? '' : 'animate-pause') }>
             <div className="flex wf-mplus1p white h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
               <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
@@ -35,7 +55,7 @@ class SpecimenMPlus extends React.Component {
             </div>
           </div>
 
-          <div className="tyn50 animate animate-tyn50 blend-luminosity">
+          <div className={ 'blend-luminosity tyn50 animate animate-tyn50 ' + (self.state.animate ? '' : 'animate-pause') }>
             <div className="flex muted wf-roundedmplus1c h0">
               <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
               <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
