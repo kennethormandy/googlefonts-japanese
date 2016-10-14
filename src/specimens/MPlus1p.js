@@ -1,14 +1,14 @@
-import React from 'react'
-import FitText from '../vendor/react-fittext'
-import Section from '../components/Section'
-import GlyphColumn from '../components/GlyphColumn'
-import GlyphColumnCaption from '../components/GlyphColumnCaption'
+import React from 'react';
+import FitText from '../vendor/react-fittext';
+import Section from '../components/Section';
+import GlyphColumn from '../components/GlyphColumn';
+import GlyphColumnCaption from '../components/GlyphColumnCaption';
 
 class SpecimenMPlus extends React.Component {
-  render () {
-    const self = this
-    const data = self.props.data
-    const font = data.fonts['mplus1p']
+  render() {
+    const self = this;
+    const data = self.props.data;
+    const font = data.fonts.mplus1p;
 
     return (
       <Section
@@ -64,12 +64,12 @@ class SpecimenMPlus extends React.Component {
 
         </div>
       </Section>
-    )
+    );
   }
 }
 
 SpecimenMPlus.defaultProps = {
   data: {}
-}
+};
 
-export default SpecimenMPlus
+export default SpecimenMPlus;

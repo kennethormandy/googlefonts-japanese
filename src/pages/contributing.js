@@ -1,20 +1,20 @@
-import React from 'react'
-import map from 'lodash.map'
-import content from '../../CONTRIBUTING.md'
+import React from 'react';
+import map from 'lodash.map';
+import content from '../../CONTRIBUTING.md';
 
 class Contributing extends React.Component {
-  render () {
-    const self = this
-    const data = self.props.data
-    const colors = ['fuchsia', 'maroon', 'red', 'yellow', 'green', 'olive', 'aqua', 'blue', 'navy', 'purple', 'black']
+  render() {
+    const self = this;
+    const data = self.props.data;
+    const colors = ['fuchsia', 'maroon', 'red', 'yellow', 'green', 'olive', 'aqua', 'blue', 'navy', 'purple', 'black'];
 
-    var colorGrid = colors.map((color) => {
+    var colorGrid = colors.map(color => {
       return (
-        <div key={ 'color-' + color } className={ 'bg-' + color + ' col-12 h3 flex items-center justify-center white' } style={{ height: 100 + 'px '}}>
+        <div key={ 'color-' + color } className={ 'bg-' + color + ' col-12 h3 flex items-center justify-center white' } style={{height: 100 + 'px '}}>
           <code>{ '.bg-' + color }</code>
         </div>
-      )
-    })
+      );
+    });
 
     return (
       <div>
@@ -35,10 +35,9 @@ class Contributing extends React.Component {
         </div>
       </div>
 
-
       </div>
-    )
+    );
   }
 }
 
-export default Contributing
+export default Contributing;

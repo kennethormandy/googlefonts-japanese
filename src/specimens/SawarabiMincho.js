@@ -1,9 +1,9 @@
-import React from 'react'
-import Section from '../components/Section'
+import React from 'react';
+import Section from '../components/Section';
 
 class SpecimenSawarabi extends React.Component {
-  render () {
-    const self = this
+  render() {
+    const self = this;
 
     return (
       <div>
@@ -15,8 +15,8 @@ class SpecimenSawarabi extends React.Component {
           </div>
         </Section>
       </div>
-    )
+    );
   }
 }
 
-export default SpecimenSawarabi
+export default SpecimenSawarabi;

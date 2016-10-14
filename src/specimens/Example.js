@@ -1,14 +1,14 @@
-import React from 'react'
-import Section from '../components/Section'
+import React from 'react';
+import Section from '../components/Section';
 
 class SpecimenExample extends React.Component {
-  render () {
-    const self = this
+  render() {
+    const self = this;
 
     // Assign the metadata from `_data/fonts.json`
     // to variables to use in the tempaltes
-    const data = self.props.data
-    const font = data.fonts['example']
+    const data = self.props.data;
+    const font = data.fonts.example;
 
     // Edit the template within `return()`!
     // This is JSX, which is made to look a lot like HTML,
@@ -21,8 +21,8 @@ class SpecimenExample extends React.Component {
           <span className="muted" lang="en">{ font.name.en }</span>
         </h2>
       </Section>
-    )
+    );
   }
 }
 
-export default SpecimenExample
+export default SpecimenExample;

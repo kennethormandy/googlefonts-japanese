@@ -1,13 +1,13 @@
-import React from 'react'
-import { Keyframes, Frame } from 'react-keyframes'
-import Section from '../components/Section'
-import FitterHappierText from '../vendor/react-fitter-happier-text'
+import React from 'react';
+import {Keyframes, Frame} from 'react-keyframes';
+import Section from '../components/Section';
+import FitterHappierText from '../vendor/react-fitter-happier-text';
 
 class SpecimenNicoMoji extends React.Component {
-  render () {
-    const self = this
-    const data = self.props.data
-    const font = data.fonts['nicomoji']
+  render() {
+    const self = this;
+    const data = self.props.data;
+    const font = data.fonts.nicomoji;
 
     return (
       <Section
@@ -31,12 +31,12 @@ class SpecimenNicoMoji extends React.Component {
         <img src="/media/illustration-storefront-3-outlined.svg" className="col-12 block" role="presentation" alt="" />
 
       </Section>
-    )
+    );
   }
 }
 
 SpecimenNicoMoji.defaultProps = {
   data: {}
-}
+};
 
-export default SpecimenNicoMoji
+export default SpecimenNicoMoji;

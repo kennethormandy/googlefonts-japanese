@@ -1,22 +1,22 @@
-import React from 'react'
-import {render} from 'react-dom'
-import Router from 'ampersand-router'
+import React from 'react';
+import {render} from 'react-dom';
+import Router from 'ampersand-router';
 
-import Layout from './components/Layout'
-import Index from './pages/index'
+import Layout from './components/Layout';
+import Index from './pages/index';
 // import Contributing from './pages/contributing'
-import FourOhFour from './pages/404'
+import FourOhFour from './pages/404';
 
 export default Router.extend({
-  renderPage (page, opts = { layout: true }) {
+  renderPage(page, opts = {layout: true}) {
     if (opts.layout) {
       page = (
         <Layout>
           {page}
         </Layout>
-      )
+      );
     }
-    render(page, document.getElementById('js-root'))
+    render(page, document.getElementById('js-root'));
   },
   routes: {
     '': 'home',
@@ -25,16 +25,16 @@ export default Router.extend({
     // 'contributing/index.html': 'contributing',
     '*404': 'home' // TODO 404 Breaking `#` links
   },
-  home () {
-    this.renderPage(<Index />)
+  home() {
+    this.renderPage(<Index />);
   },
-  test () {
-    this.renderPage(<Test />)
+  test() {
+    this.renderPage(<Test />);
   },
-  contributing () {
-    this.renderPage(<Contributing />)
+  contributing() {
+    this.renderPage(<Contributing />);
   },
-  fourOhFour () {
-    this.renderPage(<FourOhFour />)
+  fourOhFour() {
+    this.renderPage(<FourOhFour />);
   }
-})
+});

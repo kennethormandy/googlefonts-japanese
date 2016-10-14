@@ -1,8 +1,8 @@
-import React from 'react'
-import FitText from '../vendor/react-fittext'
+import React from 'react';
+import FitText from '../vendor/react-fittext';
 
 class SpecimenHannari extends React.Component {
-  render () {
+  render() {
     return (
       <div className="bg-fallback-red bg-gradient-transparent-white-transparent white overflow-y-hidden">
         <div className="p2 py4">
@@ -17,12 +17,12 @@ class SpecimenHannari extends React.Component {
         </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
 SpecimenHannari.defaultProps = {
 
-}
+};
 
-export default SpecimenHannari
+export default SpecimenHannari;
