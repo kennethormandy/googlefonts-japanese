@@ -50,6 +50,8 @@
     "babel-preset-react": "6.5.0",
     "babel-preset-react-hmre": "1.1.1",
     "css-loader": "0.23.1",
+    "eslint": "3.7.1",
+    "eslint-config-google": "0.6.0",
     "hjs-webpack": "8.1.0",
     "html-loader": "0.4.4",
     "image-size": "0.5.0",
@@ -63,8 +65,14 @@
     "surge": "0.17.7",
     "webpack": "1.13.0"
   },
+  "eslintConfig": {
+    "extends": "google",
+    "env": {
+      "browser": true
+    }
+  },
   "scripts": {
-    "lint": "",
+    "lint": "eslint ./src",
     "test": "echo \"Error: no test specified.\" && exit 0",
     "posttest": "npm run lint",
     "build": "webpack",
