@@ -1,17 +1,16 @@
-import React from 'react'
-import _map from 'lodash.map'
-import FitText from '../vendor/react-fittext'
-import FontList from '../components/FontList'
+import React from 'react';
+import FitText from '../vendor/react-fittext';
+import FontList from '../components/FontList';
 
 class HeaderColumn extends React.Component {
-  render () {
-    const self = this
+  render() {
+    const self = this;
 
     return (
       <div className={ 'col-12 sm-col-6 px1 md-px2 ' + self.props.className } lang={ self.props.lang }>
         <div className="h4 md-h3">{ self.props.children }</div>
       </div>
-    )
+    );
   }
 }
 
@@ -20,22 +19,21 @@ HeaderColumn.defaultProps = {
   headingClassName: '',
   className: '',
   lang: 'ja'
-}
+};
 
 class Header extends React.Component {
-  render () {
-    const self = this
-    const data = self.props.data
+  render() {
+    const self = this;
 
     return (
-      <div className="bg-white black font-family-base relative pb4 bg-white black" style={{ zIndex: 100 }}>
+      <div className="bg-white black font-family-base relative pb4 bg-white black" style={{zIndex: 100}}>
         <header className="mx-auto md-max-width-4 lg-max-width-5 mb4 px1 md-px2 lg-px3 pt2 md-pt3 font-weight-500">
           <div className="h4 md-h3 red-small mb1 md-pl1" lang="en">Google Fonts + Japanese Early Access</div>
           <div className="col-12 md-col-9">
             <FitText compressor={ 1 }>
               <h1 className="h1 line-height-2 my0 mb3 red font-weight-500">
-                <span className="break-none">Google Fonts</span><span style={{ fontSize: 0.9 + 'em' }}>&nbsp;+&nbsp;日本語</span><br/>
-                <span style={{ fontSize: 0.9 + 'em' }}>早期アクセス</span>
+                <span className="break-none">Google Fonts</span><span style={{fontSize: 0.9 + 'em'}}>&nbsp;+&nbsp;日本語</span><br/>
+                <span style={{fontSize: 0.9 + 'em'}}>早期アクセス</span>
               </h1>
             </FitText>
           </div>
@@ -54,8 +52,8 @@ class Header extends React.Component {
           <FontList className="sm-col-6 md-col-4 px2" textAlignment="center" { ...self.props } />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

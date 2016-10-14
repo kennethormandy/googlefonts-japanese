@@ -1,36 +1,13 @@
-import React from 'react'
-import _map from 'lodash.map'
-import FitText from '../vendor/react-fittext'
-import FontList from '../components/FontList'
+import React from 'react';
+import FontList from '../components/FontList';
 
 class Footer extends React.Component {
-  render () {
-    const self = this
-    const data = self.props.data
-
-    // var typefaceList = _map(Object.keys(data.fonts), function (index) {
-    //   var font = data.fonts[index]
-    //   if (font.published !== false && font.designer) {
-    //     return (
-    //       <li className="p0 m0" key={ 'footer_' + index }><a className="block py2" href={ '#' + index }>
-    //         <div className="flex items-center">
-    //           <div className="h1 col-4 sm-col-3">
-    //             <FitText compressor={0.33} minFontSize={24}>
-    //               <div className={ 'break-none wf-' + index }>あア</div>
-    //             </FitText>
-    //           </div>
-    //           <div className="flex-auto line-height-3">
-    //             <span>{ font.name.ja } <span lang="en" className="muted">{ font.name.en !== font.name.ja ? font.name.en : '' }</span></span>
-    //             <span className="block mt1">{ font.designer.name.ja } <span lang="en" className="muted">{ font.designer.name.en !== font.designer.name.ja ? font.designer.name.en : '' }</span></span>
-    //           </div>
-    //         </div>
-    //       </a></li>
-    //     )
-    //   }
-    // })
+  render() {
+    const self = this;
+    const data = self.props.data;
 
     return (
-      <div className="clearfix bg-white bg-fallback-white py2 md-py4" style={{ minHeight: 60 + 'vh' }}>
+      <div className="clearfix bg-white bg-fallback-white py2 md-py4" style={{minHeight: 60 + 'vh'}}>
         <div className="mx-auto max-width-5 px2 sm-px3">
           <div className="md-flex flex-wrap">
             <div className="col-12 lg-col-4 md-pr4 mb4 lg-mt4">
@@ -53,12 +30,12 @@ class Footer extends React.Component {
                 <h3 className="h3">Made by Friends of Google Fonts</h3>
                 <div className="sm-flex mxn1" lang="en">
                   <div className="col-12 sm-col-6 px1">
-                    <a className="" href={ data.authors['marikotakagi'].url }>{ data.authors['marikotakagi'].name }</a>
-                    <p className="mt0">{ data.authors['marikotakagi'].credit }</p>
+                    <a className="" href={ data.authors.marikotakagi.url }>{ data.authors.marikotakagi.name }</a>
+                    <p className="mt0">{ data.authors.marikotakagi.credit }</p>
                   </div>
                   <div className="col-12 sm-col-6 px1">
-                    <a className="" href={ data.authors['kennethormandy'].url }>{ data.authors['kennethormandy'].name }</a>
-                    <p className="mt0">{ data.authors['kennethormandy'].credit }</p>
+                    <a className="" href={ data.authors.kennethormandy.url }>{ data.authors.kennethormandy.name }</a>
+                    <p className="mt0">{ data.authors.kennethormandy.credit }</p>
                   </div>
                 </div>
               </div>
@@ -66,8 +43,8 @@ class Footer extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

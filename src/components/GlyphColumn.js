@@ -1,15 +1,15 @@
-import React from 'react'
-import FitterHappierText from '../vendor/react-fitter-happier-text'
+import React from 'react';
+import FitterHappierText from '../vendor/react-fitter-happier-text';
 
 class GlyphColumn extends React.Component {
-  render () {
-    const self = this
+  render() {
+    const self = this;
 
     return (
       <div className={ self.props.className + ' font-weight-' + self.props.fontWeight }>
         <FitterHappierText text={ self.props.value } />
       </div>
-    )
+    );
   }
 }
 
@@ -18,6 +18,6 @@ GlyphColumn.defaultProps = {
   className: '',
   compressor: 1.0,
   value: ''
-}
+};
 
-export default GlyphColumn
+export default GlyphColumn;

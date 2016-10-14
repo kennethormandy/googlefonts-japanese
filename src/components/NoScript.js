@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
 class NoScript extends React.Component {
-  render () {
+  render() {
     // https://git.io/vPtBU
     return (
       <noscript dangerouslySetInnerHTML={{
         __html: '<link href="/css/fonts.css" rel="stylesheet" />'
       }} />
-    )
+    );
   }
 }
 
-export default NoScript
+export default NoScript;
