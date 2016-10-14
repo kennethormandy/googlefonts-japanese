@@ -246,6 +246,7 @@
     }
   }
   @media #{ $breakheight-lg } {
+    min-height: 12em;
     .sidebar-quote {
       font-size: $h2;
     }

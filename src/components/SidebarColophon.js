@@ -39,7 +39,7 @@ class SidebarColophon extends React.Component {
     if (font.designer.quote.ja || font.designer.quote.en) {
       quote = <blockquote>
           <p className="sidebar-quote">{ font.designer.quote.ja }</p>
-          <p className="xsh-hide smh-hide muted-dark" lang="en">{ font.designer.quote.en }</p>
+          <p className="xsh-hide smh-hide mdh-hide muted-dark" lang="en">{ font.designer.quote.en }</p>
           <footer>
             <span>{ font.designer.name.ja }</span> <span className="muted-dark" lang="en">{ fontDesignerNameEn }</span>
           </footer>
