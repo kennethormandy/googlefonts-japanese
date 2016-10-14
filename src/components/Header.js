@@ -39,7 +39,7 @@ class Header extends React.Component {
           </div>
           <div className="sm-flex sm-mxn1 md-mxn2 line-height-4 font-weight-400">
             <HeaderColumn>
-              <p>Google Fonts は、デザイナー ウェブフォントを直感的にご利用いただける、安定したオープンソース ディレクトリです。Google Fonts 早期アクセスでは、現時点で完全にはサポートしていないフォントを試験的に提供しています。</p>
+              <p><a href="https://fonts.google.com">Google Fonts</a> は、デザイナー ウェブフォントを直感的にご利用いただける、安定したオープンソース ディレクトリです。<a href="https://fonts.google.com/earlyaccess" title="Google Fonts Early Access">Google Fonts 早期アクセス</a>では、現時点で完全にはサポートしていないフォントを試験的に提供しています。</p>
               <p>膨大な数の文字のデザインに要する時間や、大容量のフォント ファイルをウェブフォントとして提供する際に必要な技術的インフラストラクチャなど、日本語の書体デザインやフォント開発にはさまざまな課題が立ちふさがります。そこで、規格や技術の開発を進めると同時に、Google Fonts 早期アクセスを通じてデザイナーやデベロッパーの皆様に日本語のウェブフォントをお試しいただけるようにしました。</p>
             </HeaderColumn>
             <HeaderColumn lang="en">
