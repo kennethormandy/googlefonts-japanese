@@ -264,6 +264,20 @@
   }
 }
 
+.height-section {
+  min-height: 50vh;
+  @media #{ $breakheight-md } and #{ $breakpoint-md } {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  @media #{ $breakheight-lg } and #{ $breakpoint-md } {
+    min-height: 80vh;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+}
+
 // Hide and show over breakheights
 @media #{ $breakheight-xs } {
   .xsh-hide { display: none !important }
