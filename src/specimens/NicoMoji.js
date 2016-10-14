@@ -5,10 +5,6 @@ import FitterHappierText from '../vendor/react-fitter-happier-text';
 
 class SpecimenNicoMoji extends React.Component {
   render() {
-    const self = this;
-    const data = self.props.data;
-    const font = data.fonts.nicomoji;
-
     return (
       <Section
         maxWidth={4}

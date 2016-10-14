@@ -2,12 +2,8 @@ import React from 'react';
 import Section from '../components/Section';
 import FitterHappierText from '../vendor/react-fitter-happier-text.jsx';
 
-class SpecimenExample extends React.Component {
+class SpecimenNikukyu extends React.Component {
   render() {
-    const self = this;
-    const data = self.props.data;
-    const font = data.fonts.nikukyu;
-
     return (
       <Section maxWidth={5} className="bg-fallback-olive black wf-nikukyu md-px4">
         <div className="col-12">
@@ -46,4 +42,4 @@ class SpecimenExample extends React.Component {
   }
 }
 
-export default SpecimenExample;
+export default SpecimenNikukyu;

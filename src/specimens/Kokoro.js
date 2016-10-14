@@ -5,7 +5,6 @@ import KokoroSecret from '../components/svg/kokoro-secret';
 class KokoroNotebook extends React.Component {
   render() {
     const self = this;
-    const data = self.props.data;
 
     return (
       <div className="height-kokoro-book mx-auto max-width-4 bg-white black ds-bookcover rounded flex flex-wrap items-stretch content-stretch overflow-hidden">
@@ -31,10 +30,6 @@ class KokoroNotebook extends React.Component {
 
 class SpecimenKokoro extends React.Component {
   render() {
-    const self = this;
-    const data = self.props.data;
-    const font = data.fonts.kokoro;
-
     return (
       <Section
         maxWidth={4}

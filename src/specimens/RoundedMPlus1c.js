@@ -1,5 +1,4 @@
 import React from 'react';
-import FitText from '../vendor/react-fittext';
 import Section from '../components/Section';
 import GlyphColumn from '../components/GlyphColumn';
 import GlyphColumnCaption from '../components/GlyphColumnCaption';

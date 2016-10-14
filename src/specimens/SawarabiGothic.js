@@ -3,8 +3,6 @@ import Section from '../components/Section';
 
 class SpecimenSawarabi extends React.Component {
   render() {
-    const self = this;
-
     return (
       <div>
         <Section maxWidth={ 2 }>

@@ -1,5 +1,4 @@
 import React from 'react';
-import FitText from '../vendor/react-fittext';
 
 class SpecimenHannari extends React.Component {
   render() {
