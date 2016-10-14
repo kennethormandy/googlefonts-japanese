@@ -83,7 +83,7 @@ class SidebarColophon extends React.Component {
                   {/* TODO might need to change this minHeight based on CSS breakpoints */}
                   <div className="height-sidebar-description">{ desc }</div>
 
-                  <div className="height-sidebar-quote mb3">{ quote }</div>
+                  <div className="height-sidebar-quote xsh-hide smh-hide mb3">{ quote }</div>
 
                   { codeBlock }
 

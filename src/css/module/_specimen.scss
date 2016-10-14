@@ -256,6 +256,7 @@
   min-height: 5rem;
   font-size: $h5;
   @media #{ $breakheight-sm } {
+    min-height: 8rem;
     font-size: $h4;
   }
   @media #{ $breakheight-md } {
