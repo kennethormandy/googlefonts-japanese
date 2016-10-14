@@ -133,7 +133,7 @@ class Index extends React.Component {
           <div className={ 'clearfix animate-bg bg-' + self.state.backgroundColor }>
 
           <div className="clearfix" id="mplus1p">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'mplus1p', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'mplus1p', {
               backgroundColor: 'blue',
               codeBlock: true
             })} />
@@ -141,7 +141,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="roundedmplus1c">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'roundedmplus1c', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'roundedmplus1c', {
               backgroundColor: 'navy',
               codeBlock: true
             })} />
@@ -149,7 +149,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="hannari">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'hannari', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'hannari', {
               backgroundColor: 'red',
               codeBlock: true
             })} />
@@ -157,7 +157,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="kokoro" style={{minHeight: 100 + 'vh'}}>
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'kokoro', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'kokoro', {
               backgroundColor: 'green',
               codeBlock: true
             })} />
@@ -165,7 +165,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="sawarabimincho">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabimincho', {
               backgroundColor: 'gray',
               codeBlock: true
             })} />
@@ -173,7 +173,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="sawarabigothic">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'sawarabigothic', {
               backgroundColor: 'gray',
               codeBlock: true
             })} />
@@ -181,7 +181,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="nikukyu">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nikukyu', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nikukyu', {
               backgroundColor: 'olive',
               codeBlock: true
             })} />
@@ -189,7 +189,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="nicomoji">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomoji', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'nicomoji', {
               backgroundColor: 'gray',
               codeBlock: true
             })} />
@@ -197,7 +197,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix" id="notosansjapanese">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'notosansjapanese', {
               backgroundColor: 'fuchsia',
               codeBlock: true
             })} />
@@ -205,7 +205,7 @@ class Index extends React.Component {
           </div>
 
           <div className="clearfix">
-            <Waypoint topOffset={ '-33%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'footer', {
+            <Waypoint bottomOffset={ '50%' } topOffset={ '-50%' } onPositionChange={self.handleSpecimenWaypoint.bind(self, 'footer', {
               backgroundColor: 'white',
               codeBlock: false
             })} />
