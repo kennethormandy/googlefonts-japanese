@@ -43,8 +43,8 @@ class Header extends React.Component {
               <p>膨大な数の文字のデザインに要する時間や、大容量のフォント ファイルをウェブフォントとして提供する際に必要な技術的インフラストラクチャなど、日本語の書体デザインやフォント開発にはさまざまな課題が立ちふさがります。そこで、規格や技術の開発を進めると同時に、Google Fonts 早期アクセスを通じてデザイナーやデベロッパーの皆様に日本語のウェブフォントをお試しいただけるようにしました。</p>
             </HeaderColumn>
             <HeaderColumn lang="en">
-              <p><a href="https://fonts.google.com">Google Fonts</a> provides an intuitive and robust directory of open source, designer web fonts. Our <a href="https://fonts.google.com/earlyaccess" title="Google Fonts Early Access">Early Access</a> program serves as an experimental playground for fonts that aren’t yet fully supported.</p>
-              <p>The rich typography of Japan presents many interesting challenges, from the lengthy process needed to design thousands of characters to the technical infrastructure required to serve large font files as web fonts. As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts Early&nbsp;Access.</p>
+              <p><a href="https://fonts.google.com">Google Fonts</a> provides an intuitive and robust directory of open source designer web fonts. <a href="https://fonts.google.com/earlyaccess" title="Google Fonts Early Access">Google Fonts Early Access</a> is an experimental showcase for fonts that aren’t yet fully supported.</p>
+              <p>Japanese typeface design and font development presents many interesting challenges, from the time it takes to design thousands and thousands of available characters, to the technical infrastructure required to serve large font files as web fonts. As standards and technology continue to develop, we invite designers and developers to experiment with the Japanese web fonts now available on Google Fonts Early Access.</p>
             </HeaderColumn>
           </div>
         </header>
