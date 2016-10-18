@@ -24,7 +24,7 @@ class SpecimenNikukyu extends React.Component {
 
           <div className="relative max-width-4 mx-auto mb4">
             <div data-prefix="チョコ チョコ" className="img-nikukyu-ladybug z1 relative">
-            <img src="/media/illustration-nikukyu-ladybug.svg" style={{width: 35 + 'px'}} role="presentation" alt="" />
+            <img src="media/illustration-nikukyu-ladybug.svg" style={{width: 35 + 'px'}} role="presentation" alt="" />
             </div>
             <div className="flex items-baseline line-height-1 muted">
               <div className="col-6 h1">
