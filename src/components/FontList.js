@@ -2,6 +2,20 @@ import React from 'react';
 import _map from 'lodash.map';
 import FitText from '../vendor/react-fittext';
 
+class GlyphHidden extends React.Component {
+  render () {
+    const self = this;
+
+    return (
+      <span style={{ opacity: 0 }} className="speak-none" aria-hidden="true">{ self.props.text }</span>
+    );
+  }
+}
+
+GlyphHidden.defaultProps = {
+  text: ''
+};
+
 class FontList extends React.Component {
   render() {
     const self = this;
@@ -15,15 +29,15 @@ class FontList extends React.Component {
     var typefaceList = _map(Object.keys(data.fonts), function(index) {
       var font = data.fonts[index];
       var fontWeight = 400;
-      var fontString = 'アあ ';
+      var fontString = <span><GlyphHidden text="安" />あア</span>;
       var fontSizeAdjust = typeof font.font_size_adjust === 'undefined' ? 1 : (1 / font.font_size_adjust);
 
       if (font.published !== false && font.designer) {
         if (font.hiragana === false) {
-          fontString = 'ア  ';
+          fontString = <span><GlyphHidden text="安あ" />ア</span>;
         }
         if (font.kanji === true) {
-          fontString = 'アあ安';
+          fontString = '安あア';
         }
 
         return (
