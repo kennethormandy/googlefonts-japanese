@@ -203,7 +203,7 @@
 		"kanji": false,
 		"katakana": true,
 		"hiragana": true,
-		"font_size_adjust": 1.3,
+		"font_size_adjust": 1.2,
 		"google_fonts_id": "nico+moji",
 		"name": {
 			"ja": "ニコモジ",
