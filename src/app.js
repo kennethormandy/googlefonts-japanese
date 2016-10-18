@@ -21,7 +21,7 @@ window.app = app.extend({
 
     // Load UI fonts
     // Remainder are loaded when Layout mounts
-    loadCSS('http://fonts.googleapis.com/earlyaccess/notosansjp.css');
+    loadCSS('https://fonts.googleapis.com/earlyaccess/notosansjp.css');
     loadCSS('https://fonts.googleapis.com/css?family=Noto+Sans');
     // TODO loadCSS('http://fonts.googleapis.com/earlyaccess/productsans.css')
 
@@ -32,14 +32,14 @@ window.app = app.extend({
     _map(Object.keys(data.fonts), function(index) {
       var font = data.fonts[index];
       if (font.load !== false) {
-        loadCSS('http://fonts.googleapis.com/earlyaccess/' + index + '.css');
+        loadCSS('https://fonts.googleapis.com/earlyaccess/' + index + '.css');
       }
     });
 
     // Non-critical UI
     // TODO Check on existing hosted version
     // although I’m using a fairly heavily subset version here
-    loadCSS('/css/notosansmono.css');
+    loadCSS('css/notosansmono.css');
   }
 });
 
