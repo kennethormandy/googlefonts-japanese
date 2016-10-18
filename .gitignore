@@ -26,6 +26,9 @@ build/*
 !build/media/
 build/media/**/*.html
 build/media/**/.DS_Store
+!build/fonts/
+build/fonts/**/*.html
+build/fonts/**/.DS_Store
 !build/css/
 build/css/**/.DS_Store
 !build/favicon.ico
