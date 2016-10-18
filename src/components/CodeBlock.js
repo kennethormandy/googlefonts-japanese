@@ -9,8 +9,8 @@ class CodeBlock extends React.Component {
       className += ' rounded';
     }
     return (
-      <pre className={ className }
-           data-language={ self.props.language }><code>{ self.props.children.toString() }</code></pre>
+      <pre className={className}
+           data-language={self.props.language}><code>{self.props.children.toString()}</code></pre>
     );
   }
 }

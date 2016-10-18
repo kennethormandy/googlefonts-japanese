@@ -14,12 +14,12 @@ class SpecimenNicoMoji extends React.Component {
         <img src="/media/illustration-storefront-2-outlined.svg" className="col-12 block" role="presentation" alt="" />
         <div className="flex items-center px3 my3 center height-nicomojiplus blue">
           <div className="line-height-1 mt0 mb2 wf-nicomoji mx-auto col-10">
-            <Keyframes loop={ true }>
+            <Keyframes loop={true}>
 
-              <Frame duration={ 2500 }><div className="red transition-color"><FitterHappierText text="ニCもじ" /></div></Frame>
-              <Frame duration={ 2500 }><div className="green transition-color"><FitterHappierText text="カフェでコーヒ" /></div></Frame>
-              <Frame duration={ 2500 }><div className="blue transition-color"><FitterHappierText text="おちゃにしますか" /></div></Frame>
-              <Frame duration={ 2500 }><div className="purple transition-color"><FitterHappierText text="いらっしゃいませ" /></div></Frame>
+              <Frame duration={2500}><div className="red transition-color"><FitterHappierText text="ニCもじ" /></div></Frame>
+              <Frame duration={2500}><div className="green transition-color"><FitterHappierText text="カフェでコーヒ" /></div></Frame>
+              <Frame duration={2500}><div className="blue transition-color"><FitterHappierText text="おちゃにしますか" /></div></Frame>
+              <Frame duration={2500}><div className="purple transition-color"><FitterHappierText text="いらっしゃいませ" /></div></Frame>
 
             </Keyframes>
           </div>

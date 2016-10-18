@@ -17,8 +17,8 @@ class SpecimenExample extends React.Component {
     return (
       <Section maxWidth={3} className="bg-black white">
         <h2>
-          { font.name.ja }
-          <span className="muted" lang="en">{ font.name.en }</span>
+          {font.name.ja}
+          <span className="muted" lang="en">{font.name.en}</span>
         </h2>
       </Section>
     );

@@ -16,26 +16,26 @@ class Footer extends React.Component {
               <p lang="en">Check back often!</p>
               <p lang="en">We’ll update this page with samples as new fonts are added to Early Access, and provide information about our own experiments and technology when possible.</p>
               <ul className="list-style-none p0 m0" lang="en">
-              <li><a href={ data.repository + '/blob/master/CONTRIBUTING.md' } aria-label="Read more about contributing to this open source site.">Contribute</a></li>
-              <li className="fill-navy"><a href={ 'https://twitter.com/' + data.social.twitter }>@{ data.social.twitter } on Twitter</a></li>
-              <li className="fill-navy"><a href={ 'https://github.com/' + data.social.github }>@{ data.social.github } on GitHub</a></li>
+              <li><a href={data.repository + '/blob/master/CONTRIBUTING.md'} aria-label="Read more about contributing to this open source site.">Contribute</a></li>
+              <li className="fill-navy"><a href={'https://twitter.com/' + data.social.twitter}>@{data.social.twitter} on Twitter</a></li>
+              <li className="fill-navy"><a href={'https://github.com/' + data.social.github}>@{data.social.github} on GitHub</a></li>
               </ul>
             </div>
             <div className="col-12 md-col-8">
               <div className="clearfix mb4">
                 <h3 className="h3 mt0">Featured Typefaces</h3>
-                <FontList color="black" maxFontSize={48} textAlignment="left" firstColumnLgCol={3} { ...self.props } />
+                <FontList color="black" maxFontSize={48} textAlignment="left" firstColumnLgCol={3} {...self.props} />
               </div>
               <div className="clearfix">
                 <h3 className="h3">Made by Friends of Google Fonts</h3>
                 <div className="sm-flex mxn1" lang="en">
                   <div className="col-12 sm-col-6 px1">
-                    <a className="" href={ data.authors.marikotakagi.url }>{ data.authors.marikotakagi.name }</a>
-                    <p className="mt0">{ data.authors.marikotakagi.credit }</p>
+                    <a className="" href={data.authors.marikotakagi.url}>{data.authors.marikotakagi.name}</a>
+                    <p className="mt0">{data.authors.marikotakagi.credit}</p>
                   </div>
                   <div className="col-12 sm-col-6 px1">
-                    <a className="" href={ data.authors.kennethormandy.url }>{ data.authors.kennethormandy.name }</a>
-                    <p className="mt0">{ data.authors.kennethormandy.credit }</p>
+                    <a className="" href={data.authors.kennethormandy.url}>{data.authors.kennethormandy.name}</a>
+                    <p className="mt0">{data.authors.kennethormandy.credit}</p>
                   </div>
                 </div>
               </div>

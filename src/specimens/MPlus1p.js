@@ -31,7 +31,7 @@ class SpecimenMPlus extends React.Component {
         basePaddingX={3}
         className="bg-fallback-blue black wf-mplus1p">
 
-        <div className="py4" onClick={ self.handleOnClick }>
+        <div className="py4" onClick={self.handleOnClick}>
 
           <GlyphColumnCaption className="flex">
             <div className="flex-auto pl2">Thin</div>
@@ -43,27 +43,27 @@ class SpecimenMPlus extends React.Component {
             <div className="flex-auto pl2">Black</div>
           </GlyphColumnCaption>
 
-          <div className={ 'relative ty50 animate animate-ty50 ' + (self.state.animate ? '' : 'animate-pause') }>
+          <div className={'relative ty50 animate animate-ty50 ' + (self.state.animate ? '' : 'animate-pause')}>
             <div className="flex wf-mplus1p white h0">
-              <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
-              <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
-              <GlyphColumn value="に" compressor={ 0.125 } fontWeight={ 400 } className="flex-auto" />
-              <GlyphColumn value="な" compressor={ 0.125 } fontWeight={ 500 } className="flex-auto" />
-              <GlyphColumn value="が" compressor={ 0.125 } fontWeight={ 600 } className="flex-auto" />
-              <GlyphColumn value="れ" compressor={ 0.125 } fontWeight={ 700 } className="flex-auto" />
-              <GlyphColumn value="星" compressor={ 0.125 } fontWeight={ 800 } className="flex-auto" />
+              <GlyphColumn value="夜" compressor={0.125} fontWeight={200} className="flex-auto" />
+              <GlyphColumn value="空" compressor={0.125} fontWeight={300} className="flex-auto" />
+              <GlyphColumn value="に" compressor={0.125} fontWeight={400} className="flex-auto" />
+              <GlyphColumn value="な" compressor={0.125} fontWeight={500} className="flex-auto" />
+              <GlyphColumn value="が" compressor={0.125} fontWeight={600} className="flex-auto" />
+              <GlyphColumn value="れ" compressor={0.125} fontWeight={700} className="flex-auto" />
+              <GlyphColumn value="星" compressor={0.125} fontWeight={800} className="flex-auto" />
             </div>
           </div>
 
-          <div className={ 'blend-luminosity tyn50 animate animate-tyn50 ' + (self.state.animate ? '' : 'animate-pause') }>
+          <div className={'blend-luminosity tyn50 animate animate-tyn50 ' + (self.state.animate ? '' : 'animate-pause')}>
             <div className="flex muted wf-roundedmplus1c h0">
-              <GlyphColumn value="夜" compressor={ 0.125 } fontWeight={ 200 } className="flex-auto" />
-              <GlyphColumn value="空" compressor={ 0.125 } fontWeight={ 300 } className="flex-auto" />
-              <GlyphColumn value="に" compressor={ 0.125 } fontWeight={ 400 } className="flex-auto" />
-              <GlyphColumn value="な" compressor={ 0.125 } fontWeight={ 500 } className="flex-auto" />
-              <GlyphColumn value="が" compressor={ 0.125 } fontWeight={ 600 } className="flex-auto" />
-              <GlyphColumn value="れ" compressor={ 0.125 } fontWeight={ 700 } className="flex-auto" />
-              <GlyphColumn value="星" compressor={ 0.125 } fontWeight={ 800 } className="flex-auto" />
+              <GlyphColumn value="夜" compressor={0.125} fontWeight={200} className="flex-auto" />
+              <GlyphColumn value="空" compressor={0.125} fontWeight={300} className="flex-auto" />
+              <GlyphColumn value="に" compressor={0.125} fontWeight={400} className="flex-auto" />
+              <GlyphColumn value="な" compressor={0.125} fontWeight={500} className="flex-auto" />
+              <GlyphColumn value="が" compressor={0.125} fontWeight={600} className="flex-auto" />
+              <GlyphColumn value="れ" compressor={0.125} fontWeight={700} className="flex-auto" />
+              <GlyphColumn value="星" compressor={0.125} fontWeight={800} className="flex-auto" />
             </div>
           </div>
 

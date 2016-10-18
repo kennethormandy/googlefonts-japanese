@@ -28,7 +28,7 @@ class SpecimenNikukyu extends React.Component {
             </div>
             <div className="flex items-baseline line-height-1 muted">
               <div className="col-6 h1">
-                <FitterHappierText text="スタ" paddingY={ 0 } baseline={ 14 } />
+                <FitterHappierText text="スタ" paddingY={0} baseline={14} />
               </div>
               <div className="col-6">
                 <div className="h0-nikukyu">スタ</div>

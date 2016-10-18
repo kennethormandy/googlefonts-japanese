@@ -6,8 +6,8 @@ class GlyphColumn extends React.Component {
     const self = this;
 
     return (
-      <div className={ self.props.className + ' font-weight-' + self.props.fontWeight }>
-        <FitterHappierText text={ self.props.value } />
+      <div className={self.props.className + ' font-weight-' + self.props.fontWeight}>
+        <FitterHappierText text={self.props.value} />
       </div>
     );
   }

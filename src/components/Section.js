@@ -4,8 +4,8 @@ import React from 'react';
 class Section extends React.Component {
   render() {
     return (
-      <div className={ this.props.className + ' px' + this.props.basePaddingX + ' py' + this.props.basePaddingY + ' sm-py3 md-py4 overflow-hidden' + (this.props.verticalCenter === true ? ' flex items-stretch ' : '') + ' height-section' }>
-        <div className={ 'max-width-' + this.props.maxWidth + ' mx-auto ' + (this.props.verticalCenter === true ? 'self-center' : '') }>
+      <div className={this.props.className + ' px' + this.props.basePaddingX + ' py' + this.props.basePaddingY + ' sm-py3 md-py4 overflow-hidden' + (this.props.verticalCenter === true ? ' flex items-stretch ' : '') + ' height-section'}>
+        <div className={'max-width-' + this.props.maxWidth + ' mx-auto ' + (this.props.verticalCenter === true ? 'self-center' : '')}>
           {this.props.children}
         </div>
       </div>

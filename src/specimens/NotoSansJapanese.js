@@ -5,7 +5,7 @@ class SpecimenNotoSans extends React.Component {
   render() {
     return (
     <div className="relative overflow-hidden">
-    <Section className="bg-fallback-fuchsia black" verticalCenter={ true }>
+    <Section className="bg-fallback-fuchsia black" verticalCenter={true}>
       {/*
       <div className="wf-notosansjapanese js-bigIdeasText hide">
         <span className="font-weight-900">本当にすばらしい旅だった</span>

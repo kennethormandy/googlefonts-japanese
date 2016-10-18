@@ -7,8 +7,8 @@ class HeaderColumn extends React.Component {
     const self = this;
 
     return (
-      <div className={ 'col-12 sm-col-6 px1 md-px2 ' + self.props.className } lang={ self.props.lang }>
-        <div className="h4 md-h3">{ self.props.children }</div>
+      <div className={'col-12 sm-col-6 px1 md-px2 ' + self.props.className} lang={self.props.lang}>
+        <div className="h4 md-h3">{self.props.children}</div>
       </div>
     );
   }
@@ -30,7 +30,7 @@ class Header extends React.Component {
         <header className="mx-auto md-max-width-4 lg-max-width-5 mb4 px1 md-px2 lg-px3 pt2 md-pt3 font-weight-500">
           <div className="h4 md-h3 red-small mb1 md-pl1" lang="en">Google Fonts + Japanese Early Access</div>
           <div className="col-12 md-col-9">
-            <FitText compressor={ 1 }>
+            <FitText compressor={1}>
               <h1 className="h1 line-height-2 my0 mb3 red font-weight-500">
                 <span className="break-none">Google Fonts</span><span style={{fontSize: 0.9 + 'em'}}>&nbsp;+&nbsp;日本語</span><br/>
                 <span style={{fontSize: 0.9 + 'em'}}>早期アクセス</span>
@@ -49,7 +49,7 @@ class Header extends React.Component {
           </div>
         </header>
         <div className="mx-auto md-max-width-5 lg-max-width-6">
-          <FontList className="sm-col-6 md-col-4 px2" textAlignment="center" { ...self.props } />
+          <FontList className="sm-col-6 md-col-4 px2" textAlignment="center" {...self.props} />
         </div>
       </div>
     );
