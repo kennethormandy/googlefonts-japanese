@@ -82,7 +82,7 @@ class SidebarColophon extends React.Component {
       codeBlock = <div className="mxn2 md-mxn3">
         <div className="mb2">
           <abbr className="xsh-hide smh-hide mdh-hide border-none h5 m0 line-height-1 pl2 md-pl3">HTML</abbr>
-          <CodeBlock rounded={false } language="html">{'<link href="https://fonts.googleapis.com/earlyaccess/' + self.props.font + '.css" />'}</CodeBlock>
+          <CodeBlock rounded={false } language="html">{'<link href="https://fonts.googleapis.com/earlyaccess/' + self.props.font + '.css" rel="stylesheet" />'}</CodeBlock>
         </div>
         <div className="mb2">
           <abbr className="xsh-hide smh-hide mdh-hide border-none h5 m0 line-height-1 pl2 md-pl3">CSS</abbr>
