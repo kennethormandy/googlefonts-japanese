@@ -13,9 +13,9 @@ class SpecimenRoundedMPlus extends React.Component {
       <Section
         maxWidth={5}
         basePaddingX={3}
-        className="bg-fallback-navy black wf-mplus">
+        className="bg-fallback-navy black wf-mplus1p">
         <div className="sm-flex mxn1 sm-mxn2 md-mxn3 py3 md-py3">
-          <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-mplus white">
+          <div className="col-12 sm-col-6 px1 sm-px2 md-px3 wf-mplus1p white">
             <GlyphColumn fontWeight={200} value="すると、夜空に最初の流れ星が現れた。" />
             <GlyphColumn fontWeight={300} value="すると、夜空に最初の流れ星が現れた。" />
             <GlyphColumn fontWeight={400} value="すると、夜空に最初の流れ星が現れた。" />
