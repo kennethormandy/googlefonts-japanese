@@ -39,7 +39,7 @@ class SpecimenMPlus extends React.Component {
             <div className="flex-auto pl2">Regular</div>
             <div className="flex-auto pl2">Medium</div>
             <div className="flex-auto pl2">Bold</div>
-            <div className="flex-auto pl2">Heavy</div>
+            <div className="flex-auto pl2">Extra Bold</div>
             <div className="flex-auto pl2">Black</div>
           </GlyphColumnCaption>
 
@@ -49,9 +49,9 @@ class SpecimenMPlus extends React.Component {
               <GlyphColumn value="空" compressor={0.125} fontWeight={300} className="flex-auto" />
               <GlyphColumn value="に" compressor={0.125} fontWeight={400} className="flex-auto" />
               <GlyphColumn value="な" compressor={0.125} fontWeight={500} className="flex-auto" />
-              <GlyphColumn value="が" compressor={0.125} fontWeight={600} className="flex-auto" />
-              <GlyphColumn value="れ" compressor={0.125} fontWeight={700} className="flex-auto" />
-              <GlyphColumn value="星" compressor={0.125} fontWeight={800} className="flex-auto" />
+              <GlyphColumn value="が" compressor={0.125} fontWeight={700} className="flex-auto" />
+              <GlyphColumn value="れ" compressor={0.125} fontWeight={800} className="flex-auto" />
+              <GlyphColumn value="星" compressor={0.125} fontWeight={900} className="flex-auto" />
             </div>
           </div>
 
@@ -61,9 +61,9 @@ class SpecimenMPlus extends React.Component {
               <GlyphColumn value="空" compressor={0.125} fontWeight={300} className="flex-auto" />
               <GlyphColumn value="に" compressor={0.125} fontWeight={400} className="flex-auto" />
               <GlyphColumn value="な" compressor={0.125} fontWeight={500} className="flex-auto" />
-              <GlyphColumn value="が" compressor={0.125} fontWeight={600} className="flex-auto" />
-              <GlyphColumn value="れ" compressor={0.125} fontWeight={700} className="flex-auto" />
-              <GlyphColumn value="星" compressor={0.125} fontWeight={800} className="flex-auto" />
+              <GlyphColumn value="が" compressor={0.125} fontWeight={700} className="flex-auto" />
+              <GlyphColumn value="れ" compressor={0.125} fontWeight={800} className="flex-auto" />
+              <GlyphColumn value="星" compressor={0.125} fontWeight={900} className="flex-auto" />
             </div>
           </div>
 
@@ -73,7 +73,7 @@ class SpecimenMPlus extends React.Component {
             <div className="flex-auto pl2">Regular</div>
             <div className="flex-auto pl2">Medium</div>
             <div className="flex-auto pl2">Bold</div>
-            <div className="flex-auto pl2">Heavy</div>
+            <div className="flex-auto pl2">Extra Bold</div>
             <div className="flex-auto pl2">Black</div>
           </GlyphColumnCaption>
 
