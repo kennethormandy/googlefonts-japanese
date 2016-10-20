@@ -86,7 +86,7 @@ class SidebarColophon extends React.Component {
         </div>
         <div className="mb2">
           <abbr className="xsh-hide smh-hide mdh-hide border-none h5 m0 line-height-1 pl2 md-pl3">CSS</abbr>
-          <CodeBlock rounded={false } language="css">{'.wf-' + self.props.font + ' {font-family: "' + (font.name.ja === font.name.en ? font.name.ja : font.name.en) + '"; }'}</CodeBlock>
+          <CodeBlock rounded={false } language="css">{'.wf-' + self.props.font + ' { font-family: "' + ( font.google_fonts_id || font.name.en || font.name.ja ) + '"; }'}</CodeBlock>
         </div>
       </div>;
     }

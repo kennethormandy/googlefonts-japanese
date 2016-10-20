@@ -27,7 +27,7 @@
 		"kanji": true,
 		"katakana": true,
 		"hiragana": true,
-		"google_fonts_id": "Mplus+1p",
+		"google_fonts_id": "Mplus 1p",
 		"name": {
 			"ja": "M+ 1p",
 			"en": "M+ 1p"
@@ -56,7 +56,7 @@
 		"kanji": true,
 		"katakana": true,
 		"hiragana": true,
-		"google_fonts_id": "Rounded+Mplus+1c",
+		"google_fonts_id": "Rounded Mplus 1c",
 		"description": {
 			"ja": false,
 			"en": "The Rounded M+ Project develops versions of the M+ Fonts with rounded terminals. This set, Rounded M+ 1c, are fonts with proportional Latin and fixed-fullwidth Japanese, and 7 weights from Thin to Black. The Kana have traditional slightly curved strokes. The Latin is optimized to be well-proportioned for text typesetting."
@@ -89,7 +89,7 @@
 		"google_fonts_id": "Hannari",
 		"name": {
 			"ja": "はんなり明朝",
-			"en": "Hannari Mincho"
+			"en": "Hannari"
 		},
 		"description": {
 			"ja": false,
@@ -145,7 +145,7 @@
 		"kanji": true,
 		"katakana": true,
 		"hiragana": true,
-		"google_fonts_id": "Sawarabi+Mincho",
+		"google_fonts_id": "Sawarabi Mincho",
 		"name": {
 			"ja": "さわらび明朝",
 			"en": "Sawarabi Mincho"
@@ -174,7 +174,7 @@
 		"kanji": true,
 		"katakana": true,
 		"hiragana": true,
-		"google_fonts_id": "Sawarabi+Gothic",
+		"google_fonts_id": "Sawarabi Gothic",
 		"name": {
 			"ja": "さわらびゴシック",
 			"en": "Sawarabi Gothic"
@@ -204,7 +204,7 @@
 		"katakana": true,
 		"hiragana": true,
 		"font_size_adjust": 1.2,
-		"google_fonts_id": "nico+moji",
+		"google_fonts_id": "Nico Moji",
 		"name": {
 			"ja": "ニコモジ",
 			"en": "Nico Moji"
@@ -265,7 +265,7 @@
 		"kanji": true,
 		"katakana": true,
 		"hiragana": true,
-		"google_fonts_id": "Noto+Sans+Japanese",
+		"google_fonts_id": "Noto Sans Japanese",
 		"description": {
 			"ja": false,
 			"en": "Noto helps to make the web more beautiful across platforms for all languages. Currently, Noto covers over 30 scripts, and will cover all of Unicode in the future. This is the Sans Japanese family. It has Regular and Bold styles and is hinted."
