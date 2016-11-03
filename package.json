@@ -80,7 +80,7 @@
     "build:nofollow": "echo 'User-agent: *\nDisallow: /' > ./build/robots.txt",
     "start": "NODE_ENV=development hjs-dev-server",
     "prestage": "npm run build && npm run build:nofollow",
-    "stage": "surge ./build v2.gf-project-1.kennethormandy.com",
+    "stage": "surge ./build googlefonts-japanese.kennethormandy.com",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d ./build"
   }
