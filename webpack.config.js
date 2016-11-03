@@ -22,8 +22,10 @@ var hjsConfig = getConfig({
     // Use React's `renderToString` method to return an HTML string from our
     // components (dynamic values can be passed into `createElement` too)
     var renderPage = function (page) {
+      var pageHtmlString = page ? ReactDOMServer.renderToString(React.createElement(Layout, {}, React.createElement(page))) : ''
+
       return context.defaultTemplate({
-        html: '<div id="js-root" class="no-js">' + (page ? ReactDOMServer.renderToString(React.createElement(Layout, {}, React.createElement(page))) : '') + '</div>',
+        html: `<div id="js-root" class="no-js"><div>${pageHtmlString}</div></div>`,
         title: data.title,
         lang: 'en',
         publicPath: '',
