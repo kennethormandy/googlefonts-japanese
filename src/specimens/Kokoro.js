@@ -36,7 +36,7 @@ class SpecimenKokoro extends React.Component {
         basePaddingX={3}
         className="bg-fallback-green black wf-kokoro">
         <KokoroNotebook>
-          <p className="m0">わたしのふたつのじんかくにはきょうつうのきおくがある。</p>
+          <p className="m0">わたしのふたつのじんかくにはきょうつうのきおくがある。</p>
         </KokoroNotebook>
       </Section>
     );
