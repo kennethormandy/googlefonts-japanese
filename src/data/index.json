@@ -1,14 +1,14 @@
 {
-  "name": "Google Fonts + 日本語 早期アクセス",
-  "title": "Google Fonts + 日本語 早期アクセス • Google Fonts + Japanese Early Access",
-  "description": "As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts Early Access.",
+  "name": "Google Fonts + 日本語",
+  "title": "Google Fonts + 日本語 • Google Fonts + Japanese",
+  "description": "As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts.",
   "url": "https://googlefonts.github.io/japanese",
   "repository": "https://github.com/googlefonts/japanese",
   "baseurl": "",
   "action": "http://example.com",
   "og": {
-    "title": "Google Fonts + 日本語 早期アクセス • Google Fonts + Japanese Early Access",
-    "description": "As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts Early Access."
+    "title": "Google Fonts + 日本語 • Google Fonts + Japanese",
+    "description": "As Google makes progress on supporting Japanese web typography, we invite designers and developers to experiment with these Japanese web fonts now available from Google Fonts."
   },
   "service": {
     "analytics": "UA-23393770-19"
