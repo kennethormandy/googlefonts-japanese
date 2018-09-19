@@ -4,6 +4,8 @@ As Google makes progress on supporting Japanese web typography, we invite design
 
 This repository contains the type specimen site built to showcase the collection.
 
+This project is not an official Google project, and Google provides no support for it.
+
 ## Getting started
 
 More detailed instructions to come.
