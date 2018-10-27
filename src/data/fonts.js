@@ -238,7 +238,7 @@ module.exports = {
 			},
 			"quote": {
 				"ja": "すこしでもデザインのてだすけになれればさいわいです。",
-				"en": "I hope to do a cotribution to designers with this typeface."
+				"en": "I hope to make a contribution to designers with this typeface."
 			}
 		}
 	},
